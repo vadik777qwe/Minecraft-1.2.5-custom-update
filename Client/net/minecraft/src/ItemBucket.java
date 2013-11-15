@@ -8,7 +8,7 @@ public class ItemBucket extends Item {
 
 	public ItemBucket(int par1, int par2) {
 		super(par1);
-		maxStackSize = 1;
+		maxStackSize = 16;
 		isFull = par2;
 	}
 

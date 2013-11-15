@@ -3,7 +3,7 @@ package net.minecraft.src;
 public class ItemSign extends Item {
 	public ItemSign(int par1) {
 		super(par1);
-		maxStackSize = 1;
+		maxStackSize = 16;
 	}
 
 	/**
