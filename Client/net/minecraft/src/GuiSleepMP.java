@@ -70,6 +70,6 @@ public class GuiSleepMP extends GuiChat
         {
             NetClientHandler netclienthandler = ((EntityClientPlayerMP)mc.thePlayer).sendQueue;
             netclienthandler.addToSendQueue(new Packet19EntityAction(mc.thePlayer, 3));
-        }
-    }
+		}
+	}
 }

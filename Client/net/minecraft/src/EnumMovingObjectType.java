@@ -1,7 +1,5 @@
 package net.minecraft.src;
 
-public enum EnumMovingObjectType
-{
-    TILE,
-    ENTITY;
+public enum EnumMovingObjectType {
+	TILE, ENTITY;
 }
