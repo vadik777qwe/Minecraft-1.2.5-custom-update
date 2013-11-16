@@ -1,5 +1,10 @@
 package net.minecraft.src;
 
+import net.minecraft.src.Entity;
+import net.minecraft.src.MathHelper;
+import net.minecraft.src.ModelBase;
+import net.minecraft.src.ModelRenderer;
+
 public class ModelBiped extends ModelBase {
 	public ModelRenderer bipedHead;
 	public ModelRenderer bipedHeadwear;
@@ -11,7 +16,7 @@ public class ModelBiped extends ModelBase {
 	public ModelRenderer bipedEars;
 	public ModelRenderer bipedCloak;
 	ModelRenderer rleg;
-        ModelRenderer lleg;
+	ModelRenderer lleg;
 
 	/**
 	 * Records whether the model should be rendered holding an item in the left
@@ -62,27 +67,27 @@ public class ModelBiped extends ModelBase {
 		bipedLeftArm.mirror = true;
 		bipedLeftArm.addBox(-1F, -2F, -2F, 4, 12, 4, par1);
 		bipedLeftArm.setRotationPoint(5F, 2.0F + par2, 0.0F);
-		//Making Legs a better
+		// Making Legs a better
 		bipedRightLeg = new ModelRenderer(this, 0, 16);
-	        bipedRightLeg.addBox(-2F, 0.0F, -2F, 4, 6, 4, par1);
-	        bipedRightLeg.setRotationPoint(-2F, 12F + par2, 0.0F);
-                bipedLeftLeg = new ModelRenderer(this, 0, 16);
-	        bipedLeftLeg.mirror = true;
-	        bipedLeftLeg.addBox(-2F, 0.0F, -2F, 4, 6, 4, par1);
-	        bipedLeftLeg.setRotationPoint(2.0F, 12F + par2, 0.0F);
+		bipedRightLeg.addBox(-2F, 0.0F, -2F, 4, 6, 4, par1);
+		bipedRightLeg.setRotationPoint(-2F, 12F + par2, 0.0F);
+		bipedLeftLeg = new ModelRenderer(this, 0, 16);
+		bipedLeftLeg.mirror = true;
+		bipedLeftLeg.addBox(-2F, 0.0F, -2F, 4, 6, 4, par1);
+		bipedLeftLeg.setRotationPoint(2.0F, 12F + par2, 0.0F);
 		rleg = new ModelRenderer(this, 0, 22);
-                rleg.addBox(-2F, 0.0F, -2F, 4, 6, 4, par1);
-                rleg.setRotationPoint(0.0F, 6F, 0.0F);
-                lleg = new ModelRenderer(this, 0, 22);
-                lleg.mirror = true;
-                lleg.addBox(-2F, 0.0F, -2F, 4, 6, 4, par1);
-                lleg.setRotationPoint(0.0F, 6F, 0.0F);
-                bipedRightLeg.addChild(rleg);
-                bipedLeftLeg.addChild(lleg);
-                rleg.setTextureOffset(0, 16);
-                rleg.addBox(-2F, 5.02F, -2F, 4, 1, 4, -0.01F);
-                lleg.setTextureOffset(0, 16);
-                lleg.addBox(-2F, 5.02F, -2F, 4, 1, 4, -0.01F);
+		rleg.addBox(-2F, 0.0F, -2F, 4, 6, 4, par1);
+		rleg.setRotationPoint(0.0F, 6F, 0.0F);
+		lleg = new ModelRenderer(this, 0, 22);
+		lleg.mirror = true;
+		lleg.addBox(-2F, 0.0F, -2F, 4, 6, 4, par1);
+		lleg.setRotationPoint(0.0F, 6F, 0.0F);
+		bipedRightLeg.addChild(rleg);
+		bipedLeftLeg.addChild(lleg);
+		rleg.setTextureOffset(0, 16);
+		rleg.addBox(-2F, 5.02F, -2F, 4, 1, 4, -0.01F);
+		lleg.setTextureOffset(0, 16);
+		lleg.addBox(-2F, 5.02F, -2F, 4, 1, 4, -0.01F);
 	}
 
 	/**
@@ -124,7 +129,7 @@ public class ModelBiped extends ModelBase {
 		bipedRightLeg.rotateAngleY = 0.0F;
 		bipedLeftLeg.rotateAngleY = 0.0F;
 		rleg.rotateAngleX = 0.0F;
-                lleg.rotateAngleX = 0.0F;
+		lleg.rotateAngleX = 0.0F;
 
 		if (isRiding) {
 			bipedRightArm.rotateAngleX += -((float) Math.PI / 5F);
@@ -134,9 +139,9 @@ public class ModelBiped extends ModelBase {
 			bipedRightLeg.rotateAngleY = ((float) Math.PI / 10F);
 			bipedLeftLeg.rotateAngleY = -((float) Math.PI / 10F);
 			bipedRightLeg.rotateAngleX -= 0.6F;
-                        bipedLeftLeg.rotateAngleX -= 0.6F;
+			bipedLeftLeg.rotateAngleX -= 0.6F;
 			rleg.rotateAngleX = 0.9F;
-                        lleg.rotateAngleX = 0.9F;
+			lleg.rotateAngleX = 0.9F;
 		}
 
 		if (heldItemLeft != 0) {
@@ -191,9 +196,9 @@ public class ModelBiped extends ModelBase {
 			bipedLeftLeg.rotationPointY = 9F;
 			bipedHead.rotationPointY = 1.0F;
 			bipedRightLeg.rotateAngleX -= 0.275F;
-                        bipedLeftLeg.rotateAngleX -= 0.275F;
-                        rleg.rotateAngleX = 0.275F;
-                        lleg.rotateAngleX = 0.275F;
+			bipedLeftLeg.rotateAngleX -= 0.275F;
+			rleg.rotateAngleX = 0.275F;
+			lleg.rotateAngleX = 0.275F;
 		} else {
 			bipedBody.rotateAngleX = 0.0F;
 			bipedRightLeg.rotationPointZ = 0.0F;
