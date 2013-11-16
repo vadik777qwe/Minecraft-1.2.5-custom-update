@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+
 public class SlotCrafting extends Slot {
 	/** The craft matrix inventory linked to this result slot. */
 	private final IInventory craftMatrix;

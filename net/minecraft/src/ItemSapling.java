@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+
 public class ItemSapling extends ItemBlock {
 	public ItemSapling(int par1) {
 		super(par1);

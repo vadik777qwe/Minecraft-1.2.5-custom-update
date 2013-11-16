@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class TileEntityChest extends TileEntity implements IInventory {
 	private ItemStack chestContents[];
 

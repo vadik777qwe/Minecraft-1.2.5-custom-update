@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class WorldGenSand extends WorldGenerator {
 	/** Stores ID for WorldGenSand */
 	private int sandID;

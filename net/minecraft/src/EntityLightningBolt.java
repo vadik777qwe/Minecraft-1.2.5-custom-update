@@ -3,6 +3,8 @@ package net.minecraft.src;
 import java.util.List;
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class EntityLightningBolt extends EntityWeatherEffect {
 	/**
 	 * Declares which state the lightning bolt is in. Whether it's in the air,

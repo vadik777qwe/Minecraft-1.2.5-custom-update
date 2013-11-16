@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class WorldGenSpikes extends WorldGenerator {
 	/**
 	 * The Block ID that the generator is allowed to replace while generating

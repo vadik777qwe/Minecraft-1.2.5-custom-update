@@ -4,6 +4,8 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
+import net.minecraft.packet.Packet;
+
 public class NetworkManager {
 	/** Synchronization object used for read and write threads. */
 	public static final Object threadSyncObject = new Object();

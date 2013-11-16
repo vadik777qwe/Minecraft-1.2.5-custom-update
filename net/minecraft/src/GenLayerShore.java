@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.biome.BiomeGenBase;
+
 public class GenLayerShore extends GenLayer {
 	public GenLayerShore(long par1, GenLayer par3GenLayer) {
 		super(par1);

@@ -2,6 +2,16 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.entity.AI.EntityAIArrowAttack;
+import net.minecraft.entity.AI.EntityAIFleeSun;
+import net.minecraft.entity.AI.EntityAIHurtByTarget;
+import net.minecraft.entity.AI.EntityAILookIdle;
+import net.minecraft.entity.AI.EntityAINearestAttackableTarget;
+import net.minecraft.entity.AI.EntityAIRestrictSun;
+import net.minecraft.entity.AI.EntityAISwimming;
+import net.minecraft.entity.AI.EntityAIWander;
+import net.minecraft.entity.AI.EntityAIWatchClosest;
+
 public class EntitySkeleton extends EntityMob {
 	/** The ItemStack that any Skeleton holds (a bow). */
 	private static final ItemStack defaultHeldItem;

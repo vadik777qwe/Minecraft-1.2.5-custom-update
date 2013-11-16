@@ -3,6 +3,8 @@ package net.minecraft.src;
 import java.io.*;
 import java.util.*;
 
+import net.minecraft.biome.BiomeGenBase;
+
 public class AnvilSaveConverter extends SaveFormatOld {
 	public AnvilSaveConverter(File par1File) {
 		super(par1File);

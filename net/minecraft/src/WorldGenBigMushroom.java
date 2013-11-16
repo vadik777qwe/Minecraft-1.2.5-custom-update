@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class WorldGenBigMushroom extends WorldGenerator {
 	/** The mushroom type. 0 for brown, 1 for red. */
 	private int mushroomType;

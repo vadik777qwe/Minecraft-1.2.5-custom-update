@@ -3,6 +3,10 @@ package net.minecraft.src;
 import java.io.PrintStream;
 import java.util.*;
 
+import net.minecraft.biome.BiomeGenBase;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockContainer;
+
 public class Chunk {
 	/**
 	 * Determines if the chunk is lit or not at a light value greater than 0.

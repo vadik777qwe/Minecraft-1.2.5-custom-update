@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class EntityEnderCrystal extends Entity {
 	/** Used to create the rotation animation when rendering the crystal. */
 	public int innerRotation;

@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+
 public class ItemTool extends Item {
 	private Block blocksEffectiveAgainst[];
 	protected float efficiencyOnProperMaterial;

@@ -3,6 +3,8 @@ package net.minecraft.src;
 import java.io.PrintStream;
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class WorldGenDungeons extends WorldGenerator {
 	public WorldGenDungeons() {
 	}

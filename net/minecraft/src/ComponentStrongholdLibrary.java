@@ -3,6 +3,8 @@ package net.minecraft.src;
 import java.util.List;
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class ComponentStrongholdLibrary extends ComponentStronghold {
 	private static final StructurePieceTreasure field_35056_b[];
 	protected final EnumDoor doorType;

@@ -1,5 +1,8 @@
 package net.minecraft.src;
 
+import net.minecraft.biome.BiomeGenBase;
+import net.minecraft.block.Block;
+
 public abstract class WorldProvider {
 	/** world object being used */
 	public World worldObj;

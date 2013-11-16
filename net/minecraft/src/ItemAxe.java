@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+
 public class ItemAxe extends ItemTool {
 	private static Block blocksEffectiveAgainst[];
 

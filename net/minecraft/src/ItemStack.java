@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.*;
 
+import net.minecraft.block.Block;
+
 public final class ItemStack {
 	/** Size of the stack. */
 	public int stackSize;

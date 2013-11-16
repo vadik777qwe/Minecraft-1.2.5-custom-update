@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class WorldGenDesertWells extends WorldGenerator {
 	public WorldGenDesertWells() {
 	}

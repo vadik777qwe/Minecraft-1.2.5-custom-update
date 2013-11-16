@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.*;
 
+import net.minecraft.block.Block;
+
 public class Explosion {
 	/** whether or not the explosion sets fire to blocks around it */
 	public boolean isFlaming;

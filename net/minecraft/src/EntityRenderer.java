@@ -3,7 +3,11 @@ package net.minecraft.src;
 import java.awt.image.BufferedImage;
 import java.nio.FloatBuffer;
 import java.util.Random;
+
+import net.minecraft.biome.BiomeGenBase;
+import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
+
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.ContextCapabilities;
 import org.lwjgl.opengl.Display;

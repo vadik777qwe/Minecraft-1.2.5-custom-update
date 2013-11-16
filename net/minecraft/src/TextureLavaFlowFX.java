@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+
 public class TextureLavaFlowFX extends TextureFX {
 	protected float field_1143_g[];
 	protected float field_1142_h[];

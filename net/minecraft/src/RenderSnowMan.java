@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+
 import org.lwjgl.opengl.GL11;
 
 public class RenderSnowMan extends RenderLiving {

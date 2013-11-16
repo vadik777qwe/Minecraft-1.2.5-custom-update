@@ -3,6 +3,8 @@ package net.minecraft.src;
 import java.util.ArrayList;
 import java.util.List;
 
+import net.minecraft.block.Block;
+
 public class Session {
 	public static List registeredBlocksList;
 	public String username;

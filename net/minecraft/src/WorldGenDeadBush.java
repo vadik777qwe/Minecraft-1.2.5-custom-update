@@ -2,6 +2,9 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockFlower;
+
 public class WorldGenDeadBush extends WorldGenerator {
 	/** stores the ID for WorldGenDeadBush */
 	private int deadBushID;

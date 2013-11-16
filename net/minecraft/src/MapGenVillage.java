@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.*;
 
+import net.minecraft.biome.BiomeGenBase;
+
 public class MapGenVillage extends MapGenStructure {
 	/** A list of all the biomes villages can spawn in. */
 	public static List villageSpawnBiomes;

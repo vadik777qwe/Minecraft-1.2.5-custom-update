@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class ItemFireball extends Item {
 	public ItemFireball(int par1) {
 		super(par1);

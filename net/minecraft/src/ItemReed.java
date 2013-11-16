@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+
 public class ItemReed extends Item {
 	/** The ID of the block the reed will spawn when used from inventory bar. */
 	private int spawnID;

@@ -2,6 +2,9 @@ package net.minecraft.src;
 
 import java.util.*;
 
+import net.minecraft.biome.BiomeCache;
+import net.minecraft.biome.BiomeGenBase;
+
 public class WorldChunkManager {
 	private GenLayer genBiomes;
 

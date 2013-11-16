@@ -2,6 +2,20 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.entity.AI.EntityAIAttackOnCollide;
+import net.minecraft.entity.AI.EntityAIBeg;
+import net.minecraft.entity.AI.EntityAIFollowOwner;
+import net.minecraft.entity.AI.EntityAIHurtByTarget;
+import net.minecraft.entity.AI.EntityAILeapAtTarget;
+import net.minecraft.entity.AI.EntityAILookIdle;
+import net.minecraft.entity.AI.EntityAIMate;
+import net.minecraft.entity.AI.EntityAIOwnerHurtByTarget;
+import net.minecraft.entity.AI.EntityAIOwnerHurtTarget;
+import net.minecraft.entity.AI.EntityAISwimming;
+import net.minecraft.entity.AI.EntityAITargetNonTamed;
+import net.minecraft.entity.AI.EntityAIWander;
+import net.minecraft.entity.AI.EntityAIWatchClosest;
+
 public class EntityWolf extends EntityTameable {
 	/**
 	 * This flag is set when the wolf is looking at a player with interest, i.e.

@@ -3,7 +3,10 @@ package net.minecraft.src;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.Arrays;
+
 import javax.imageio.ImageIO;
+
+import net.minecraft.block.Block;
 
 public class TerrainTextureManager {
 	private float texCols[];

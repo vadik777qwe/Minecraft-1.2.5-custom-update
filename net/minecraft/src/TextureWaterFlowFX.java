@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+
 public class TextureWaterFlowFX extends TextureFX {
 	protected float field_1138_g[];
 	protected float field_1137_h[];

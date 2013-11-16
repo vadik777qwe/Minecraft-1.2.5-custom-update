@@ -3,6 +3,8 @@ package net.minecraft.src;
 import java.util.HashMap;
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class ItemMonsterPlacer extends Item {
 	public ItemMonsterPlacer(int par1) {
 		super(par1);

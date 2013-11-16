@@ -3,6 +3,10 @@ package net.minecraft.src;
 import java.io.PrintStream;
 import java.util.*;
 
+import net.minecraft.biome.BiomeGenBase;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockFluid;
+
 public class World implements IBlockAccess {
 	/**
 	 * boolean; if true updates scheduled by scheduleBlockUpdate happen

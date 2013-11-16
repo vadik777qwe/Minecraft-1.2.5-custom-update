@@ -1,7 +1,10 @@
 package net.minecraft.src;
 
 import java.util.List;
+
 import net.minecraft.client.Minecraft;
+import net.minecraft.gui.menu.GuiMainMenu;
+import net.minecraft.gui.menu.GuiOptions;
 
 public class GuiIngameMenu extends GuiScreen {
 	/** Also counts the number of updates, not certain as to why yet. */

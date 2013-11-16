@@ -4,7 +4,10 @@ import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Random;
+
+import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
+
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
 

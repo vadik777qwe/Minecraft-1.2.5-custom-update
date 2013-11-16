@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.List;
 
+import net.minecraft.block.Block;
+
 public class ItemBoat extends Item {
 	public ItemBoat(int par1) {
 		super(par1);

@@ -3,6 +3,8 @@ package net.minecraft.src;
 import java.util.List;
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class EntityEnderman extends EntityMob {
 	private static boolean canCarryBlocks[];
 

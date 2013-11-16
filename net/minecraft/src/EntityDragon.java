@@ -2,6 +2,9 @@ package net.minecraft.src;
 
 import java.util.*;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockEndPortal;
+
 public class EntityDragon extends EntityDragonBase {
 	public double targetX;
 	public double targetY;

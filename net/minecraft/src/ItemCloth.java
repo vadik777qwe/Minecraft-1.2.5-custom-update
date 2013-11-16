@@ -1,5 +1,8 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockCloth;
+
 public class ItemCloth extends ItemBlock {
 	public ItemCloth(int par1) {
 		super(par1);

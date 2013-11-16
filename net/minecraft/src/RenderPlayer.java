@@ -1,6 +1,8 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
+
 import org.lwjgl.opengl.GL11;
 
 public class RenderPlayer extends RenderLiving {

@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.biome.BiomeGenBase;
+
 public class GenLayerBiome extends GenLayer {
 	private BiomeGenBase allowedBiomes[];
 

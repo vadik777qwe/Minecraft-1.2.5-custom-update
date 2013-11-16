@@ -3,14 +3,17 @@ package net.minecraft.src;
 import java.io.IOException;
 import java.net.*;
 
-class ThreadPollServers extends Thread {
+import net.minecraft.gui.menu.GuiMultiplayer;
+import net.minecraft.gui.menu.GuiSlotServer;
+
+public class ThreadPollServers extends Thread {
 	/** The server getting checked */
 	final ServerNBTStorage server;
 
 	/** Slot container for the server list */
 	final GuiSlotServer serverSlotContainer;
 
-	ThreadPollServers(GuiSlotServer par1GuiSlotServer,
+	public ThreadPollServers(GuiSlotServer par1GuiSlotServer,
 			ServerNBTStorage par2ServerNBTStorage) {
 		serverSlotContainer = par1GuiSlotServer;
 		server = par2ServerNBTStorage;

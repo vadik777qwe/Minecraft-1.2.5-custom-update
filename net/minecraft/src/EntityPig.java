@@ -1,5 +1,14 @@
 package net.minecraft.src;
 
+import net.minecraft.entity.AI.EntityAIFollowParent;
+import net.minecraft.entity.AI.EntityAILookIdle;
+import net.minecraft.entity.AI.EntityAIMate;
+import net.minecraft.entity.AI.EntityAIPanic;
+import net.minecraft.entity.AI.EntityAISwimming;
+import net.minecraft.entity.AI.EntityAITempt;
+import net.minecraft.entity.AI.EntityAIWander;
+import net.minecraft.entity.AI.EntityAIWatchClosest;
+
 public class EntityPig extends EntityAnimal {
 	public EntityPig(World par1World) {
 		super(par1World);

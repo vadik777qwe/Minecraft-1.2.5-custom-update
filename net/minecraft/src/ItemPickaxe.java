@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+
 public class ItemPickaxe extends ItemTool {
 	private static Block blocksEffectiveAgainst[];
 

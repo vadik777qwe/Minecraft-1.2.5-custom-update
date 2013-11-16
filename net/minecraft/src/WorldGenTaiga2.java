@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class WorldGenTaiga2 extends WorldGenerator {
 	public WorldGenTaiga2(boolean par1) {
 		super(par1);

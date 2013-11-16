@@ -1,7 +1,19 @@
 package net.minecraft.src;
 
 import java.util.List;
+
 import net.minecraft.client.Minecraft;
+import net.minecraft.packet.packets.Packet101CloseWindow;
+import net.minecraft.packet.packets.Packet10Flying;
+import net.minecraft.packet.packets.Packet11PlayerPosition;
+import net.minecraft.packet.packets.Packet12PlayerLook;
+import net.minecraft.packet.packets.Packet13PlayerLookMove;
+import net.minecraft.packet.packets.Packet14BlockDig;
+import net.minecraft.packet.packets.Packet18Animation;
+import net.minecraft.packet.packets.Packet19EntityAction;
+import net.minecraft.packet.packets.Packet202PlayerAbilities;
+import net.minecraft.packet.packets.Packet3Chat;
+import net.minecraft.packet.packets.Packet9Respawn;
 
 public class EntityClientPlayerMP extends EntityPlayerSP {
 	public NetClientHandler sendQueue;

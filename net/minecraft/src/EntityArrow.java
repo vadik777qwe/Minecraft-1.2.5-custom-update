@@ -3,6 +3,8 @@ package net.minecraft.src;
 import java.util.List;
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class EntityArrow extends Entity {
 	private int xTile;
 	private int yTile;

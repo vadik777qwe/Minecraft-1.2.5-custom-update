@@ -3,6 +3,8 @@ package net.minecraft.src;
 import java.io.*;
 import java.util.*;
 
+import net.minecraft.packet.Packet;
+
 public class DataWatcher {
 	private static final HashMap dataTypes;
 	private final Map watchedObjects = new HashMap();

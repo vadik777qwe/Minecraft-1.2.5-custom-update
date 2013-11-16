@@ -3,6 +3,10 @@ package net.minecraft.src;
 import java.util.List;
 import java.util.Random;
 
+import net.minecraft.biome.BiomeGenBase;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockSand;
+
 public class ChunkProviderHell implements IChunkProvider {
 	private Random hellRNG;
 

@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+
 public class ItemLilyPad extends ItemColored {
 	public ItemLilyPad(int par1) {
 		super(par1, false);

@@ -4,6 +4,8 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import net.minecraft.block.Block;
+
 public class AchievementList {
 	/** Is the smallest column used to display a achievement on the GUI. */
 	public static int minDisplayColumn;

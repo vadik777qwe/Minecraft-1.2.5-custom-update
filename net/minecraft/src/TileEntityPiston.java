@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.*;
 
+import net.minecraft.block.Block;
+
 public class TileEntityPiston extends TileEntity {
 	private int storedBlockID;
 	private int storedMetadata;

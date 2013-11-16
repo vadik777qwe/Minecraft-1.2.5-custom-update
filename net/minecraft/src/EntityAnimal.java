@@ -3,6 +3,8 @@ package net.minecraft.src;
 import java.util.List;
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public abstract class EntityAnimal extends EntityAgeable {
 	private int inLove;
 

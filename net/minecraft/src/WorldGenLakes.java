@@ -2,6 +2,9 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.biome.BiomeGenBase;
+import net.minecraft.block.Block;
+
 public class WorldGenLakes extends WorldGenerator {
 	private int blockIndex;
 

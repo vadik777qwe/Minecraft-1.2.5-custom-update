@@ -1,6 +1,14 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
+import net.minecraft.packet.packets.Packet102WindowClick;
+import net.minecraft.packet.packets.Packet107CreativeSetSlot;
+import net.minecraft.packet.packets.Packet108EnchantItem;
+import net.minecraft.packet.packets.Packet14BlockDig;
+import net.minecraft.packet.packets.Packet15Place;
+import net.minecraft.packet.packets.Packet16BlockItemSwitch;
+import net.minecraft.packet.packets.Packet7UseEntity;
 
 public class PlayerControllerMP extends PlayerController {
 	/** PosX of the current block being destroyed */

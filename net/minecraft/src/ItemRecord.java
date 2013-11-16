@@ -2,6 +2,9 @@ package net.minecraft.src;
 
 import java.util.List;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockJukeBox;
+
 public class ItemRecord extends Item {
 	/** The name of the record. */
 	public final String recordName;

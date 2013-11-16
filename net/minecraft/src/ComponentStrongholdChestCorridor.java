@@ -3,6 +3,8 @@ package net.minecraft.src;
 import java.util.List;
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class ComponentStrongholdChestCorridor extends ComponentStronghold {
 	private static final StructurePieceTreasure chestLoot[];
 	private final EnumDoor doorType;

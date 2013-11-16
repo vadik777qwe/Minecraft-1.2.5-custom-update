@@ -1,7 +1,11 @@
 package net.minecraft.src;
 
 import java.util.List;
+
+import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
+import net.minecraft.packet.packets.Packet130UpdateSign;
+
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
 

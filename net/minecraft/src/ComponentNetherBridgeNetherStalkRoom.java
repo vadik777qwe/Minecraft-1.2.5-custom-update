@@ -3,6 +3,8 @@ package net.minecraft.src;
 import java.util.List;
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class ComponentNetherBridgeNetherStalkRoom extends
 		ComponentNetherBridgePiece {
 	public ComponentNetherBridgeNetherStalkRoom(int par1, Random par2Random,

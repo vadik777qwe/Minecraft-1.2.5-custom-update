@@ -2,6 +2,19 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+import net.minecraft.entity.AI.EntityAIAttackOnCollide;
+import net.minecraft.entity.AI.EntityAIDefendVillage;
+import net.minecraft.entity.AI.EntityAIHurtByTarget;
+import net.minecraft.entity.AI.EntityAILookAtVillager;
+import net.minecraft.entity.AI.EntityAILookIdle;
+import net.minecraft.entity.AI.EntityAIMoveThroughVillage;
+import net.minecraft.entity.AI.EntityAIMoveTowardsTarget;
+import net.minecraft.entity.AI.EntityAIMoveTwardsRestriction;
+import net.minecraft.entity.AI.EntityAINearestAttackableTarget;
+import net.minecraft.entity.AI.EntityAIWander;
+import net.minecraft.entity.AI.EntityAIWatchClosest;
+
 public class EntityIronGolem extends EntityGolem {
 	private int field_48119_b;
 	Village villageObj;

@@ -3,6 +3,8 @@ package net.minecraft.src;
 import java.util.List;
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class StructureMineshaftPieces {
 	private static final StructurePieceTreasure lootArray[];
 

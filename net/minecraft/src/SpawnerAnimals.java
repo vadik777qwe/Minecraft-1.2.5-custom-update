@@ -3,6 +3,9 @@ package net.minecraft.src;
 import java.lang.reflect.Constructor;
 import java.util.*;
 
+import net.minecraft.biome.BiomeGenBase;
+import net.minecraft.block.Block;
+
 public final class SpawnerAnimals {
 	/** The 17x17 area around the player where mobs can spawn */
 	private static HashMap eligibleChunksForSpawning = new HashMap();

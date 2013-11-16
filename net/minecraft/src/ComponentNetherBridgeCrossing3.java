@@ -3,6 +3,8 @@ package net.minecraft.src;
 import java.util.List;
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class ComponentNetherBridgeCrossing3 extends ComponentNetherBridgePiece {
 	public ComponentNetherBridgeCrossing3(int par1, Random par2Random,
 			StructureBoundingBox par3StructureBoundingBox, int par4) {

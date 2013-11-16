@@ -2,6 +2,17 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.entity.AI.EntityAIAttackOnCollide;
+import net.minecraft.entity.AI.EntityAIBreakDoor;
+import net.minecraft.entity.AI.EntityAIHurtByTarget;
+import net.minecraft.entity.AI.EntityAILookIdle;
+import net.minecraft.entity.AI.EntityAIMoveThroughVillage;
+import net.minecraft.entity.AI.EntityAIMoveTwardsRestriction;
+import net.minecraft.entity.AI.EntityAINearestAttackableTarget;
+import net.minecraft.entity.AI.EntityAISwimming;
+import net.minecraft.entity.AI.EntityAIWander;
+import net.minecraft.entity.AI.EntityAIWatchClosest;
+
 public class EntityZombie extends EntityMob {
 	public EntityZombie(World par1World) {
 		super(par1World);

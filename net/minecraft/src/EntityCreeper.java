@@ -2,6 +2,16 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.entity.AI.EntityAIAttackOnCollide;
+import net.minecraft.entity.AI.EntityAIAvoidEntity;
+import net.minecraft.entity.AI.EntityAICreeperSwell;
+import net.minecraft.entity.AI.EntityAIHurtByTarget;
+import net.minecraft.entity.AI.EntityAILookIdle;
+import net.minecraft.entity.AI.EntityAINearestAttackableTarget;
+import net.minecraft.entity.AI.EntityAISwimming;
+import net.minecraft.entity.AI.EntityAIWander;
+import net.minecraft.entity.AI.EntityAIWatchClosest;
+
 public class EntityCreeper extends EntityMob {
 	/**
 	 * The amount of time since the creeper was close enough to the player to

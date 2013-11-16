@@ -4,6 +4,8 @@ import java.io.PrintStream;
 import java.util.List;
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class Item {
 	/** The RNG used by the Item subclasses. */
 	protected static Random itemRand = new Random();

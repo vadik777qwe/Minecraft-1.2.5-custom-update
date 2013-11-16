@@ -3,7 +3,10 @@ package net.minecraft.src;
 import java.util.ArrayList;
 import java.util.List;
 
-class RailLogic {
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockRail;
+
+public class RailLogic {
 	/** Reference to the World object. */
 	private World worldObj;
 	private int trackX;
@@ -436,7 +439,7 @@ class RailLogic {
 	/**
 	 * get number of adjacent tracks
 	 */
-	static int getNAdjacentTracks(RailLogic par0RailLogic) {
+	public static int getNAdjacentTracks(RailLogic par0RailLogic) {
 		return par0RailLogic.getAdjacentTracks();
 	}
 }

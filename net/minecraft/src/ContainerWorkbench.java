@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.List;
 
+import net.minecraft.block.Block;
+
 public class ContainerWorkbench extends Container {
 	/** The crafting matrix inventory (3x3). */
 	public InventoryCrafting craftMatrix;

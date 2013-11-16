@@ -2,6 +2,15 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.entity.AI.EntityAIFollowParent;
+import net.minecraft.entity.AI.EntityAILookIdle;
+import net.minecraft.entity.AI.EntityAIMate;
+import net.minecraft.entity.AI.EntityAIPanic;
+import net.minecraft.entity.AI.EntityAISwimming;
+import net.minecraft.entity.AI.EntityAITempt;
+import net.minecraft.entity.AI.EntityAIWander;
+import net.minecraft.entity.AI.EntityAIWatchClosest;
+
 public class EntityChicken extends EntityAnimal {
 	public boolean field_753_a;
 	public float field_752_b;

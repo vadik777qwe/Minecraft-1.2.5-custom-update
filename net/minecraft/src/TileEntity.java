@@ -4,6 +4,8 @@ import java.io.PrintStream;
 import java.util.HashMap;
 import java.util.Map;
 
+import net.minecraft.block.Block;
+
 public class TileEntity {
 	/**
 	 * A HashMap storing string names of classes mapping to the actual

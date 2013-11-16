@@ -1,6 +1,9 @@
 package net.minecraft.src;
 
 import java.util.*;
+
+import net.minecraft.block.Block;
+
 import org.lwjgl.opengl.GL11;
 
 public class EffectRenderer {

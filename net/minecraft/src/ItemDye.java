@@ -2,6 +2,13 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockCloth;
+import net.minecraft.block.BlockCrops;
+import net.minecraft.block.BlockMushroom;
+import net.minecraft.block.BlockSapling;
+import net.minecraft.block.BlockStem;
+
 public class ItemDye extends Item {
 	public static final String dyeColorNames[] = { "black", "red", "green",
 			"brown", "blue", "purple", "cyan", "silver", "gray", "pink",

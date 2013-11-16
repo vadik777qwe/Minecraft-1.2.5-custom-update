@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class TexturePortalFX extends TextureFX {
 	/** Portal tick counter */
 	private int portalTickCounter;

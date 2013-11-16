@@ -2,6 +2,9 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockSilverfish;
+
 public class EntitySilverfish extends EntityMob {
 	/**
 	 * A cooldown before this entity will search for another Silverfish to join

@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class WorldGenGlowStone1 extends WorldGenerator {
 	public WorldGenGlowStone1() {
 	}

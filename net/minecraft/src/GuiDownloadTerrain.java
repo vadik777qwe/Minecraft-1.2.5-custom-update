@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.List;
 
+import net.minecraft.packet.packets.Packet0KeepAlive;
+
 public class GuiDownloadTerrain extends GuiScreen {
 	/** Network object that downloads the terrain data. */
 	private NetClientHandler netHandler;

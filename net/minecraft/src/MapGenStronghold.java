@@ -3,6 +3,8 @@ package net.minecraft.src;
 import java.io.PrintStream;
 import java.util.*;
 
+import net.minecraft.biome.BiomeGenBase;
+
 public class MapGenStronghold extends MapGenStructure {
 	private BiomeGenBase allowedBiomeGenBases[];
 

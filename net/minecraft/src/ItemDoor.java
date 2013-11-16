@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+
 public class ItemDoor extends Item {
 	private Material doorMaterial;
 

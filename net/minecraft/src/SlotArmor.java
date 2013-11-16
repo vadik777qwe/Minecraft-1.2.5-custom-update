@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+
 class SlotArmor extends Slot {
 	/**
 	 * The armor type that can be placed on that slot, it uses the same values

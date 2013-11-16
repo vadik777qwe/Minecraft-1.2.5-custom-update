@@ -1,5 +1,8 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockStep;
+
 public class ItemSlab extends ItemBlock {
 	public ItemSlab(int par1) {
 		super(par1);

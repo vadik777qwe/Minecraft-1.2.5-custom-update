@@ -2,7 +2,10 @@ package net.minecraft.src;
 
 import java.nio.IntBuffer;
 import java.util.*;
+
+import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
+
 import org.lwjgl.opengl.ARBOcclusionQuery;
 import org.lwjgl.opengl.GL11;
 

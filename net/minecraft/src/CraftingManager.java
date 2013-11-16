@@ -3,6 +3,8 @@ package net.minecraft.src;
 import java.io.PrintStream;
 import java.util.*;
 
+import net.minecraft.block.Block;
+
 public class CraftingManager {
 	/** The static instance of this class */
 	private static final CraftingManager instance = new CraftingManager();

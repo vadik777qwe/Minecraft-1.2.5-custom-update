@@ -2,6 +2,9 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockFlower;
+
 public class WorldGenTallGrass extends WorldGenerator {
 	/** Stores ID for WorldGenTallGrass */
 	private int tallGrassID;

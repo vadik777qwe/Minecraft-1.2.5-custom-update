@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.BlockRail;
+
 public class ItemMinecart extends Item {
 	public int minecartType;
 

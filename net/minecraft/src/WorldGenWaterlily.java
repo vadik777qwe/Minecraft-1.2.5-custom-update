@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class WorldGenWaterlily extends WorldGenerator {
 	public WorldGenWaterlily() {
 	}

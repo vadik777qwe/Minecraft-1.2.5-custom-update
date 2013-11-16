@@ -2,9 +2,12 @@ package net.minecraft.src;
 
 import java.net.ConnectException;
 import java.net.UnknownHostException;
-import net.minecraft.client.Minecraft;
 
-class ThreadConnectToServer extends Thread {
+import net.minecraft.client.Minecraft;
+import net.minecraft.gui.menu.GuiConnecting;
+import net.minecraft.packet.packets.Packet2Handshake;
+
+public class ThreadConnectToServer extends Thread {
 	/** A reference to the Minecraft object. */
 	final Minecraft mc;
 
@@ -17,7 +20,7 @@ class ThreadConnectToServer extends Thread {
 	/** A reference to the GuiConnecting object. */
 	final GuiConnecting connectingGui;
 
-	ThreadConnectToServer(GuiConnecting par1GuiConnecting,
+	public ThreadConnectToServer(GuiConnecting par1GuiConnecting,
 			Minecraft par2Minecraft, String par3Str, int par4) {
 		connectingGui = par1GuiConnecting;
 		mc = par2Minecraft;

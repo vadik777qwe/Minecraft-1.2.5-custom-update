@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+
 public class PathFinder {
 	/** Used to find obstacles */
 	private IBlockAccess worldMap;

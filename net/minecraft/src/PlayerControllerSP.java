@@ -1,5 +1,6 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 
 public class PlayerControllerSP extends PlayerController {

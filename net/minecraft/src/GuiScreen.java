@@ -9,7 +9,7 @@ import org.lwjgl.opengl.GL11;
 
 public class GuiScreen extends Gui {
 	/** Reference to the Minecraft object. */
-	protected Minecraft mc;
+	public Minecraft mc;
 
 	/** The width of the screen object. */
 	public int width;
@@ -22,7 +22,7 @@ public class GuiScreen extends Gui {
 	public boolean allowUserInput;
 
 	/** The FontRenderer used by GuiScreen */
-	protected FontRenderer fontRenderer;
+	public FontRenderer fontRenderer;
 	public GuiParticle guiParticles;
 
 	/** The button that was just pressed. */

@@ -1,5 +1,8 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockSand;
+
 public class EntityFallingSand extends Entity {
 	public int blockID;
 

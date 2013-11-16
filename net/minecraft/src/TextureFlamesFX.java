@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+
 public class TextureFlamesFX extends TextureFX {
 	protected float field_1133_g[];
 	protected float field_1132_h[];

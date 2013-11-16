@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.biome.BiomeGenBase;
+
 public class GenLayerAddIsland extends GenLayer {
 	public GenLayerAddIsland(long par1, GenLayer par3GenLayer) {
 		super(par1);

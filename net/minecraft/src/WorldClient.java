@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.*;
 
+import net.minecraft.packet.packets.Packet255KickDisconnect;
+
 public class WorldClient extends World {
 	/**
 	 * Contains a list of blocks to to receive and process after they've been

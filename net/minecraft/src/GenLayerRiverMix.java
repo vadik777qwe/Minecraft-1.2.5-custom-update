@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.biome.BiomeGenBase;
+
 public class GenLayerRiverMix extends GenLayer {
 	private GenLayer field_35512_b;
 	private GenLayer field_35513_c;

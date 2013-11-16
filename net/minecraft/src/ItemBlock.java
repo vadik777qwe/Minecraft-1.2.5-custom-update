@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+
 public class ItemBlock extends Item {
 	/** The block ID of the Block associated with this ItemBlock */
 	private int blockID;

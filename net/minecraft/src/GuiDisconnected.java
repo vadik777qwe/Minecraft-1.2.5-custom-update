@@ -1,7 +1,9 @@
 package net.minecraft.src;
 
 import java.util.List;
+
 import net.minecraft.client.Minecraft;
+import net.minecraft.gui.menu.GuiMainMenu;
 
 public class GuiDisconnected extends GuiScreen {
 	/** The error message. */

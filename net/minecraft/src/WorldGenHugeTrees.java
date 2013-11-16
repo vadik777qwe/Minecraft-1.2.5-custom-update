@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class WorldGenHugeTrees extends WorldGenerator {
 	private final int field_48195_a;
 

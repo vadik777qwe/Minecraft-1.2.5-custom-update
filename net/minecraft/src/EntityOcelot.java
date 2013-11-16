@@ -3,6 +3,19 @@ package net.minecraft.src;
 import java.util.List;
 import java.util.Random;
 
+import net.minecraft.block.Block;
+import net.minecraft.entity.AI.EntityAIAvoidEntity;
+import net.minecraft.entity.AI.EntityAIFollowOwner;
+import net.minecraft.entity.AI.EntityAILeapAtTarget;
+import net.minecraft.entity.AI.EntityAIMate;
+import net.minecraft.entity.AI.EntityAIOcelotAttack;
+import net.minecraft.entity.AI.EntityAIOcelotSit;
+import net.minecraft.entity.AI.EntityAISwimming;
+import net.minecraft.entity.AI.EntityAITargetNonTamed;
+import net.minecraft.entity.AI.EntityAITempt;
+import net.minecraft.entity.AI.EntityAIWander;
+import net.minecraft.entity.AI.EntityAIWatchClosest;
+
 public class EntityOcelot extends EntityTameable {
 	/**
 	 * The tempt AI task for this mob, used to prevent taming while it is

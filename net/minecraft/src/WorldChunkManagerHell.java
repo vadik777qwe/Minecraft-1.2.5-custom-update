@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.*;
 
+import net.minecraft.biome.BiomeGenBase;
+
 public class WorldChunkManagerHell extends WorldChunkManager {
 	/** The biome generator object. */
 	private BiomeGenBase biomeGenerator;

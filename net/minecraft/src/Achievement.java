@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.List;
 
+import net.minecraft.block.Block;
+
 public class Achievement extends StatBase {
 	/**
 	 * Is the column (related to center of achievement gui, in 24 pixels unit)

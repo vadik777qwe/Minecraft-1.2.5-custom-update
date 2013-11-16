@@ -2,6 +2,13 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+import net.minecraft.entity.AI.EntityAIArrowAttack;
+import net.minecraft.entity.AI.EntityAILookIdle;
+import net.minecraft.entity.AI.EntityAINearestAttackableTarget;
+import net.minecraft.entity.AI.EntityAIWander;
+import net.minecraft.entity.AI.EntityAIWatchClosest;
+
 public class EntitySnowman extends EntityGolem {
 	public EntitySnowman(World par1World) {
 		super(par1World);

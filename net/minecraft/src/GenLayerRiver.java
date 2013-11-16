@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.biome.BiomeGenBase;
+
 public class GenLayerRiver extends GenLayer {
 	public GenLayerRiver(long par1, GenLayer par3GenLayer) {
 		super(par1);

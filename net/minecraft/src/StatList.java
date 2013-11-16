@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.*;
 
+import net.minecraft.block.Block;
+
 public class StatList {
 	/** Tracks one-off stats. */
 	protected static Map oneShotStats = new HashMap();

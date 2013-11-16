@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.biome.BiomeGenBase;
+
 public class WorldProviderHell extends WorldProvider {
 	public WorldProviderHell() {
 	}

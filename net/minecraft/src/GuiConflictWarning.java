@@ -1,7 +1,9 @@
 package net.minecraft.src;
 
 import java.util.List;
+
 import net.minecraft.client.Minecraft;
+import net.minecraft.gui.menu.GuiMainMenu;
 
 public class GuiConflictWarning extends GuiScreen {
 	/** Counts the number of screen updates. Not used. */

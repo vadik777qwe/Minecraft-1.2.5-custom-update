@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.biome.BiomeGenBase;
+
 public class GenLayerHills extends GenLayer {
 	public GenLayerHills(long par1, GenLayer par3GenLayer) {
 		super(par1);

@@ -1,5 +1,8 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockCloth;
+
 public class RecipesDyes {
 	public RecipesDyes() {
 	}

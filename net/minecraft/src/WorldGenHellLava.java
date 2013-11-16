@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class WorldGenHellLava extends WorldGenerator {
 	/** Stores ID for WorldGenHellLava */
 	private int hellLavaID;

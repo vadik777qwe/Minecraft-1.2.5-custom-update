@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.BlockFluid;
+
 public class EntityDropParticleFX extends EntityFX {
 	/** the material type for dropped items/blocks */
 	private Material materialType;

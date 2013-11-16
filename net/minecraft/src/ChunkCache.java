@@ -1,5 +1,8 @@
 package net.minecraft.src;
 
+import net.minecraft.biome.BiomeGenBase;
+import net.minecraft.block.Block;
+
 public class ChunkCache implements IBlockAccess {
 	private int chunkX;
 	private int chunkZ;

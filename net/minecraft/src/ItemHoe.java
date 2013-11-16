@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+
 public class ItemHoe extends Item {
 	public ItemHoe(int par1, EnumToolMaterial par2EnumToolMaterial) {
 		super(par1);

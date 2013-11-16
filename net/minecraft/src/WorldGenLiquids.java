@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class WorldGenLiquids extends WorldGenerator {
 	/** The ID of the liquid block used in this liquid generator. */
 	private int liquidBlockId;

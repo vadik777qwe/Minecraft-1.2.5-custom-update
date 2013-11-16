@@ -3,6 +3,8 @@ package net.minecraft.src;
 import java.util.HashMap;
 import java.util.Map;
 
+import net.minecraft.block.Block;
+
 public class FurnaceRecipes {
 	private static final FurnaceRecipes smeltingBase = new FurnaceRecipes();
 

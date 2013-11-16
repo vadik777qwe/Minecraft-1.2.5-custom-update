@@ -1,6 +1,25 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockBed;
+import net.minecraft.block.BlockBrewingStand;
+import net.minecraft.block.BlockCauldron;
+import net.minecraft.block.BlockDirectional;
+import net.minecraft.block.BlockDoor;
+import net.minecraft.block.BlockDragonEgg;
+import net.minecraft.block.BlockEndPortalFrame;
+import net.minecraft.block.BlockFence;
+import net.minecraft.block.BlockFenceGate;
+import net.minecraft.block.BlockFluid;
+import net.minecraft.block.BlockPane;
+import net.minecraft.block.BlockPistonBase;
+import net.minecraft.block.BlockPistonExtension;
+import net.minecraft.block.BlockRail;
+import net.minecraft.block.BlockRedstoneRepeater;
+import net.minecraft.block.BlockRedstoneWire;
+import net.minecraft.block.BlockStem;
 import net.minecraft.client.Minecraft;
+
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL12;
 

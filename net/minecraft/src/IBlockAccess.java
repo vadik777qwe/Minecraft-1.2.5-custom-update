@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.biome.BiomeGenBase;
+
 public interface IBlockAccess {
 	/**
 	 * Returns the block ID at coords x,y,z

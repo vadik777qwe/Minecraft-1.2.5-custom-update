@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class Teleporter {
 	/** A private Random() function in Teleporter */
 	private Random random;

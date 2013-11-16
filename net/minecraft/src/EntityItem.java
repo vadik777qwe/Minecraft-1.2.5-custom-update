@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class EntityItem extends Entity {
 	/** The item stack of this EntityItem. */
 	public ItemStack item;

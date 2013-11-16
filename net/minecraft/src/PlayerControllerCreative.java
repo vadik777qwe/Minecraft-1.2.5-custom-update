@@ -1,6 +1,8 @@
 package net.minecraft.src;
 
 import java.util.List;
+
+import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 
 public class PlayerControllerCreative extends PlayerController {

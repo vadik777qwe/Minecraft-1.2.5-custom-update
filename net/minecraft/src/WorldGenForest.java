@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+
 public class WorldGenForest extends WorldGenerator {
 	public WorldGenForest(boolean par1) {
 		super(par1);

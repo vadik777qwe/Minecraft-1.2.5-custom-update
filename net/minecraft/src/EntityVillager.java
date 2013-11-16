@@ -2,6 +2,19 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.entity.AI.EntityAIAvoidEntity;
+import net.minecraft.entity.AI.EntityAIFollowGolem;
+import net.minecraft.entity.AI.EntityAIMoveIndoors;
+import net.minecraft.entity.AI.EntityAIMoveTwardsRestriction;
+import net.minecraft.entity.AI.EntityAIOpenDoor;
+import net.minecraft.entity.AI.EntityAIPlay;
+import net.minecraft.entity.AI.EntityAIRestrictOpenDoor;
+import net.minecraft.entity.AI.EntityAISwimming;
+import net.minecraft.entity.AI.EntityAIVillagerMate;
+import net.minecraft.entity.AI.EntityAIWander;
+import net.minecraft.entity.AI.EntityAIWatchClosest;
+import net.minecraft.entity.AI.EntityAIWatchClosest2;
+
 public class EntityVillager extends EntityAgeable {
 	private int randomTickDivider;
 	private boolean isMatingFlag;

@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.entity.AI.EntityAISit;
+
 public abstract class EntityTameable extends EntityAnimal {
 	protected EntityAISit aiSit;
 

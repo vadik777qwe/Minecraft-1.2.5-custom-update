@@ -3,6 +3,9 @@ package net.minecraft.src;
 import java.util.List;
 import java.util.Random;
 
+import net.minecraft.biome.BiomeGenBase;
+import net.minecraft.block.Block;
+
 public class ChunkProviderFlat implements IChunkProvider {
 	private World worldObj;
 	private Random random;

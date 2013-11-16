@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.*;
 
+import net.minecraft.block.Block;
+
 public class ContainerEnchantment extends Container {
 	/** SlotEnchantmentTable object with ItemStack to be enchanted */
 	public IInventory tableInventory;

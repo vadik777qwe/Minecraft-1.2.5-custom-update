@@ -3,6 +3,9 @@ package net.minecraft.src;
 import java.util.List;
 import java.util.Random;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockRail;
+
 public class EntityMinecart extends Entity implements IInventory {
 	private ItemStack cargoItems[];
 	private int fuel;

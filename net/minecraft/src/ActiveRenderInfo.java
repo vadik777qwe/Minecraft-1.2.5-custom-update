@@ -2,6 +2,10 @@ package net.minecraft.src;
 
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockFluid;
+
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.util.glu.GLU;
 

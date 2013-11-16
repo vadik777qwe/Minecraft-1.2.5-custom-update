@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.*;
 
+import net.minecraft.block.Block;
+
 public class ComponentMineshaftRoom extends StructureComponent {
 	private LinkedList chidStructures;
 

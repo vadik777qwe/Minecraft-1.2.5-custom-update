@@ -2,6 +2,9 @@ package net.minecraft.src;
 
 import java.util.*;
 
+import net.minecraft.block.Block;
+import net.minecraft.entity.AI.EntityAITasks;
+
 public abstract class EntityLiving extends Entity {
 	public int heartsHalvesLife;
 	public float field_9365_p;

@@ -1,5 +1,8 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockBed;
+
 public class ItemBed extends Item {
 	public ItemBed(int par1) {
 		super(par1);

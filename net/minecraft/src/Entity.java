@@ -3,6 +3,9 @@ package net.minecraft.src;
 import java.util.List;
 import java.util.Random;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockFluid;
+
 public abstract class Entity {
 	private static int nextEntityID = 0;
 	public int entityId;

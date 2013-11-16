@@ -2,6 +2,17 @@ package net.minecraft.src;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
+import net.minecraft.entity.AI.EntityAIEatGrass;
+import net.minecraft.entity.AI.EntityAIFollowParent;
+import net.minecraft.entity.AI.EntityAILookIdle;
+import net.minecraft.entity.AI.EntityAIMate;
+import net.minecraft.entity.AI.EntityAIPanic;
+import net.minecraft.entity.AI.EntityAISwimming;
+import net.minecraft.entity.AI.EntityAITempt;
+import net.minecraft.entity.AI.EntityAIWander;
+import net.minecraft.entity.AI.EntityAIWatchClosest;
+
 public class EntitySheep extends EntityAnimal {
 	public static final float fleeceColorTable[][] = { { 1.0F, 1.0F, 1.0F },
 			{ 0.95F, 0.7F, 0.2F }, { 0.9F, 0.5F, 0.85F },

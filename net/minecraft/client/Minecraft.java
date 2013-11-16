@@ -10,12 +10,16 @@ import java.awt.Graphics;
 import java.io.File;
 import java.io.PrintStream;
 import java.text.DecimalFormat;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockGrass;
+import net.minecraft.gui.menu.GuiConnecting;
+import net.minecraft.gui.menu.GuiMainMenu;
+import net.minecraft.packet.packets.Packet3Chat;
 import net.minecraft.src.Achievement;
 import net.minecraft.src.AchievementList;
 import net.minecraft.src.AnvilSaveConverter;
 import net.minecraft.src.AxisAlignedBB;
-import net.minecraft.src.Block;
-import net.minecraft.src.BlockGrass;
 import net.minecraft.src.ChunkCoordinates;
 import net.minecraft.src.ChunkProviderLoadOrGenerate;
 import net.minecraft.src.ColorizerFoliage;
@@ -39,13 +43,11 @@ import net.minecraft.src.GameWindowListener;
 import net.minecraft.src.GuiAchievement;
 import net.minecraft.src.GuiChat;
 import net.minecraft.src.GuiConflictWarning;
-import net.minecraft.src.GuiConnecting;
 import net.minecraft.src.GuiErrorScreen;
 import net.minecraft.src.GuiGameOver;
 import net.minecraft.src.GuiIngame;
 import net.minecraft.src.GuiIngameMenu;
 import net.minecraft.src.GuiInventory;
-import net.minecraft.src.GuiMainMenu;
 import net.minecraft.src.GuiMemoryErrorScreen;
 import net.minecraft.src.GuiParticle;
 import net.minecraft.src.GuiScreen;
@@ -69,7 +71,6 @@ import net.minecraft.src.MovingObjectPosition;
 import net.minecraft.src.NetClientHandler;
 import net.minecraft.src.OpenGlCapsChecker;
 import net.minecraft.src.OpenGlHelper;
-import net.minecraft.src.Packet3Chat;
 import net.minecraft.src.PlayerCapabilities;
 import net.minecraft.src.PlayerController;
 import net.minecraft.src.PlayerUsageSnooper;
@@ -111,6 +112,7 @@ import net.minecraft.src.WorldProvider;
 import net.minecraft.src.WorldRenderer;
 import net.minecraft.src.WorldSettings;
 import net.minecraft.src.WorldType;
+
 import org.lwjgl.LWJGLException;
 import org.lwjgl.Sys;
 import org.lwjgl.input.Controllers;
@@ -2259,8 +2261,7 @@ public abstract class Minecraft implements Runnable {
 		if (s != null && par1Str != null) {
 			minecraftimpl.session = new Session(s, par1Str);
 		} else {
-			minecraftimpl.session = new Session((new StringBuilder())
-					.append("Anonymous")
+			minecraftimpl.session = new Session("Anonymous", "");
 		}
 
 		if (par2Str != null) {
@@ -2287,7 +2288,7 @@ public abstract class Minecraft implements Runnable {
 	public static void main(String par0ArrayOfStr[]) {
 		String s = null;
 		String s1 = null;
-		s = (new StringBuilder()).append("Anonymous")
+		s = "Anonymous";
 
 		if (par0ArrayOfStr.length > 0) {
 			s = par0ArrayOfStr[0];

@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+
 public class RecipesArmor {
 	private String recipePatterns[][] = { { "XXX", "X X" },
 			{ "X X", "XXX", "XXX" }, { "XXX", "X X", "X X" }, { "X X", "X X" } };

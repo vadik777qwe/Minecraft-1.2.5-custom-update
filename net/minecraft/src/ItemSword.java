@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+
 public class ItemSword extends Item {
 	private int weaponDamage;
 	private final EnumToolMaterial toolMaterial;

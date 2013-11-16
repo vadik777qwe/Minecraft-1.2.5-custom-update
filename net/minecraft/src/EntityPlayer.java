@@ -2,6 +2,9 @@ package net.minecraft.src;
 
 import java.util.*;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockBed;
+
 public abstract class EntityPlayer extends EntityLiving {
 	/** Inventory of the player */
 	public InventoryPlayer inventory;

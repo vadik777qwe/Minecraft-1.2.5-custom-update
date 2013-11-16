@@ -2,6 +2,8 @@ package net.minecraft.src;
 
 import java.util.*;
 
+import net.minecraft.block.Block;
+
 class ContainerCreative extends Container {
 	/** the list of items in this container */
 	public List itemList;

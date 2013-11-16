@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.Block;
+
 public class RecipesTools {
 	private String recipePatterns[][] = { { "XXX", " # ", " # " },
 			{ "X", "#", "#" }, { "XX", "X#", " #" }, { "XX", " #", " #" } };
