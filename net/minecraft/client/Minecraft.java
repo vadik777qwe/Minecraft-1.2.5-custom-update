@@ -2260,8 +2260,7 @@ public abstract class Minecraft implements Runnable {
 			minecraftimpl.session = new Session(s, par1Str);
 		} else {
 			minecraftimpl.session = new Session((new StringBuilder())
-					.append("Player")
-					.append(System.currentTimeMillis() % 1000L).toString(), "");
+					.append("Anonymous")
 		}
 
 		if (par2Str != null) {
@@ -2288,8 +2287,7 @@ public abstract class Minecraft implements Runnable {
 	public static void main(String par0ArrayOfStr[]) {
 		String s = null;
 		String s1 = null;
-		s = (new StringBuilder()).append("Player")
-				.append(System.currentTimeMillis() % 1000L).toString();
+		s = (new StringBuilder()).append("Anonymous")
 
 		if (par0ArrayOfStr.length > 0) {
 			s = par0ArrayOfStr[0];

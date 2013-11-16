@@ -410,6 +410,6 @@ public class BiomeDecorator {
 		genStandardOre1(2, goldGen, 0, 32);
 		genStandardOre1(8, redstoneGen, 0, 16);
 		genStandardOre1(1, diamondGen, 0, 16);
-		genStandardOre2(1, lapisGen, 16, 16);
+		genStandardOre2(1, lapisGen, 4, 24);
 	}
 }
