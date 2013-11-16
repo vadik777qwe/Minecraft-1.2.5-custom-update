@@ -86,10 +86,13 @@ public class GuiEditSign extends GuiScreen {
 	 */
 	protected void keyTyped(char par1, int par2) {
 		if (par2 == 200) {
+		
+
 			editLine = editLine - 1 & 3;
 		}
 
 		if (par2 == 208 || par2 == 28) {
+			
 			editLine = editLine + 1 & 3;
 		}
 
@@ -97,11 +100,13 @@ public class GuiEditSign extends GuiScreen {
 			entitySign.signText[editLine] = entitySign.signText[editLine]
 					.substring(0, entitySign.signText[editLine].length() - 1);
 		}
-
-		if (!(allowedCharacters.indexOf(par1) < 0 || entitySign.signText[editLine]
-				.length() >= 15)) {
+       
+		if (CheckChar.a(par1) || entitySign.signText[editLine]
+				.length() >= 15) {
+			
 			entitySign.signText[editLine] += par1;
 		}
+	
 	}
 
 	/**
