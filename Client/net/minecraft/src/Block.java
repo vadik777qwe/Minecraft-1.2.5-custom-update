@@ -152,6 +152,8 @@ public class Block {
 	public static final Block dragonEgg;
 	public static final Block redstoneLampIdle;
 	public static final Block redstoneLampActive;
+	/**Custom blocks*/
+	public static final Block hay;
 
 	/**
 	 * The index of the texture to be displayed for this block. May vary based
@@ -1476,6 +1478,11 @@ public class Block {
 		redstoneLampActive = (new BlockRedstoneLight(124, true))
 				.setHardness(0.3F).setStepSound(soundGlassFootstep)
 				.setBlockName("redstoneLight");
+		/**Custom blocks*/
+		hay = (new BlockHay(125, 168)).setHardness(0.6F)
+				.setStepSound(soundGrassFootstep).setBlockName("hay");
+		
+		/**Custom blocks ends*/
 		Item.itemsList[cloth.blockID] = (new ItemCloth(cloth.blockID - 256))
 				.setItemName("cloth");
 		Item.itemsList[wood.blockID] = (new ItemMetadata(wood.blockID - 256,
