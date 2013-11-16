@@ -74,7 +74,7 @@ public class CraftingManager {
 				"###", '#', Block.planks });
 		addRecipe(new ItemStack(Item.doorSteel, 1), new Object[] { "##", "##",
 				"##", '#', Item.ingotIron });
-		addRecipe(new ItemStack(Item.sign, 1), new Object[] { "###", "###",
+		addRecipe(new ItemStack(Item.sign, 3), new Object[] { "###", "###",
 				" X ", '#', Block.planks, 'X', Item.stick });
 		addRecipe(new ItemStack(Item.cake, 1), new Object[] { "AAA", "BEB",
 				"CCC", 'A', Item.bucketMilk, 'B', Item.sugar, 'C', Item.wheat,
@@ -182,6 +182,9 @@ public class CraftingManager {
 		addShapelessRecipe(new ItemStack(Item.fireballCharge, 3), new Object[] {
 				Item.gunpowder, Item.blazePowder,
 				new ItemStack(Item.coal, 1, 1) });
+		/** Custom Recipes*/
+		addRecipe(new ItemStack(Block.hay, 1), new Object[] {
+				"XXX", "XXX", "XXX", 'X', Item.wheat });
 		Collections.sort(recipes, new RecipeSorter(this));
 		System.out.println((new StringBuilder()).append(recipes.size())
 				.append(" recipes").toString());
