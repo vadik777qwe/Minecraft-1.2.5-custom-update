@@ -1,3 +1,3 @@
-Minecraft-1.2.5-custom-update
+Minecraft 1.2.5 Custom Update
 =============================
 Встречаем новый год весело! :D
