@@ -10,6 +10,7 @@ import net.minecraft.block.BlockDragonEgg;
 import net.minecraft.block.BlockEndPortalFrame;
 import net.minecraft.block.BlockFence;
 import net.minecraft.block.BlockFenceGate;
+import net.minecraft.block.BlockFire;
 import net.minecraft.block.BlockFluid;
 import net.minecraft.block.BlockPane;
 import net.minecraft.block.BlockPistonBase;
@@ -1581,7 +1582,7 @@ public class RenderBlocks {
 		float f = 1.4F;
 
 		if (blockAccess.isBlockNormalCube(par2, par3 - 1, par4)
-				|| Block.fire.canBlockCatchFire(blockAccess, par2, par3 - 1,
+				|| ((BlockFire) Block.fire).canBlockCatchFire(blockAccess, par2, par3 - 1,
 						par4)) {
 			double d8 = (double) par2 + 0.5D + 0.20000000000000001D;
 			double d9 = ((double) par2 + 0.5D) - 0.20000000000000001D;
@@ -1664,7 +1665,7 @@ public class RenderBlocks {
 				d = d10;
 			}
 
-			if (Block.fire.canBlockCatchFire(blockAccess, par2 - 1, par3, par4)) {
+			if (((BlockFire) Block.fire).canBlockCatchFire(blockAccess, par2 - 1, par3, par4)) {
 				tessellator.addVertexWithUV((float) par2 + f2, (float) par3 + f
 						+ f3, par4 + 1, d2, d4);
 				tessellator.addVertexWithUV(par2 + 0, (float) (par3 + 0) + f3,
@@ -1683,7 +1684,7 @@ public class RenderBlocks {
 						+ f3, par4 + 1, d2, d4);
 			}
 
-			if (Block.fire.canBlockCatchFire(blockAccess, par2 + 1, par3, par4)) {
+			if (((BlockFire) Block.fire).canBlockCatchFire(blockAccess, par2 + 1, par3, par4)) {
 				tessellator.addVertexWithUV((float) (par2 + 1) - f2,
 						(float) par3 + f + f3, par4 + 0, d, d4);
 				tessellator.addVertexWithUV((par2 + 1) - 0, (float) (par3 + 0)
@@ -1702,7 +1703,7 @@ public class RenderBlocks {
 						(float) par3 + f + f3, par4 + 0, d, d4);
 			}
 
-			if (Block.fire.canBlockCatchFire(blockAccess, par2, par3, par4 - 1)) {
+			if (((BlockFire) Block.fire).canBlockCatchFire(blockAccess, par2, par3, par4 - 1)) {
 				tessellator.addVertexWithUV(par2 + 0, (float) par3 + f + f3,
 						(float) par4 + f2, d2, d4);
 				tessellator.addVertexWithUV(par2 + 0, (float) (par3 + 0) + f3,
@@ -1721,7 +1722,7 @@ public class RenderBlocks {
 						(float) par4 + f2, d2, d4);
 			}
 
-			if (Block.fire.canBlockCatchFire(blockAccess, par2, par3, par4 + 1)) {
+			if (((BlockFire) Block.fire).canBlockCatchFire(blockAccess, par2, par3, par4 + 1)) {
 				tessellator.addVertexWithUV(par2 + 1, (float) par3 + f + f3,
 						(float) (par4 + 1) - f2, d, d4);
 				tessellator.addVertexWithUV(par2 + 1, (float) (par3 + 0) + f3,
@@ -1740,7 +1741,7 @@ public class RenderBlocks {
 						(float) (par4 + 1) - f2, d, d4);
 			}
 
-			if (Block.fire.canBlockCatchFire(blockAccess, par2, par3 + 1, par4)) {
+			if (((BlockFire) Block.fire).canBlockCatchFire(blockAccess, par2, par3 + 1, par4)) {
 				double d11 = (double) par2 + 0.5D + 0.5D;
 				double d13 = ((double) par2 + 0.5D) - 0.5D;
 				double d15 = (double) par4 + 0.5D + 0.5D;

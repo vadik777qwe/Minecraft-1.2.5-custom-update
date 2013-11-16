@@ -4,6 +4,7 @@ import java.nio.IntBuffer;
 import java.util.*;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockLeaves;
 import net.minecraft.client.Minecraft;
 
 import org.lwjgl.opengl.ARBOcclusionQuery;
@@ -297,7 +298,7 @@ public class RenderGlobal implements IWorldAccess {
 			return;
 		}
 
-		Block.leaves.setGraphicsLevel(mc.gameSettings.fancyGraphics);
+		((BlockLeaves) Block.leaves).setGraphicsLevel(mc.gameSettings.fancyGraphics);
 		renderDistance = mc.gameSettings.renderDistance;
 
 		if (worldRenderers != null) {

@@ -184,7 +184,7 @@ public class CraftingManager {
 		addShapelessRecipe(new ItemStack(Item.fireballCharge, 3), new Object[] {
 				Item.gunpowder, Item.blazePowder,
 				new ItemStack(Item.coal, 1, 1) });
-		/** Custom Recipes*/
+		/** Custom Recipes **/
 		addRecipe(new ItemStack(Block.hay, 1), new Object[] {
 				"XXX", "XXX", "XXX", 'X', Item.wheat });
 		Collections.sort(recipes, new RecipeSorter(this));

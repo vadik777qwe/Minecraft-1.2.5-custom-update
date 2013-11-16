@@ -3,6 +3,7 @@ package net.minecraft.src;
 import java.util.*;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockPistonMoving;
 
 public class TileEntityPiston extends TileEntity {
 	private int storedBlockID;
@@ -110,7 +111,7 @@ public class TileEntityPiston extends TileEntity {
 			par1 = 1.0F - par1;
 		}
 
-		AxisAlignedBB axisalignedbb = Block.pistonMoving.getAxisAlignedBB(
+		AxisAlignedBB axisalignedbb = ((BlockPistonMoving) Block.pistonMoving).getAxisAlignedBB(
 				worldObj, xCoord, yCoord, zCoord, storedBlockID, par1,
 				storedOrientation);
 

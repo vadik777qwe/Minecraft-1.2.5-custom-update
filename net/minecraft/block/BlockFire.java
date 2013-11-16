@@ -357,7 +357,7 @@ public class BlockFire extends Block {
 	public void onBlockAdded(World par1World, int par2, int par3, int par4) {
 		if (par1World.worldProvider.worldType <= 0
 				&& par1World.getBlockId(par2, par3 - 1, par4) == Block.obsidian.blockID
-				&& Block.portal.tryToCreatePortal(par1World, par2, par3, par4)) {
+				&& ((BlockPortal) Block.portal).tryToCreatePortal(par1World, par2, par3, par4)) {
 			return;
 		}
 
@@ -386,7 +386,7 @@ public class BlockFire extends Block {
 		}
 
 		if (par1World.isBlockNormalCube(par2, par3 - 1, par4)
-				|| Block.fire
+				|| ((BlockFire) Block.fire)
 						.canBlockCatchFire(par1World, par2, par3 - 1, par4)) {
 			for (int i = 0; i < 3; i++) {
 				float f = (float) par2 + par5Random.nextFloat();
@@ -396,7 +396,7 @@ public class BlockFire extends Block {
 						0.0D);
 			}
 		} else {
-			if (Block.fire.canBlockCatchFire(par1World, par2 - 1, par3, par4)) {
+			if (((BlockFire) Block.fire).canBlockCatchFire(par1World, par2 - 1, par3, par4)) {
 				for (int j = 0; j < 2; j++) {
 					float f1 = (float) par2 + par5Random.nextFloat() * 0.1F;
 					float f7 = (float) par3 + par5Random.nextFloat();
@@ -406,7 +406,7 @@ public class BlockFire extends Block {
 				}
 			}
 
-			if (Block.fire.canBlockCatchFire(par1World, par2 + 1, par3, par4)) {
+			if (((BlockFire) Block.fire).canBlockCatchFire(par1World, par2 + 1, par3, par4)) {
 				for (int k = 0; k < 2; k++) {
 					float f2 = (float) (par2 + 1) - par5Random.nextFloat()
 							* 0.1F;
@@ -417,7 +417,7 @@ public class BlockFire extends Block {
 				}
 			}
 
-			if (Block.fire.canBlockCatchFire(par1World, par2, par3, par4 - 1)) {
+			if (((BlockFire) Block.fire).canBlockCatchFire(par1World, par2, par3, par4 - 1)) {
 				for (int l = 0; l < 2; l++) {
 					float f3 = (float) par2 + par5Random.nextFloat();
 					float f9 = (float) par3 + par5Random.nextFloat();
@@ -427,7 +427,7 @@ public class BlockFire extends Block {
 				}
 			}
 
-			if (Block.fire.canBlockCatchFire(par1World, par2, par3, par4 + 1)) {
+			if (((BlockFire) Block.fire).canBlockCatchFire(par1World, par2, par3, par4 + 1)) {
 				for (int i1 = 0; i1 < 2; i1++) {
 					float f4 = (float) par2 + par5Random.nextFloat();
 					float f10 = (float) par3 + par5Random.nextFloat();
@@ -438,7 +438,7 @@ public class BlockFire extends Block {
 				}
 			}
 
-			if (Block.fire.canBlockCatchFire(par1World, par2, par3 + 1, par4)) {
+			if (((BlockFire) Block.fire).canBlockCatchFire(par1World, par2, par3 + 1, par4)) {
 				for (int j1 = 0; j1 < 2; j1++) {
 					float f5 = (float) par2 + par5Random.nextFloat();
 					float f11 = (float) (par3 + 1) - par5Random.nextFloat()

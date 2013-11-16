@@ -1,7 +1,9 @@
 package net.minecraft.src;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockFire;
 import net.minecraft.block.BlockPistonBase;
+import net.minecraft.block.BlockPistonExtension;
 import net.minecraft.client.Minecraft;
 
 import org.lwjgl.opengl.GL11;
@@ -49,14 +51,14 @@ public class TileEntityRendererPiston extends TileEntitySpecialRenderer {
 						par1TileEntityPiston.zCoord, false);
 			} else if (par1TileEntityPiston.shouldRenderHead()
 					&& !par1TileEntityPiston.isExtending()) {
-				Block.pistonExtension.setHeadTexture(((BlockPistonBase) block)
+				((BlockPistonExtension) Block.pistonExtension).setHeadTexture(((BlockPistonBase) block)
 						.getPistonExtensionTexture());
 				blockRenderer.renderPistonExtensionAllFaces(
 						Block.pistonExtension, par1TileEntityPiston.xCoord,
 						par1TileEntityPiston.yCoord,
 						par1TileEntityPiston.zCoord,
 						par1TileEntityPiston.getProgress(par8) < 0.5F);
-				Block.pistonExtension.clearHeadTexture();
+				((BlockPistonExtension) Block.pistonExtension).clearHeadTexture();
 				tessellator.setTranslation((float) par2
 						- (float) par1TileEntityPiston.xCoord, (float) par4
 						- (float) par1TileEntityPiston.yCoord, (float) par6
