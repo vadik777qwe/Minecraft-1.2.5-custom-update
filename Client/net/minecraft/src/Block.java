@@ -2,7 +2,7 @@ package net.minecraft.src;
 
 import java.util.ArrayList;
 import java.util.Random;
-
+//BlockList
 public class Block {
 	public static final StepSound soundPowderFootstep;
 	public static final StepSound soundWoodFootstep;
