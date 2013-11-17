@@ -4,9 +4,9 @@ import java.util.Random;
 
 import net.minecraft.src.AxisAlignedBB;
 import net.minecraft.src.DamageSource;
-import net.minecraft.src.Entity;
-import net.minecraft.src.Material;
-import net.minecraft.src.World;
+import net.minecraft.entity.Entity;
+import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
 
 public class BlockCactus extends Block {
 	protected BlockCactus(int par1, int par2) {

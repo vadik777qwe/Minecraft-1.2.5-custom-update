@@ -6,15 +6,15 @@ import java.util.Collections;
 import java.util.List;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.src.GuiButton;
-import net.minecraft.src.GuiRenameWorld;
-import net.minecraft.src.GuiScreen;
-import net.minecraft.src.GuiYesNo;
+import net.minecraft.gui.GuiButton;
+import net.minecraft.gui.GuiRenameWorld;
+import net.minecraft.gui.GuiScreen;
+import net.minecraft.gui.GuiYesNo;
 import net.minecraft.src.ISaveFormat;
 import net.minecraft.src.MathHelper;
-import net.minecraft.src.PlayerControllerCreative;
-import net.minecraft.src.PlayerControllerSP;
-import net.minecraft.src.SaveFormatComparator;
+import net.minecraft.entity.player.PlayerControllerCreative;
+import net.minecraft.entity.player.PlayerControllerSP;
+import net.minecraft.world.save.SaveFormatComparator;
 import net.minecraft.src.StringTranslate;
 
 public class GuiSelectWorld extends GuiScreen {

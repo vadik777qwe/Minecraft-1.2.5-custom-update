@@ -2,8 +2,8 @@ package net.minecraft.block;
 
 import java.util.Random;
 
-import net.minecraft.src.Item;
-import net.minecraft.src.Material;
+import net.minecraft.item.Item;
+import net.minecraft.block.material.Material;
 
 public class BlockBookshelf extends Block {
 	public BlockBookshelf(int par1, int par2) {

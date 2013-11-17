@@ -2,10 +2,10 @@ package net.minecraft.entity.AI;
 
 import java.util.List;
 
-import net.minecraft.src.Entity;
-import net.minecraft.src.EntityCreature;
-import net.minecraft.src.EntityPlayer;
-import net.minecraft.src.EntityTameable;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityCreature;
+import net.minecraft.entity.EntityPlayer;
+import net.minecraft.entity.EntityTameable;
 import net.minecraft.src.PathEntity;
 import net.minecraft.src.PathNavigate;
 import net.minecraft.src.RandomPositionGenerator;
@@ -41,7 +41,7 @@ public class EntityAIAvoidEntity extends EntityAIBase {
 	 * Returns whether the EntityAIBase should begin execution.
 	 */
 	public boolean shouldExecute() {
-		if (targetEntityClass == (net.minecraft.src.EntityPlayer.class)) {
+		if (targetEntityClass == (net.minecraft.entity.EntityPlayer.class)) {
 			if ((theEntity instanceof EntityTameable)
 					&& ((EntityTameable) theEntity).isTamed()) {
 				return false;

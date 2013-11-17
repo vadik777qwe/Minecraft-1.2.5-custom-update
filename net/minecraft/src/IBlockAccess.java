@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.material.Material;
+import net.minecraft.entity.tiles.TileEntity;
 import net.minecraft.biome.BiomeGenBase;
 
 public interface IBlockAccess {

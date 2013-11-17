@@ -1,5 +1,6 @@
 package net.minecraft.src;
 
+import net.minecraft.world.World;
 import java.awt.image.BufferedImage;
 
 public class IsoImageBuffer {

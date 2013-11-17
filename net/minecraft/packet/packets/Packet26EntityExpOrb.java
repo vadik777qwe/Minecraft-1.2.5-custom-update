@@ -3,9 +3,9 @@ package net.minecraft.packet.packets;
 import java.io.*;
 
 import net.minecraft.packet.Packet;
-import net.minecraft.src.EntityXPOrb;
+import net.minecraft.entity.EntityXPOrb;
 import net.minecraft.src.MathHelper;
-import net.minecraft.src.NetHandler;
+import net.minecraft.network.NetHandler;
 
 public class Packet26EntityExpOrb extends Packet {
 	/** Entity ID for the XP Orb */

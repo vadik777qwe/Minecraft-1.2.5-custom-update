@@ -1,5 +1,8 @@
 package net.minecraft.src;
 
+import net.minecraft.stats.StatCollector;
+import net.minecraft.enums.EnumOptionsMappingHelper;
+import net.minecraft.enums.EnumOptions;
 import java.io.*;
 import net.minecraft.client.Minecraft;
 import org.lwjgl.input.Keyboard;

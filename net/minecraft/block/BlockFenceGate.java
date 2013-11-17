@@ -1,12 +1,12 @@
 package net.minecraft.block;
 
 import net.minecraft.src.AxisAlignedBB;
-import net.minecraft.src.EntityLiving;
-import net.minecraft.src.EntityPlayer;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityPlayer;
 import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.Material;
+import net.minecraft.block.material.Material;
 import net.minecraft.src.MathHelper;
-import net.minecraft.src.World;
+import net.minecraft.world.World;
 
 public class BlockFenceGate extends BlockDirectional {
 	public BlockFenceGate(int par1, int par2) {

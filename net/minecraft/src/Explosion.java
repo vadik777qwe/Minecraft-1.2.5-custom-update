@@ -1,5 +1,8 @@
 package net.minecraft.src;
 
+import net.minecraft.world.chunk.ChunkPosition;
+import net.minecraft.world.World;
+import net.minecraft.entity.Entity;
 import java.util.*;
 
 import net.minecraft.block.Block;

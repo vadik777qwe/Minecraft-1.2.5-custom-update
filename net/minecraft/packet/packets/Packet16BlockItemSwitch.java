@@ -3,7 +3,7 @@ package net.minecraft.packet.packets;
 import java.io.*;
 
 import net.minecraft.packet.Packet;
-import net.minecraft.src.NetHandler;
+import net.minecraft.network.NetHandler;
 
 public class Packet16BlockItemSwitch extends Packet {
 	/** The block/item id to be equipped. */

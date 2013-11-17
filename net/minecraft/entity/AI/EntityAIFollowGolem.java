@@ -2,9 +2,9 @@ package net.minecraft.entity.AI;
 
 import java.util.*;
 
-import net.minecraft.src.Entity;
-import net.minecraft.src.EntityIronGolem;
-import net.minecraft.src.EntityVillager;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityIronGolem;
+import net.minecraft.entity.EntityVillager;
 
 public class EntityAIFollowGolem extends EntityAIBase {
 	private EntityVillager theVillager;
@@ -31,7 +31,7 @@ public class EntityAIFollowGolem extends EntityAIBase {
 		}
 
 		List list = theVillager.worldObj.getEntitiesWithinAABB(
-				net.minecraft.src.EntityIronGolem.class,
+				net.minecraft.entity.EntityIronGolem.class,
 				theVillager.boundingBox.expand(6D, 2D, 6D));
 
 		if (list.size() == 0) {

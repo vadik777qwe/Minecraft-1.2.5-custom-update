@@ -2,9 +2,9 @@ package net.minecraft.biome;
 
 import java.util.List;
 
-import net.minecraft.src.EntityGhast;
-import net.minecraft.src.EntityMagmaCube;
-import net.minecraft.src.EntityPigZombie;
+import net.minecraft.entity.EntityGhast;
+import net.minecraft.entity.EntityMagmaCube;
+import net.minecraft.entity.EntityPigZombie;
 import net.minecraft.src.SpawnListEntry;
 
 public class BiomeGenHell extends BiomeGenBase {
@@ -14,10 +14,10 @@ public class BiomeGenHell extends BiomeGenBase {
 		spawnableCreatureList.clear();
 		spawnableWaterCreatureList.clear();
 		spawnableMonsterList.add(new SpawnListEntry(
-				net.minecraft.src.EntityGhast.class, 50, 4, 4));
+				net.minecraft.entity.EntityGhast.class, 50, 4, 4));
 		spawnableMonsterList.add(new SpawnListEntry(
-				net.minecraft.src.EntityPigZombie.class, 100, 4, 4));
+				net.minecraft.entity.EntityPigZombie.class, 100, 4, 4));
 		spawnableMonsterList.add(new SpawnListEntry(
-				net.minecraft.src.EntityMagmaCube.class, 1, 4, 4));
+				net.minecraft.entity.EntityMagmaCube.class, 1, 4, 4));
 	}
 }

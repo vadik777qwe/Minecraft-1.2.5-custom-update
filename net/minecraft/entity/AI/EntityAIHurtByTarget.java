@@ -4,8 +4,8 @@ import java.util.Iterator;
 import java.util.List;
 
 import net.minecraft.src.AxisAlignedBB;
-import net.minecraft.src.Entity;
-import net.minecraft.src.EntityLiving;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLiving;
 
 public class EntityAIHurtByTarget extends EntityAITarget {
 	boolean field_48395_a;

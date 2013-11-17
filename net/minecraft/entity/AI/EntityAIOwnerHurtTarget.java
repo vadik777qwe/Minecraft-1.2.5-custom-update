@@ -1,7 +1,7 @@
 package net.minecraft.entity.AI;
 
-import net.minecraft.src.EntityLiving;
-import net.minecraft.src.EntityTameable;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityTameable;
 
 public class EntityAIOwnerHurtTarget extends EntityAITarget {
 	EntityTameable field_48392_a;

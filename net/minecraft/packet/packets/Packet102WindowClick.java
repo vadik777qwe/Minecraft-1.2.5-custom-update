@@ -3,8 +3,8 @@ package net.minecraft.packet.packets;
 import java.io.*;
 
 import net.minecraft.packet.Packet;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.NetHandler;
+import net.minecraft.item.ItemStack;
+import net.minecraft.network.NetHandler;
 
 public class Packet102WindowClick extends Packet {
 	/** The id of the window which was clicked. 0 for player inventory. */

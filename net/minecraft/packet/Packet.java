@@ -5,10 +5,10 @@ import java.util.*;
 
 import net.minecraft.src.CompressedStreamTools;
 import net.minecraft.src.IntHashMap;
-import net.minecraft.src.Item;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.NBTTagCompound;
-import net.minecraft.src.NetHandler;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.NBT.NBTTagCompound;
+import net.minecraft.network.NetHandler;
 
 public abstract class Packet {
 	/** Maps packet id to packet class */

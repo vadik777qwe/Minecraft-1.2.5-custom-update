@@ -3,21 +3,21 @@ package net.minecraft.block;
 import java.util.*;
 
 import net.minecraft.src.AxisAlignedBB;
-import net.minecraft.src.Entity;
-import net.minecraft.src.EntityItem;
-import net.minecraft.src.EntityLiving;
-import net.minecraft.src.EntityOcelot;
-import net.minecraft.src.EntityPlayer;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityItem;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityOcelot;
+import net.minecraft.entity.EntityPlayer;
 import net.minecraft.src.IBlockAccess;
 import net.minecraft.src.IInventory;
-import net.minecraft.src.InventoryLargeChest;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.Material;
+import net.minecraft.inventory.InventoryLargeChest;
+import net.minecraft.item.ItemStack;
+import net.minecraft.block.material.Material;
 import net.minecraft.src.MathHelper;
-import net.minecraft.src.NBTTagCompound;
-import net.minecraft.src.TileEntity;
-import net.minecraft.src.TileEntityChest;
-import net.minecraft.src.World;
+import net.minecraft.NBT.NBTTagCompound;
+import net.minecraft.entity.tiles.TileEntity;
+import net.minecraft.entity.tiles.TileEntityChest;
+import net.minecraft.world.World;
 
 public class BlockChest extends BlockContainer {
 	private Random random;
@@ -590,7 +590,7 @@ public class BlockChest extends BlockContainer {
 	private static boolean func_50075_j(World par0World, int par1, int par2,
 			int par3) {
 		for (Iterator iterator = par0World.getEntitiesWithinAABB(
-				net.minecraft.src.EntityOcelot.class,
+				net.minecraft.entity.EntityOcelot.class,
 				AxisAlignedBB.getBoundingBoxFromPool(par1, par2 + 1, par3,
 						par1 + 1, par2 + 2, par3 + 1)).iterator(); iterator
 				.hasNext();) {

@@ -4,11 +4,11 @@ import java.util.Random;
 
 import net.minecraft.src.AxisAlignedBB;
 import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.Material;
+import net.minecraft.block.material.Material;
 import net.minecraft.src.MovingObjectPosition;
 import net.minecraft.src.RailLogic;
 import net.minecraft.src.Vec3D;
-import net.minecraft.src.World;
+import net.minecraft.world.World;
 
 public class BlockRail extends Block {
 	/** Power related rails have this field at true. */

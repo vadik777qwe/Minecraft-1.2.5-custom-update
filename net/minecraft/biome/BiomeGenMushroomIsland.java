@@ -3,7 +3,7 @@ package net.minecraft.biome;
 import java.util.List;
 
 import net.minecraft.block.Block;
-import net.minecraft.src.EntityMooshroom;
+import net.minecraft.entity.EntityMooshroom;
 import net.minecraft.src.SpawnListEntry;
 
 public class BiomeGenMushroomIsland extends BiomeGenBase {
@@ -19,6 +19,6 @@ public class BiomeGenMushroomIsland extends BiomeGenBase {
 		spawnableCreatureList.clear();
 		spawnableWaterCreatureList.clear();
 		spawnableCreatureList.add(new SpawnListEntry(
-				net.minecraft.src.EntityMooshroom.class, 8, 4, 8));
+				net.minecraft.entity.EntityMooshroom.class, 8, 4, 8));
 	}
 }

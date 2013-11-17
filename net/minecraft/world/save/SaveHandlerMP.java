@@ -1,0 +1,59 @@
+package net.minecraft.world.save;
+
+import net.minecraft.world.WorldInfo;
+import net.minecraft.world.WorldProvider;
+import java.io.File;
+import java.util.List;
+import net.minecraft.src.IChunkLoader;
+import net.minecraft.src.ISaveHandler;
+
+public class SaveHandlerMP implements ISaveHandler {
+	public SaveHandlerMP() {
+	}
+
+	/**
+	 * Loads and returns the world info
+	 */
+	public WorldInfo loadWorldInfo() {
+		return null;
+	}
+
+	/**
+	 * Checks the session lock to prevent save collisions
+	 */
+	public void checkSessionLock() {
+	}
+
+	/**
+	 * Returns the chunk loader with the provided world provider
+	 */
+	public IChunkLoader getChunkLoader(WorldProvider par1WorldProvider) {
+		return null;
+	}
+
+	/**
+	 * saves level.dat and backs up the existing one to level.dat_old
+	 */
+	public void saveWorldInfoAndPlayer(WorldInfo worldinfo, List list) {
+	}
+
+	/**
+	 * Saves the passed in world info.
+	 */
+	public void saveWorldInfo(WorldInfo worldinfo) {
+	}
+
+	/**
+	 * Gets the file location of the given map
+	 */
+	public File getMapFileFromName(String par1Str) {
+		return null;
+	}
+
+	/**
+	 * Returns the name of the directory where world information is saved
+	 */
+	public String getSaveDirectoryName() {
+		return "none";
+	}
+}

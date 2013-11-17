@@ -2,8 +2,8 @@ package net.minecraft.block;
 
 import java.util.Random;
 
-import net.minecraft.src.Item;
-import net.minecraft.src.Material;
+import net.minecraft.item.Item;
+import net.minecraft.block.material.Material;
 import net.minecraft.src.MathHelper;
 
 public class BlockGlowStone extends Block {

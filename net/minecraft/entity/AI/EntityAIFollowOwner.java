@@ -1,10 +1,10 @@
 package net.minecraft.entity.AI;
 
-import net.minecraft.src.EntityLiving;
-import net.minecraft.src.EntityTameable;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityTameable;
 import net.minecraft.src.MathHelper;
 import net.minecraft.src.PathNavigate;
-import net.minecraft.src.World;
+import net.minecraft.world.World;
 
 public class EntityAIFollowOwner extends EntityAIBase {
 	private EntityTameable thePet;

@@ -1,5 +1,6 @@
 package net.minecraft.src;
 
+import net.minecraft.entity.EntityLiving;
 import java.io.File;
 import java.io.PrintStream;
 import java.util.Random;

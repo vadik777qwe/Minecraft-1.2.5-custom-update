@@ -2,10 +2,10 @@ package net.minecraft.entity.AI;
 
 import java.util.Random;
 
-import net.minecraft.src.EntityCreature;
+import net.minecraft.entity.EntityCreature;
 import net.minecraft.src.MathHelper;
 import net.minecraft.src.Vec3D;
-import net.minecraft.src.World;
+import net.minecraft.world.World;
 
 public class EntityAIFleeSun extends EntityAIBase {
 	private EntityCreature theCreature;

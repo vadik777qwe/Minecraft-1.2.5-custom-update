@@ -3,9 +3,9 @@ package net.minecraft.packet.packets;
 import java.io.*;
 
 import net.minecraft.packet.Packet;
-import net.minecraft.src.EntityItem;
+import net.minecraft.entity.EntityItem;
 import net.minecraft.src.MathHelper;
-import net.minecraft.src.NetHandler;
+import net.minecraft.network.NetHandler;
 
 public class Packet21PickupSpawn extends Packet {
 	/** Unique entity ID. */

@@ -1,5 +1,9 @@
 package net.minecraft.src;
 
+import net.minecraft.entity.tiles.TileEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityPlayer;
+
 public interface IWorldAccess {
 	/**
 	 * Will mark the block and neighbors that their renderers need an update

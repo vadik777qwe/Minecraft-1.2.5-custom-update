@@ -3,9 +3,9 @@ package net.minecraft.packet.packets;
 import java.io.*;
 
 import net.minecraft.packet.Packet;
-import net.minecraft.src.EntityPainting;
-import net.minecraft.src.EnumArt;
-import net.minecraft.src.NetHandler;
+import net.minecraft.entity.EntityPainting;
+import net.minecraft.enums.EnumArt;
+import net.minecraft.network.NetHandler;
 
 public class Packet25EntityPainting extends Packet {
 	public int entityId;

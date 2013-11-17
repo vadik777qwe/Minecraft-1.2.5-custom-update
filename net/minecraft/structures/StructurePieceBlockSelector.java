@@ -1,0 +1,25 @@
+package net.minecraft.structures;
+
+import java.util.Random;
+
+public abstract class StructurePieceBlockSelector {
+	protected int selectedBlockId;
+	protected int selectedBlockMetaData;
+
+	protected StructurePieceBlockSelector() {
+	}
+
+	/**
+	 * 'picks Block Ids and Metadata (Silverfish)'
+	 */
+	public abstract void selectBlocks(Random random, int i, int j, int k,
+			boolean flag);
+
+	public int getSelectedBlockId() {
+		return selectedBlockId;
+	}
+
+	public int getSelectedBlockMetaData() {
+		return selectedBlockMetaData;
+	}
+}

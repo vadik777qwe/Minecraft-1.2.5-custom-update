@@ -3,12 +3,12 @@ package net.minecraft.block;
 import java.util.*;
 
 import net.minecraft.src.AxisAlignedBB;
-import net.minecraft.src.ChunkPosition;
+import net.minecraft.world.chunk.ChunkPosition;
 import net.minecraft.src.Direction;
 import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.Item;
-import net.minecraft.src.Material;
-import net.minecraft.src.World;
+import net.minecraft.item.Item;
+import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
 
 public class BlockRedstoneWire extends Block {
 	/**

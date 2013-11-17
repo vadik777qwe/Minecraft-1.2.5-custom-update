@@ -2,13 +2,13 @@ package net.minecraft.entity.AI;
 
 import java.util.*;
 
-import net.minecraft.src.EntityCreature;
+import net.minecraft.entity.EntityCreature;
 import net.minecraft.src.MathHelper;
 import net.minecraft.src.PathEntity;
 import net.minecraft.src.RandomPositionGenerator;
 import net.minecraft.src.Vec3D;
-import net.minecraft.src.Village;
-import net.minecraft.src.VillageDoorInfo;
+import net.minecraft.world.village.Village;
+import net.minecraft.world.village.VillageDoorInfo;
 
 public class EntityAIMoveThroughVillage extends EntityAIBase {
 	private EntityCreature theEntity;

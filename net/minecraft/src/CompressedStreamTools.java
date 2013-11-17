@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.NBT.NBTTagCompound;
+import net.minecraft.NBT.NBTBase;
 import java.io.*;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;

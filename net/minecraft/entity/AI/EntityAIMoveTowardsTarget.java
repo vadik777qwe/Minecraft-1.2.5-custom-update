@@ -1,7 +1,7 @@
 package net.minecraft.entity.AI;
 
-import net.minecraft.src.EntityCreature;
-import net.minecraft.src.EntityLiving;
+import net.minecraft.entity.EntityCreature;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.src.RandomPositionGenerator;
 import net.minecraft.src.Vec3D;
 

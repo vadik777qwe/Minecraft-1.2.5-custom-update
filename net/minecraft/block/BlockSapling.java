@@ -2,13 +2,13 @@ package net.minecraft.block;
 
 import java.util.Random;
 
-import net.minecraft.src.World;
-import net.minecraft.src.WorldGenBigTree;
-import net.minecraft.src.WorldGenForest;
-import net.minecraft.src.WorldGenHugeTrees;
-import net.minecraft.src.WorldGenTaiga2;
-import net.minecraft.src.WorldGenTrees;
-import net.minecraft.src.WorldGenerator;
+import net.minecraft.world.World;
+import net.minecraft.world.generators.misc.WorldGenBigTree;
+import net.minecraft.world.generators.misc.WorldGenForest;
+import net.minecraft.world.generators.misc.WorldGenHugeTrees;
+import net.minecraft.world.generators.misc.WorldGenTaiga2;
+import net.minecraft.world.generators.misc.WorldGenTrees;
+import net.minecraft.world.WorldGenerator;
 
 public class BlockSapling extends BlockFlower {
 	protected BlockSapling(int par1, int par2) {

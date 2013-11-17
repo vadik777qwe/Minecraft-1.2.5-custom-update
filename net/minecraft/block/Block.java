@@ -5,34 +5,34 @@ import java.util.Random;
 
 import net.minecraft.block.*;
 import net.minecraft.src.AxisAlignedBB;
-import net.minecraft.src.EnchantmentHelper;
-import net.minecraft.src.Entity;
-import net.minecraft.src.EntityItem;
-import net.minecraft.src.EntityLiving;
-import net.minecraft.src.EntityPlayer;
-import net.minecraft.src.EnumMobType;
+import net.minecraft.enchants.EnchantmentHelper;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityItem;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityPlayer;
+import net.minecraft.enums.EnumMobType;
 import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.Item;
-import net.minecraft.src.ItemBlock;
-import net.minecraft.src.ItemCloth;
-import net.minecraft.src.ItemColored;
-import net.minecraft.src.ItemLeaves;
-import net.minecraft.src.ItemLilyPad;
-import net.minecraft.src.ItemMetadata;
-import net.minecraft.src.ItemPiston;
-import net.minecraft.src.ItemSapling;
-import net.minecraft.src.ItemSlab;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.Material;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemCloth;
+import net.minecraft.item.ItemColored;
+import net.minecraft.item.ItemLeaves;
+import net.minecraft.item.ItemLilyPad;
+import net.minecraft.item.ItemMetadata;
+import net.minecraft.item.ItemPiston;
+import net.minecraft.item.ItemSapling;
+import net.minecraft.item.ItemSlab;
+import net.minecraft.item.ItemStack;
+import net.minecraft.block.material.Material;
 import net.minecraft.src.MovingObjectPosition;
-import net.minecraft.src.StatCollector;
-import net.minecraft.src.StatList;
+import net.minecraft.stats.StatCollector;
+import net.minecraft.stats.StatList;
 import net.minecraft.src.StepSound;
 import net.minecraft.src.StepSoundSand;
 import net.minecraft.src.StepSoundStone;
-import net.minecraft.src.TileEntitySign;
+import net.minecraft.entity.tiles.TileEntitySign;
 import net.minecraft.src.Vec3D;
-import net.minecraft.src.World;
+import net.minecraft.world.World;
 
 public class Block {
 	public static final StepSound soundPowderFootstep = new StepSound("stone",
@@ -241,7 +241,7 @@ public class Block {
 			.setLightValue(0.875F).setBlockName("furnace")
 			.setRequiresSelfNotify();
 	public static final Block signPost = (new BlockSign(63,
-			net.minecraft.src.TileEntitySign.class, true)).setHardness(1.0F)
+			net.minecraft.entity.tiles.TileEntitySign.class, true)).setHardness(1.0F)
 			.setStepSound(soundWoodFootstep).setBlockName("sign")
 			.disableStats().setRequiresSelfNotify();
 	public static final Block doorWood = (new BlockDoor(64, Material.wood))
@@ -256,7 +256,7 @@ public class Block {
 	public static final Block stairCompactCobblestone = (new BlockStairs(67,
 			cobblestone)).setBlockName("stairsStone").setRequiresSelfNotify();
 	public static final Block signWall = (new BlockSign(68,
-			net.minecraft.src.TileEntitySign.class, false)).setHardness(1.0F)
+			net.minecraft.entity.tiles.TileEntitySign.class, false)).setHardness(1.0F)
 			.setStepSound(soundWoodFootstep).setBlockName("sign")
 			.disableStats().setRequiresSelfNotify();
 	public static final Block lever = (new BlockLever(69, 96))

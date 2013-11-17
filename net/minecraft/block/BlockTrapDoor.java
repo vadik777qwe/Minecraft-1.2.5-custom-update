@@ -1,12 +1,12 @@
 package net.minecraft.block;
 
 import net.minecraft.src.AxisAlignedBB;
-import net.minecraft.src.EntityPlayer;
+import net.minecraft.entity.EntityPlayer;
 import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.Material;
+import net.minecraft.block.material.Material;
 import net.minecraft.src.MovingObjectPosition;
 import net.minecraft.src.Vec3D;
-import net.minecraft.src.World;
+import net.minecraft.world.World;
 
 public class BlockTrapDoor extends Block {
 	protected BlockTrapDoor(int par1, Material par2Material) {

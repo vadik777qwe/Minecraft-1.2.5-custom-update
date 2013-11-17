@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
 import java.util.HashMap;
 import java.util.Map;
 

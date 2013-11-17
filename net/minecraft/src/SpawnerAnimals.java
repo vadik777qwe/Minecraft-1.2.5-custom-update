@@ -1,5 +1,18 @@
 package net.minecraft.src;
 
+import net.minecraft.block.material.Material;
+import net.minecraft.world.chunk.ChunkPosition;
+import net.minecraft.world.chunk.Chunk;
+import net.minecraft.world.chunk.ChunkCoordIntPair;
+import net.minecraft.world.chunk.ChunkCoordinates;
+import net.minecraft.enums.EnumCreatureType;
+import net.minecraft.world.World;
+import net.minecraft.entity.EntitySpider;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntitySheep;
+import net.minecraft.entity.EntitySkeleton;
+import net.minecraft.entity.EntityOcelot;
+import net.minecraft.entity.EntityPlayer;
 import java.lang.reflect.Constructor;
 import java.util.*;
 
@@ -316,7 +329,7 @@ public final class SpawnerAnimals {
 						try {
 							entityliving = (EntityLiving) spawnlistentry.entityClass
 									.getConstructor(
-											new Class[] { net.minecraft.src.World.class })
+											new Class[] { net.minecraft.world.World.class })
 									.newInstance(new Object[] { par0World });
 						} catch (Exception exception) {
 							exception.printStackTrace();
@@ -346,8 +359,8 @@ public final class SpawnerAnimals {
 
 	static {
 		nightSpawnEntities = (new Class[] {
-				net.minecraft.src.EntitySpider.class,
-				net.minecraft.src.EntityZombie.class,
-				net.minecraft.src.EntitySkeleton.class });
+				net.minecraft.entity.EntitySpider.class,
+				net.minecraft.entity.EntityZombie.class,
+				net.minecraft.entity.EntitySkeleton.class });
 	}
 }

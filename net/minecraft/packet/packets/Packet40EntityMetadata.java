@@ -5,7 +5,7 @@ import java.util.List;
 
 import net.minecraft.packet.Packet;
 import net.minecraft.src.DataWatcher;
-import net.minecraft.src.NetHandler;
+import net.minecraft.network.NetHandler;
 
 public class Packet40EntityMetadata extends Packet {
 	public int entityId;

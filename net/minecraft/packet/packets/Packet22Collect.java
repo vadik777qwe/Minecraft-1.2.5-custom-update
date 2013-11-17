@@ -3,7 +3,7 @@ package net.minecraft.packet.packets;
 import java.io.*;
 
 import net.minecraft.packet.Packet;
-import net.minecraft.src.NetHandler;
+import net.minecraft.network.NetHandler;
 
 public class Packet22Collect extends Packet {
 	/** The entity on the ground that was picked up. */

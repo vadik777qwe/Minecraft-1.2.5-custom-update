@@ -3,8 +3,8 @@ package net.minecraft.packet.packets;
 import java.io.*;
 
 import net.minecraft.packet.Packet;
-import net.minecraft.src.NetHandler;
-import net.minecraft.src.WorldType;
+import net.minecraft.network.NetHandler;
+import net.minecraft.world.WorldType;
 
 public class Packet9Respawn extends Packet {
 	public int respawnDimension;

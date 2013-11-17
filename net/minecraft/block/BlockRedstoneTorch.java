@@ -4,7 +4,7 @@ import java.util.*;
 
 import net.minecraft.src.IBlockAccess;
 import net.minecraft.src.RedstoneUpdateInfo;
-import net.minecraft.src.World;
+import net.minecraft.world.World;
 
 public class BlockRedstoneTorch extends BlockTorch {
 	/** Whether the redstone torch is currently active or not. */

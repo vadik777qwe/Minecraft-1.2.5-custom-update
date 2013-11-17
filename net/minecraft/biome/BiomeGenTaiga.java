@@ -3,17 +3,17 @@ package net.minecraft.biome;
 import java.util.List;
 import java.util.Random;
 
-import net.minecraft.src.EntityWolf;
+import net.minecraft.entity.EntityWolf;
 import net.minecraft.src.SpawnListEntry;
-import net.minecraft.src.WorldGenTaiga1;
-import net.minecraft.src.WorldGenTaiga2;
-import net.minecraft.src.WorldGenerator;
+import net.minecraft.world.generators.misc.WorldGenTaiga1;
+import net.minecraft.world.generators.misc.WorldGenTaiga2;
+import net.minecraft.world.WorldGenerator;
 
 public class BiomeGenTaiga extends BiomeGenBase {
 	public BiomeGenTaiga(int par1) {
 		super(par1);
 		spawnableCreatureList.add(new SpawnListEntry(
-				net.minecraft.src.EntityWolf.class, 8, 4, 4));
+				net.minecraft.entity.EntityWolf.class, 8, 4, 4));
 		biomeDecorator.treesPerChunk = 10;
 		biomeDecorator.grassPerChunk = 1;
 	}

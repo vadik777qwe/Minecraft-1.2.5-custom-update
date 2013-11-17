@@ -1,6 +1,6 @@
 package net.minecraft.block;
 
-import net.minecraft.src.Material;
+import net.minecraft.block.material.Material;
 
 public class BlockWood extends Block {
 	public BlockWood(int par1) {

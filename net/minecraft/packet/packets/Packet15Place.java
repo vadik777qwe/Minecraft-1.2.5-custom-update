@@ -3,8 +3,8 @@ package net.minecraft.packet.packets;
 import java.io.*;
 
 import net.minecraft.packet.Packet;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.NetHandler;
+import net.minecraft.item.ItemStack;
+import net.minecraft.network.NetHandler;
 
 public class Packet15Place extends Packet {
 	public int xPosition;

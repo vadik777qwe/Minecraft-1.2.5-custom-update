@@ -3,7 +3,7 @@ package net.minecraft.packet.packets;
 import java.io.*;
 
 import net.minecraft.packet.Packet;
-import net.minecraft.src.NetHandler;
+import net.minecraft.network.NetHandler;
 
 public class Packet29DestroyEntity extends Packet {
 	/** ID of the entity to be destroyed on the client. */

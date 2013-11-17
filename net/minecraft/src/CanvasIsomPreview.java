@@ -1,5 +1,11 @@
 package net.minecraft.src;
 
+import net.minecraft.world.save.SaveHandler;
+import net.minecraft.world.chunk.ChunkCoordinates;
+import net.minecraft.enums.EnumOS1;
+import net.minecraft.world.World;
+import net.minecraft.world.WorldType;
+import net.minecraft.threads.ThreadRunIsoClient;
 import java.awt.Canvas;
 import java.awt.Color;
 import java.awt.FontMetrics;
@@ -199,6 +205,7 @@ public class CanvasIsomPreview extends Canvas implements KeyListener,
 		return isoimagebuffer;
 	}
 
+        @Override
 	public void run() {
 		TerrainTextureManager terraintexturemanager = new TerrainTextureManager();
 
@@ -228,9 +235,11 @@ public class CanvasIsomPreview extends Canvas implements KeyListener,
 		}
 	}
 
+        @Override
 	public void update(Graphics g) {
 	}
 
+        @Override
 	public void paint(Graphics g) {
 	}
 
@@ -320,6 +329,7 @@ public class CanvasIsomPreview extends Canvas implements KeyListener,
 		par1Graphics2D.dispose();
 	}
 
+        @Override
 	public void mouseDragged(MouseEvent par1MouseEvent) {
 		int i = par1MouseEvent.getX() / zoom;
 		int j = par1MouseEvent.getY() / zoom;
@@ -330,9 +340,11 @@ public class CanvasIsomPreview extends Canvas implements KeyListener,
 		repaint();
 	}
 
+        @Override
 	public void mouseMoved(MouseEvent mouseevent) {
 	}
 
+        @Override
 	public void mouseClicked(MouseEvent par1MouseEvent) {
 		if (par1MouseEvent.getClickCount() == 2) {
 			zoom = 3 - zoom;
@@ -340,12 +352,15 @@ public class CanvasIsomPreview extends Canvas implements KeyListener,
 		}
 	}
 
+        @Override
 	public void mouseEntered(MouseEvent mouseevent) {
 	}
 
+        @Override
 	public void mouseExited(MouseEvent mouseevent) {
 	}
 
+        @Override
 	public void mousePressed(MouseEvent par1MouseEvent) {
 		int i = par1MouseEvent.getX() / zoom;
 		int j = par1MouseEvent.getY() / zoom;
@@ -353,9 +368,11 @@ public class CanvasIsomPreview extends Canvas implements KeyListener,
 		field_1782_l = j;
 	}
 
+        @Override
 	public void mouseReleased(MouseEvent mouseevent) {
 	}
 
+        @Override
 	public void keyPressed(KeyEvent par1KeyEvent) {
 		if (par1KeyEvent.getKeyCode() == 48) {
 			setBrightness(11);
@@ -428,13 +445,15 @@ public class CanvasIsomPreview extends Canvas implements KeyListener,
 		repaint();
 	}
 
+        @Override
 	public void keyReleased(KeyEvent keyevent) {
 	}
 
+        @Override
 	public void keyTyped(KeyEvent keyevent) {
 	}
 
-	static boolean isRunning(CanvasIsomPreview par0CanvasIsomPreview) {
+	public static boolean isRunning(CanvasIsomPreview par0CanvasIsomPreview) {
 		return par0CanvasIsomPreview.running;
 	}
 }

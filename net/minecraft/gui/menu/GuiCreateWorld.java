@@ -5,17 +5,17 @@ import java.util.Random;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.src.ChatAllowedCharacters;
-import net.minecraft.src.GuiButton;
-import net.minecraft.src.GuiScreen;
-import net.minecraft.src.GuiTextField;
+import net.minecraft.gui.GuiButton;
+import net.minecraft.gui.GuiScreen;
+import net.minecraft.gui.GuiTextField;
 import net.minecraft.src.ISaveFormat;
 import net.minecraft.src.MathHelper;
-import net.minecraft.src.PlayerControllerCreative;
-import net.minecraft.src.PlayerControllerSP;
-import net.minecraft.src.StatCollector;
+import net.minecraft.entity.player.PlayerControllerCreative;
+import net.minecraft.entity.player.PlayerControllerSP;
+import net.minecraft.stats.StatCollector;
 import net.minecraft.src.StringTranslate;
 import net.minecraft.src.WorldSettings;
-import net.minecraft.src.WorldType;
+import net.minecraft.world.WorldType;
 
 import org.lwjgl.input.Keyboard;
 

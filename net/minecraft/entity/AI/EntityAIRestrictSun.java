@@ -1,6 +1,6 @@
 package net.minecraft.entity.AI;
 
-import net.minecraft.src.EntityCreature;
+import net.minecraft.entity.EntityCreature;
 
 public class EntityAIRestrictSun extends EntityAIBase {
 	private EntityCreature theEntity;

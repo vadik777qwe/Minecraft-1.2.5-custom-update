@@ -2,11 +2,11 @@ package net.minecraft.entity.AI;
 
 import java.util.Random;
 
-import net.minecraft.src.EntityArrow;
-import net.minecraft.src.EntityLiving;
-import net.minecraft.src.EntitySnowball;
+import net.minecraft.entity.EntityArrow;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntitySnowball;
 import net.minecraft.src.MathHelper;
-import net.minecraft.src.World;
+import net.minecraft.world.World;
 
 public class EntityAIArrowAttack extends EntityAIBase {
 	World worldObj;

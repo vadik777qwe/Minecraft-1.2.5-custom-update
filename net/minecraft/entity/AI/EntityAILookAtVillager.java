@@ -2,8 +2,8 @@ package net.minecraft.entity.AI;
 
 import java.util.Random;
 
-import net.minecraft.src.EntityIronGolem;
-import net.minecraft.src.EntityVillager;
+import net.minecraft.entity.EntityIronGolem;
+import net.minecraft.entity.EntityVillager;
 
 public class EntityAILookAtVillager extends EntityAIBase {
 	private EntityIronGolem theGolem;
@@ -28,7 +28,7 @@ public class EntityAILookAtVillager extends EntityAIBase {
 		} else {
 			theVillager = (EntityVillager) theGolem.worldObj
 					.findNearestEntityWithinAABB(
-							net.minecraft.src.EntityVillager.class,
+							net.minecraft.entity.EntityVillager.class,
 							theGolem.boundingBox.expand(6D, 2D, 6D), theGolem);
 			return theVillager != null;
 		}

@@ -2,17 +2,17 @@ package net.minecraft.block;
 
 import java.util.Random;
 
-import net.minecraft.src.EntityItem;
-import net.minecraft.src.EntityLiving;
-import net.minecraft.src.EntityPlayer;
+import net.minecraft.entity.EntityItem;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityPlayer;
 import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.Material;
+import net.minecraft.item.ItemStack;
+import net.minecraft.block.material.Material;
 import net.minecraft.src.MathHelper;
-import net.minecraft.src.NBTTagCompound;
-import net.minecraft.src.TileEntity;
-import net.minecraft.src.TileEntityFurnace;
-import net.minecraft.src.World;
+import net.minecraft.NBT.NBTTagCompound;
+import net.minecraft.entity.tiles.TileEntity;
+import net.minecraft.entity.tiles.TileEntityFurnace;
+import net.minecraft.world.World;
 
 public class BlockFurnace extends BlockContainer {
 	/**

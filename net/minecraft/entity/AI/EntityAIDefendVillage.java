@@ -1,8 +1,8 @@
 package net.minecraft.entity.AI;
 
-import net.minecraft.src.EntityIronGolem;
-import net.minecraft.src.EntityLiving;
-import net.minecraft.src.Village;
+import net.minecraft.entity.EntityIronGolem;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.world.village.Village;
 
 public class EntityAIDefendVillage extends EntityAITarget {
 	EntityIronGolem irongolem;

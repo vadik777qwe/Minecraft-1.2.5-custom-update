@@ -4,11 +4,11 @@ import java.io.PrintStream;
 import java.util.List;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.src.GuiButton;
-import net.minecraft.src.GuiScreen;
-import net.minecraft.src.NetClientHandler;
+import net.minecraft.gui.GuiButton;
+import net.minecraft.gui.GuiScreen;
+import net.minecraft.network.NetClientHandler;
 import net.minecraft.src.StringTranslate;
-import net.minecraft.src.ThreadConnectToServer;
+import net.minecraft.threads.ThreadConnectToServer;
 
 public class GuiConnecting extends GuiScreen {
 	/** A reference to the NetClientHandler. */

@@ -1,8 +1,8 @@
 package net.minecraft.entity.AI;
 
-import net.minecraft.src.EntityCreature;
-import net.minecraft.src.EntityPlayer;
-import net.minecraft.src.ItemStack;
+import net.minecraft.entity.EntityCreature;
+import net.minecraft.entity.EntityPlayer;
+import net.minecraft.item.ItemStack;
 
 public class EntityAITempt extends EntityAIBase {
 	/** The entity using this AI that is tempted by the player. */

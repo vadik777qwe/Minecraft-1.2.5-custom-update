@@ -1,5 +1,9 @@
 package net.minecraft.src;
 
+import net.minecraft.item.ItemFood;
+import net.minecraft.NBT.NBTTagCompound;
+import net.minecraft.entity.EntityPlayer;
+
 public class FoodStats {
 	/** The player's food level. */
 	private int foodLevel;

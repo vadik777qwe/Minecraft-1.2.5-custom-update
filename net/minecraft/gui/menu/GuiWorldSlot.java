@@ -4,10 +4,10 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.List;
 
-import net.minecraft.src.GuiSlot;
+import net.minecraft.gui.GuiSlot;
 import net.minecraft.src.MathHelper;
-import net.minecraft.src.SaveFormatComparator;
-import net.minecraft.src.StatCollector;
+import net.minecraft.world.save.SaveFormatComparator;
+import net.minecraft.stats.StatCollector;
 import net.minecraft.src.Tessellator;
 
 class GuiWorldSlot extends GuiSlot {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import net.minecraft.src.LongHashMap;
-import net.minecraft.src.WorldChunkManager;
+import net.minecraft.world.WorldChunkManager;
 
 public class BiomeCache {
 	/** Reference to the WorldChunkManager */

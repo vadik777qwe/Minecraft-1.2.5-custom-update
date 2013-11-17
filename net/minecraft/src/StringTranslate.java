@@ -109,7 +109,7 @@ public class StringTranslate {
 
 							for (int var7 = 0; var7 < var6.length(); ++var7) {
 								if (var6.charAt(var7) >= 256) {
-									this.isUnicode = true;
+									this.isUnicode = false;
 									break;
 								}
 							}

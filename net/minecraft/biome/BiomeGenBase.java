@@ -7,27 +7,27 @@ import java.util.Random;
 import net.minecraft.block.Block;
 import net.minecraft.src.ColorizerFoliage;
 import net.minecraft.src.ColorizerGrass;
-import net.minecraft.src.EntityChicken;
-import net.minecraft.src.EntityCow;
-import net.minecraft.src.EntityCreeper;
-import net.minecraft.src.EntityEnderman;
-import net.minecraft.src.EntityPig;
-import net.minecraft.src.EntitySheep;
-import net.minecraft.src.EntitySkeleton;
-import net.minecraft.src.EntitySlime;
-import net.minecraft.src.EntitySpider;
-import net.minecraft.src.EntitySquid;
-import net.minecraft.src.EntityZombie;
-import net.minecraft.src.EnumCreatureType;
+import net.minecraft.entity.EntityChicken;
+import net.minecraft.entity.EntityCow;
+import net.minecraft.entity.EntityCreeper;
+import net.minecraft.entity.EntityEnderman;
+import net.minecraft.entity.EntityPig;
+import net.minecraft.entity.EntitySheep;
+import net.minecraft.entity.EntitySkeleton;
+import net.minecraft.entity.EntitySlime;
+import net.minecraft.entity.EntitySpider;
+import net.minecraft.entity.EntitySquid;
+import net.minecraft.entity.EntityZombie;
+import net.minecraft.enums.EnumCreatureType;
 import net.minecraft.src.MathHelper;
 import net.minecraft.src.SpawnListEntry;
-import net.minecraft.src.World;
-import net.minecraft.src.WorldGenBigTree;
-import net.minecraft.src.WorldGenForest;
-import net.minecraft.src.WorldGenSwamp;
-import net.minecraft.src.WorldGenTallGrass;
-import net.minecraft.src.WorldGenTrees;
-import net.minecraft.src.WorldGenerator;
+import net.minecraft.world.World;
+import net.minecraft.world.generators.misc.WorldGenBigTree;
+import net.minecraft.world.generators.misc.WorldGenForest;
+import net.minecraft.world.generators.misc.WorldGenSwamp;
+import net.minecraft.world.generators.misc.WorldGenTallGrass;
+import net.minecraft.world.generators.misc.WorldGenTrees;
+import net.minecraft.world.WorldGenerator;
 
 public abstract class BiomeGenBase {
 	public static final BiomeGenBase biomeList[] = new BiomeGenBase[256];
@@ -196,27 +196,27 @@ public abstract class BiomeGenBase {
 		biomeList[par1] = this;
 		biomeDecorator = createBiomeDecorator();
 		spawnableCreatureList.add(new SpawnListEntry(
-				net.minecraft.src.EntitySheep.class, 12, 4, 4));
+				net.minecraft.entity.EntitySheep.class, 12, 4, 4));
 		spawnableCreatureList.add(new SpawnListEntry(
-				net.minecraft.src.EntityPig.class, 10, 4, 4));
+				net.minecraft.entity.EntityPig.class, 10, 4, 4));
 		spawnableCreatureList.add(new SpawnListEntry(
-				net.minecraft.src.EntityChicken.class, 10, 4, 4));
+				net.minecraft.entity.EntityChicken.class, 10, 4, 4));
 		spawnableCreatureList.add(new SpawnListEntry(
-				net.minecraft.src.EntityCow.class, 8, 4, 4));
+				net.minecraft.entity.EntityCow.class, 8, 4, 4));
 		spawnableMonsterList.add(new SpawnListEntry(
-				net.minecraft.src.EntitySpider.class, 10, 4, 4));
+				net.minecraft.entity.EntitySpider.class, 10, 4, 4));
 		spawnableMonsterList.add(new SpawnListEntry(
-				net.minecraft.src.EntityZombie.class, 10, 4, 4));
+				net.minecraft.entity.EntityZombie.class, 10, 4, 4));
 		spawnableMonsterList.add(new SpawnListEntry(
-				net.minecraft.src.EntitySkeleton.class, 10, 4, 4));
+				net.minecraft.entity.EntitySkeleton.class, 10, 4, 4));
 		spawnableMonsterList.add(new SpawnListEntry(
-				net.minecraft.src.EntityCreeper.class, 10, 4, 4));
+				net.minecraft.entity.EntityCreeper.class, 10, 4, 4));
 		spawnableMonsterList.add(new SpawnListEntry(
-				net.minecraft.src.EntitySlime.class, 10, 4, 4));
+				net.minecraft.entity.EntitySlime.class, 10, 4, 4));
 		spawnableMonsterList.add(new SpawnListEntry(
-				net.minecraft.src.EntityEnderman.class, 1, 1, 4));
+				net.minecraft.entity.EntityEnderman.class, 1, 1, 4));
 		spawnableWaterCreatureList.add(new SpawnListEntry(
-				net.minecraft.src.EntitySquid.class, 10, 4, 4));
+				net.minecraft.entity.EntitySquid.class, 10, 4, 4));
 	}
 
 	/**

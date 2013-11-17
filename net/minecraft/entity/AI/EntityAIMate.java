@@ -2,9 +2,9 @@ package net.minecraft.entity.AI;
 
 import java.util.*;
 
-import net.minecraft.src.Entity;
-import net.minecraft.src.EntityAnimal;
-import net.minecraft.src.World;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityAnimal;
+import net.minecraft.world.World;
 
 public class EntityAIMate extends EntityAIBase {
 	private EntityAnimal theAnimal;

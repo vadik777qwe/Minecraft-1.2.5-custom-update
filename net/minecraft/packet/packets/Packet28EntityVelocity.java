@@ -3,8 +3,8 @@ package net.minecraft.packet.packets;
 import java.io.*;
 
 import net.minecraft.packet.Packet;
-import net.minecraft.src.Entity;
-import net.minecraft.src.NetHandler;
+import net.minecraft.entity.Entity;
+import net.minecraft.network.NetHandler;
 
 public class Packet28EntityVelocity extends Packet {
 	public int entityId;

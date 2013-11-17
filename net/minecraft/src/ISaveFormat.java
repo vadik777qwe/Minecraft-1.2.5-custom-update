@@ -1,5 +1,6 @@
 package net.minecraft.src;
 
+import net.minecraft.world.WorldInfo;
 import java.util.List;
 
 public interface ISaveFormat {

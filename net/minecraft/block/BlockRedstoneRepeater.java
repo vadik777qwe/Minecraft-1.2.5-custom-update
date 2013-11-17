@@ -2,13 +2,13 @@ package net.minecraft.block;
 
 import java.util.Random;
 
-import net.minecraft.src.EntityLiving;
-import net.minecraft.src.EntityPlayer;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityPlayer;
 import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.Item;
-import net.minecraft.src.Material;
+import net.minecraft.item.Item;
+import net.minecraft.block.material.Material;
 import net.minecraft.src.MathHelper;
-import net.minecraft.src.World;
+import net.minecraft.world.World;
 
 public class BlockRedstoneRepeater extends BlockDirectional {
 	public static final double repeaterTorchOffset[] = { -0.0625D, 0.0625D,

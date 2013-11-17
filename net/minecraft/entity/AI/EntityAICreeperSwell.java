@@ -1,7 +1,7 @@
 package net.minecraft.entity.AI;
 
-import net.minecraft.src.EntityCreeper;
-import net.minecraft.src.EntityLiving;
+import net.minecraft.entity.EntityCreeper;
+import net.minecraft.entity.EntityLiving;
 
 public class EntityAICreeperSwell extends EntityAIBase {
 	/** The creeper that is swelling. */

@@ -1,5 +1,8 @@
 package net.minecraft.src;
 
+import net.minecraft.inventory.InventoryCrafting;
+import net.minecraft.item.ItemStack;
+
 public interface IRecipe {
 	/**
 	 * Used to check if a recipe matches current crafting inventory

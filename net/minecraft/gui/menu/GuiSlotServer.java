@@ -3,10 +3,10 @@ package net.minecraft.gui.menu;
 import java.util.List;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.src.GuiSlot;
+import net.minecraft.gui.GuiSlot;
 import net.minecraft.src.ServerNBTStorage;
 import net.minecraft.src.Tessellator;
-import net.minecraft.src.ThreadPollServers;
+import net.minecraft.threads.ThreadPollServers;
 
 import org.lwjgl.opengl.GL11;
 

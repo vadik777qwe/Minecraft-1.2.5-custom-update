@@ -3,10 +3,10 @@ package net.minecraft.packet.packets;
 import java.io.*;
 
 import net.minecraft.packet.Packet;
-import net.minecraft.src.Entity;
-import net.minecraft.src.EntityLightningBolt;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLightningBolt;
 import net.minecraft.src.MathHelper;
-import net.minecraft.src.NetHandler;
+import net.minecraft.network.NetHandler;
 
 public class Packet71Weather extends Packet {
 	public int entityID;

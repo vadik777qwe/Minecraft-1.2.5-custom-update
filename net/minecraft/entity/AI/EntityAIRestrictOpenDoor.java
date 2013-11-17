@@ -1,9 +1,9 @@
 package net.minecraft.entity.AI;
 
-import net.minecraft.src.EntityCreature;
+import net.minecraft.entity.EntityCreature;
 import net.minecraft.src.MathHelper;
-import net.minecraft.src.Village;
-import net.minecraft.src.VillageDoorInfo;
+import net.minecraft.world.village.Village;
+import net.minecraft.world.village.VillageDoorInfo;
 
 public class EntityAIRestrictOpenDoor extends EntityAIBase {
 	private EntityCreature entityObj;

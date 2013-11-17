@@ -2,9 +2,9 @@ package net.minecraft.entity.AI;
 
 import java.util.Random;
 
-import net.minecraft.src.Entity;
-import net.minecraft.src.EntityLiving;
-import net.minecraft.src.EntityPlayer;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityPlayer;
 
 public class EntityAIWatchClosest extends EntityAIBase {
 	private EntityLiving field_46105_a;
@@ -42,7 +42,7 @@ public class EntityAIWatchClosest extends EntityAIBase {
 			return false;
 		}
 
-		if (field_48293_f == (net.minecraft.src.EntityPlayer.class)) {
+		if (field_48293_f == (net.minecraft.entity.EntityPlayer.class)) {
 			closestEntity = field_46105_a.worldObj.getClosestPlayerToEntity(
 					field_46105_a, field_46101_d);
 		} else {

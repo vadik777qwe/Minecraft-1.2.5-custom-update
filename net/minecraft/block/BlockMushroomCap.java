@@ -2,7 +2,7 @@ package net.minecraft.block;
 
 import java.util.Random;
 
-import net.minecraft.src.Material;
+import net.minecraft.block.material.Material;
 
 public class BlockMushroomCap extends Block {
 	/** The mushroom type. 0 for brown, 1 for red. */

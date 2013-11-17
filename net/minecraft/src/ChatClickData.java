@@ -1,5 +1,6 @@
 package net.minecraft.src;
 
+import net.minecraft.render.FontRenderer;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.logging.Level;

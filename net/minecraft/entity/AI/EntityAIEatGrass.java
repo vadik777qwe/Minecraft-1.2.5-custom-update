@@ -3,9 +3,9 @@ package net.minecraft.entity.AI;
 import java.util.Random;
 
 import net.minecraft.block.Block;
-import net.minecraft.src.EntityLiving;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.src.MathHelper;
-import net.minecraft.src.World;
+import net.minecraft.world.World;
 
 public class EntityAIEatGrass extends EntityAIBase {
 	private EntityLiving theEntity;

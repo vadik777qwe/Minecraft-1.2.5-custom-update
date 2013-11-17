@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import net.minecraft.src.AxisAlignedBB;
-import net.minecraft.src.Entity;
-import net.minecraft.src.EntityPlayer;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityPlayer;
 import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.Material;
-import net.minecraft.src.TileEntity;
-import net.minecraft.src.TileEntityEndPortal;
-import net.minecraft.src.World;
+import net.minecraft.block.material.Material;
+import net.minecraft.entity.tiles.TileEntity;
+import net.minecraft.entity.tiles.TileEntityEndPortal;
+import net.minecraft.world.World;
 
 public class BlockEndPortal extends BlockContainer {
 	/**

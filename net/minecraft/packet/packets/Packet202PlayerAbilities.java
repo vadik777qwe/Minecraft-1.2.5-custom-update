@@ -3,8 +3,8 @@ package net.minecraft.packet.packets;
 import java.io.*;
 
 import net.minecraft.packet.Packet;
-import net.minecraft.src.NetHandler;
-import net.minecraft.src.PlayerCapabilities;
+import net.minecraft.network.NetHandler;
+import net.minecraft.entity.player.PlayerCapabilities;
 
 public class Packet202PlayerAbilities extends Packet {
 	public boolean field_50072_a;

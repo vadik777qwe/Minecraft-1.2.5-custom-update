@@ -3,10 +3,10 @@ package net.minecraft.block;
 import java.util.Random;
 
 import net.minecraft.src.AxisAlignedBB;
-import net.minecraft.src.EntityPlayer;
+import net.minecraft.entity.EntityPlayer;
 import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.Material;
-import net.minecraft.src.World;
+import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
 
 public class BlockLever extends Block {
 	protected BlockLever(int par1, int par2) {

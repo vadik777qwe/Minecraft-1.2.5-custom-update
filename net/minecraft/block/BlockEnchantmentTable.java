@@ -2,11 +2,11 @@ package net.minecraft.block;
 
 import java.util.Random;
 
-import net.minecraft.src.EntityPlayer;
-import net.minecraft.src.Material;
-import net.minecraft.src.TileEntity;
-import net.minecraft.src.TileEntityEnchantmentTable;
-import net.minecraft.src.World;
+import net.minecraft.entity.EntityPlayer;
+import net.minecraft.block.material.Material;
+import net.minecraft.entity.tiles.TileEntity;
+import net.minecraft.entity.tiles.TileEntityEnchantmentTable;
+import net.minecraft.world.World;
 
 public class BlockEnchantmentTable extends BlockContainer {
 	protected BlockEnchantmentTable(int par1) {

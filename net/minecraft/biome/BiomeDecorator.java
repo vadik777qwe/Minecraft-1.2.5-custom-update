@@ -3,19 +3,19 @@ package net.minecraft.biome;
 import java.util.Random;
 
 import net.minecraft.block.Block;
-import net.minecraft.src.World;
-import net.minecraft.src.WorldGenBigMushroom;
-import net.minecraft.src.WorldGenCactus;
-import net.minecraft.src.WorldGenClay;
-import net.minecraft.src.WorldGenDeadBush;
-import net.minecraft.src.WorldGenFlowers;
-import net.minecraft.src.WorldGenLiquids;
-import net.minecraft.src.WorldGenMinable;
-import net.minecraft.src.WorldGenPumpkin;
-import net.minecraft.src.WorldGenReed;
-import net.minecraft.src.WorldGenSand;
-import net.minecraft.src.WorldGenWaterlily;
-import net.minecraft.src.WorldGenerator;
+import net.minecraft.world.World;
+import net.minecraft.world.generators.misc.WorldGenBigMushroom;
+import net.minecraft.world.generators.misc.WorldGenCactus;
+import net.minecraft.world.generators.misc.WorldGenClay;
+import net.minecraft.world.generators.misc.WorldGenDeadBush;
+import net.minecraft.world.generators.misc.WorldGenFlowers;
+import net.minecraft.world.generators.misc.WorldGenLiquids;
+import net.minecraft.world.generators.misc.WorldGenMinable;
+import net.minecraft.world.generators.misc.WorldGenPumpkin;
+import net.minecraft.world.generators.misc.WorldGenReed;
+import net.minecraft.world.generators.misc.WorldGenSand;
+import net.minecraft.world.generators.misc.WorldGenWaterlily;
+import net.minecraft.world.WorldGenerator;
 
 public class BiomeDecorator {
 	/** The world the BiomeDecorator is currently decorating */

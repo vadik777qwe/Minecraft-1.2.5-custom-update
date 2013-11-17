@@ -1,7 +1,7 @@
 package net.minecraft.block;
 
-import net.minecraft.src.Material;
-import net.minecraft.src.World;
+import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
 
 public class BlockSponge extends Block {
 	protected BlockSponge(int par1) {

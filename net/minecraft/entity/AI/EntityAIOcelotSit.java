@@ -4,9 +4,9 @@ import java.util.Random;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBed;
-import net.minecraft.src.EntityOcelot;
-import net.minecraft.src.TileEntityChest;
-import net.minecraft.src.World;
+import net.minecraft.entity.EntityOcelot;
+import net.minecraft.entity.tiles.TileEntityChest;
+import net.minecraft.world.World;
 
 public class EntityAIOcelotSit extends EntityAIBase {
 	private final EntityOcelot field_50085_a;

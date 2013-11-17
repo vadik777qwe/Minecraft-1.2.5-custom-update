@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.world.WorldInfo;
+import net.minecraft.world.WorldProvider;
 import java.io.File;
 import java.util.List;
 

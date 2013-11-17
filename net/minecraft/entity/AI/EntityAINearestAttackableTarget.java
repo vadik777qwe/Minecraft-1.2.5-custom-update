@@ -2,9 +2,9 @@ package net.minecraft.entity.AI;
 
 import java.util.*;
 
-import net.minecraft.src.Entity;
-import net.minecraft.src.EntityLiving;
-import net.minecraft.src.EntityPlayer;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityPlayer;
 
 public class EntityAINearestAttackableTarget extends EntityAITarget {
 	EntityLiving targetEntity;
@@ -38,7 +38,7 @@ public class EntityAINearestAttackableTarget extends EntityAITarget {
 				return false;
 			}
 
-			if (targetClass == (net.minecraft.src.EntityPlayer.class)) {
+			if (targetClass == (net.minecraft.entity.EntityPlayer.class)) {
 				EntityPlayer entityplayer = taskOwner.worldObj
 						.getClosestVulnerablePlayerToEntity(taskOwner,
 								field_48379_d);

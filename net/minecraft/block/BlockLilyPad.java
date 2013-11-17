@@ -2,8 +2,8 @@ package net.minecraft.block;
 
 import net.minecraft.src.AxisAlignedBB;
 import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.Material;
-import net.minecraft.src.World;
+import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
 
 public class BlockLilyPad extends BlockFlower {
 	protected BlockLilyPad(int par1, int par2) {

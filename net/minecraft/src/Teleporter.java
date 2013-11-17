@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.world.World;
+import net.minecraft.entity.Entity;
 import java.util.Random;
 
 import net.minecraft.block.Block;

@@ -2,10 +2,10 @@ package net.minecraft.block;
 
 import java.util.Random;
 
-import net.minecraft.src.EnumSkyBlock;
-import net.minecraft.src.Item;
-import net.minecraft.src.Material;
-import net.minecraft.src.World;
+import net.minecraft.enums.EnumSkyBlock;
+import net.minecraft.item.Item;
+import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
 
 public class BlockSnowBlock extends Block {
 	protected BlockSnowBlock(int par1, int par2) {

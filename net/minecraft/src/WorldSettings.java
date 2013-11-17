@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.world.WorldType;
+
 public final class WorldSettings {
 	/** The seed for the map. */
 	private final long seed;

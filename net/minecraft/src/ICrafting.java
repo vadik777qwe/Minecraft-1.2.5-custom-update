@@ -1,5 +1,8 @@
 package net.minecraft.src;
 
+import net.minecraft.item.ItemStack;
+import net.minecraft.containers.Container;
+
 public interface ICrafting {
 	/**
 	 * inform the player of a change in a single slot

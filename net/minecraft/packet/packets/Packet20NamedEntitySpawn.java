@@ -3,10 +3,10 @@ package net.minecraft.packet.packets;
 import java.io.*;
 
 import net.minecraft.packet.Packet;
-import net.minecraft.src.EntityPlayer;
-import net.minecraft.src.ItemStack;
+import net.minecraft.entity.EntityPlayer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.src.MathHelper;
-import net.minecraft.src.NetHandler;
+import net.minecraft.network.NetHandler;
 
 public class Packet20NamedEntitySpawn extends Packet {
 	/** The entity ID, in this case it's the player ID. */

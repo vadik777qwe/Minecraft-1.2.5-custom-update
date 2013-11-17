@@ -5,7 +5,7 @@ import java.util.zip.DataFormatException;
 import java.util.zip.Inflater;
 
 import net.minecraft.packet.Packet;
-import net.minecraft.src.NetHandler;
+import net.minecraft.network.NetHandler;
 
 public class Packet51MapChunk extends Packet {
 	/** The x-position of the transmitted chunk, in chunk coordinates. */

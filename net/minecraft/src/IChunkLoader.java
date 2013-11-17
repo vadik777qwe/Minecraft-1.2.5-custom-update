@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.world.chunk.Chunk;
+import net.minecraft.world.World;
 import java.io.IOException;
 
 public interface IChunkLoader {

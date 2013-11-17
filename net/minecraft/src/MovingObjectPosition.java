@@ -1,5 +1,8 @@
 package net.minecraft.src;
 
+import net.minecraft.enums.EnumMovingObjectType;
+import net.minecraft.entity.Entity;
+
 public class MovingObjectPosition {
 	/** What type of ray trace hit was this? 0 = block, 1 = entity */
 	public EnumMovingObjectType typeOfHit;

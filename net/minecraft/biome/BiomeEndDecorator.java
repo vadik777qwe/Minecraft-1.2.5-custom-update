@@ -3,9 +3,9 @@ package net.minecraft.biome;
 import java.util.Random;
 
 import net.minecraft.block.Block;
-import net.minecraft.src.EntityDragon;
-import net.minecraft.src.WorldGenSpikes;
-import net.minecraft.src.WorldGenerator;
+import net.minecraft.entity.EntityDragon;
+import net.minecraft.world.generators.misc.WorldGenSpikes;
+import net.minecraft.world.WorldGenerator;
 
 public class BiomeEndDecorator extends BiomeDecorator {
 	protected WorldGenerator spikeGen;

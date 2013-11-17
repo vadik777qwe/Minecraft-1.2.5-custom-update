@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.world.chunk.ChunkCoordinates;
+import net.minecraft.item.ItemStack;
 import java.io.*;
 import java.util.*;
 
@@ -258,8 +260,8 @@ public class DataWatcher {
 		dataTypes.put(java.lang.Integer.class, Integer.valueOf(2));
 		dataTypes.put(java.lang.Float.class, Integer.valueOf(3));
 		dataTypes.put(java.lang.String.class, Integer.valueOf(4));
-		dataTypes.put(net.minecraft.src.ItemStack.class, Integer.valueOf(5));
-		dataTypes.put(net.minecraft.src.ChunkCoordinates.class,
+		dataTypes.put(net.minecraft.item.ItemStack.class, Integer.valueOf(5));
+		dataTypes.put(net.minecraft.world.chunk.ChunkCoordinates.class,
 				Integer.valueOf(6));
 	}
 }

@@ -4,8 +4,8 @@ import java.io.*;
 import java.util.*;
 
 import net.minecraft.packet.Packet;
-import net.minecraft.src.ChunkPosition;
-import net.minecraft.src.NetHandler;
+import net.minecraft.world.chunk.ChunkPosition;
+import net.minecraft.network.NetHandler;
 
 public class Packet60Explosion extends Packet {
 	public double explosionX;

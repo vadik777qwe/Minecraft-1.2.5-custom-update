@@ -2,8 +2,8 @@ package net.minecraft.block;
 
 import java.util.Random;
 
-import net.minecraft.src.World;
-import net.minecraft.src.WorldGenBigMushroom;
+import net.minecraft.world.World;
+import net.minecraft.world.generators.misc.WorldGenBigMushroom;
 
 public class BlockMushroom extends BlockFlower {
 	protected BlockMushroom(int par1, int par2) {

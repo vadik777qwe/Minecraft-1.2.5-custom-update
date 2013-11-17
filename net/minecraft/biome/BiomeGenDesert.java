@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.Random;
 
 import net.minecraft.block.Block;
-import net.minecraft.src.World;
-import net.minecraft.src.WorldGenDesertWells;
+import net.minecraft.world.World;
+import net.minecraft.world.generators.misc.WorldGenDesertWells;
 
 public class BiomeGenDesert extends BiomeGenBase {
 	public BiomeGenDesert(int par1) {

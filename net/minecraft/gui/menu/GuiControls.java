@@ -4,9 +4,9 @@ import java.util.List;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.src.GameSettings;
-import net.minecraft.src.GuiButton;
-import net.minecraft.src.GuiScreen;
-import net.minecraft.src.GuiSmallButton;
+import net.minecraft.gui.GuiButton;
+import net.minecraft.gui.GuiScreen;
+import net.minecraft.gui.GuiSmallButton;
 import net.minecraft.src.KeyBinding;
 import net.minecraft.src.StringTranslate;
 

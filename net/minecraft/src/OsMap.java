@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.enums.EnumOS1;
+
 class OsMap {
 	static final int osValues[];
 

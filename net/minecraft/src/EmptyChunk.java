@@ -1,5 +1,10 @@
 package net.minecraft.src;
 
+import net.minecraft.world.chunk.Chunk;
+import net.minecraft.enums.EnumSkyBlock;
+import net.minecraft.world.World;
+import net.minecraft.entity.tiles.TileEntity;
+import net.minecraft.entity.Entity;
 import java.util.List;
 import java.util.Random;
 

@@ -3,8 +3,8 @@ package net.minecraft.entity.AI;
 import java.util.Iterator;
 import java.util.List;
 
-import net.minecraft.src.Entity;
-import net.minecraft.src.EntityAnimal;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityAnimal;
 
 public class EntityAIFollowParent extends EntityAIBase {
 	/** The child that is following its parent. */

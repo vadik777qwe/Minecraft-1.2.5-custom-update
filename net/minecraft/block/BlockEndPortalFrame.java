@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import net.minecraft.src.AxisAlignedBB;
-import net.minecraft.src.EntityLiving;
-import net.minecraft.src.Material;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.block.material.Material;
 import net.minecraft.src.MathHelper;
-import net.minecraft.src.World;
+import net.minecraft.world.World;
 
 public class BlockEndPortalFrame extends Block {
 	public BlockEndPortalFrame(int par1) {

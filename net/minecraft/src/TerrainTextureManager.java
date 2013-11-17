@@ -1,5 +1,8 @@
 package net.minecraft.src;
 
+import net.minecraft.block.material.Material;
+import net.minecraft.world.chunk.Chunk;
+import net.minecraft.world.World;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.Arrays;

@@ -2,9 +2,9 @@ package net.minecraft.block;
 
 import java.util.Random;
 
-import net.minecraft.src.EntityPlayer;
-import net.minecraft.src.Material;
-import net.minecraft.src.World;
+import net.minecraft.entity.EntityPlayer;
+import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
 
 public class BlockLog extends Block {
 	protected BlockLog(int par1) {

@@ -2,12 +2,12 @@ package net.minecraft.block;
 
 import java.util.Random;
 
-import net.minecraft.src.EntityIronGolem;
-import net.minecraft.src.EntityLiving;
-import net.minecraft.src.EntitySnowman;
-import net.minecraft.src.Material;
+import net.minecraft.entity.EntityIronGolem;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntitySnowman;
+import net.minecraft.block.material.Material;
 import net.minecraft.src.MathHelper;
-import net.minecraft.src.World;
+import net.minecraft.world.World;
 
 public class BlockPumpkin extends BlockDirectional {
 	/** Boolean used to seperate different states of blocks */

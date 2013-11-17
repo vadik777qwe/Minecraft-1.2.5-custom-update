@@ -1,5 +1,9 @@
 package net.minecraft.src;
 
+import net.minecraft.world.chunk.ChunkPosition;
+import net.minecraft.world.chunk.Chunk;
+import net.minecraft.enums.EnumCreatureType;
+import net.minecraft.world.World;
 import java.util.List;
 
 public interface IChunkProvider {

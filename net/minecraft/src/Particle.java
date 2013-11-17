@@ -1,5 +1,6 @@
 package net.minecraft.src;
 
+import net.minecraft.gui.GuiParticle;
 import java.util.Random;
 
 public class Particle {

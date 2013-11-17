@@ -10,11 +10,11 @@ import java.util.List;
 import java.util.Random;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.src.GuiButton;
-import net.minecraft.src.GuiButtonLanguage;
-import net.minecraft.src.GuiLanguage;
-import net.minecraft.src.GuiScreen;
-import net.minecraft.src.GuiTexturePacks;
+import net.minecraft.gui.GuiButton;
+import net.minecraft.gui.GuiButtonLanguage;
+import net.minecraft.gui.GuiLanguage;
+import net.minecraft.gui.GuiScreen;
+import net.minecraft.gui.GuiTexturePacks;
 import net.minecraft.src.MathHelper;
 import net.minecraft.src.StringTranslate;
 import net.minecraft.src.Tessellator;
@@ -82,6 +82,7 @@ public class GuiMainMenu extends GuiScreen {
 	/**
 	 * Called from the main game loop to update the screen.
 	 */
+        @Override
 	public void updateScreen() {
 		panoramaTimer++;
 	}
@@ -90,6 +91,7 @@ public class GuiMainMenu extends GuiScreen {
 	 * Returns true if this GUI should pause the game when it is displayed in
 	 * single-player
 	 */
+        @Override
 	public boolean doesGuiPauseGame() {
 		return false;
 	}
@@ -98,12 +100,14 @@ public class GuiMainMenu extends GuiScreen {
 	 * Fired when a key is typed. This is the equivalent of
 	 * KeyListener.keyTyped(KeyEvent e).
 	 */
+        @Override
 	protected void keyTyped(char c, int i) {
 	}
 
 	/**
 	 * Adds the buttons (and other controls) to the screen in question.
 	 */
+        @Override
 	public void initGui() {
 		viewportTexture = mc.renderEngine
 				.allocateAndSetupTexture(new java.awt.image.BufferedImage(256,
@@ -155,6 +159,7 @@ public class GuiMainMenu extends GuiScreen {
 	 * Fired when a control is clicked. This is the equivalent of
 	 * ActionListener.actionPerformed(ActionEvent e).
 	 */
+        @Override
 	protected void actionPerformed(GuiButton par1GuiButton) {
 		if (par1GuiButton.id == 0) {
 			mc.displayGuiScreen(new GuiOptions(this, mc.gameSettings));
@@ -342,6 +347,7 @@ public class GuiMainMenu extends GuiScreen {
 	/**
 	 * Draws the screen and all the components in it.
 	 */
+        @Override
 	public void drawScreen(int par1, int par2, float par3) {
 		renderSkybox(par1, par2, par3);
 		Tessellator tessellator = Tessellator.instance;

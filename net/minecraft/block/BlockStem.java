@@ -2,11 +2,11 @@ package net.minecraft.block;
 
 import java.util.Random;
 
-import net.minecraft.src.EntityItem;
+import net.minecraft.entity.EntityItem;
 import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.Item;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.World;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
 
 public class BlockStem extends BlockFlower {
 	/** Defines if it is a Melon or a Pumpkin that the stem is producing. */

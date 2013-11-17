@@ -3,9 +3,9 @@ package net.minecraft.packet.packets;
 import java.io.*;
 
 import net.minecraft.packet.Packet;
-import net.minecraft.src.Entity;
+import net.minecraft.entity.Entity;
 import net.minecraft.src.MathHelper;
-import net.minecraft.src.NetHandler;
+import net.minecraft.network.NetHandler;
 
 public class Packet34EntityTeleport extends Packet {
 	/** ID of the entity. */

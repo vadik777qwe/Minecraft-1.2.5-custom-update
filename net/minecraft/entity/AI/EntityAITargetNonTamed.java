@@ -1,6 +1,6 @@
 package net.minecraft.entity.AI;
 
-import net.minecraft.src.EntityTameable;
+import net.minecraft.entity.EntityTameable;
 
 public class EntityAITargetNonTamed extends EntityAINearestAttackableTarget {
 	private EntityTameable field_48390_g;

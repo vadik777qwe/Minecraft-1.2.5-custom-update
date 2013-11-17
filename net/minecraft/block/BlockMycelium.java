@@ -3,8 +3,8 @@ package net.minecraft.block;
 import java.util.Random;
 
 import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.Material;
-import net.minecraft.src.World;
+import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
 
 public class BlockMycelium extends Block {
 	protected BlockMycelium(int par1) {

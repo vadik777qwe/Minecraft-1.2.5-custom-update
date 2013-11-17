@@ -2,14 +2,14 @@ package net.minecraft.block;
 
 import java.util.*;
 
-import net.minecraft.src.ChunkCoordinates;
+import net.minecraft.world.chunk.ChunkCoordinates;
 import net.minecraft.src.Direction;
-import net.minecraft.src.EntityPlayer;
-import net.minecraft.src.EnumStatus;
+import net.minecraft.entity.EntityPlayer;
+import net.minecraft.enums.EnumStatus;
 import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.Item;
-import net.minecraft.src.Material;
-import net.minecraft.src.World;
+import net.minecraft.item.Item;
+import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
 
 public class BlockBed extends BlockDirectional {
 	public static final int headBlockToFootBlockMap[][] = { { 0, 1 },

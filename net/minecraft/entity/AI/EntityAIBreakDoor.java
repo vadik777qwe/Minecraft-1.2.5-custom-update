@@ -2,7 +2,7 @@ package net.minecraft.entity.AI;
 
 import java.util.Random;
 
-import net.minecraft.src.EntityLiving;
+import net.minecraft.entity.EntityLiving;
 
 public class EntityAIBreakDoor extends EntityAIDoorInteract {
 	private int field_48329_i;

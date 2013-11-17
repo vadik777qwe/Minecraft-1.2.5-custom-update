@@ -4,10 +4,10 @@ import java.util.List;
 import java.util.Random;
 
 import net.minecraft.src.AxisAlignedBB;
-import net.minecraft.src.Entity;
-import net.minecraft.src.EntityMinecart;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityMinecart;
 import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.World;
+import net.minecraft.world.World;
 
 public class BlockDetectorRail extends BlockRail {
 	public BlockDetectorRail(int par1, int par2) {
@@ -99,7 +99,7 @@ public class BlockDetectorRail extends BlockRail {
 		boolean flag1 = false;
 		float f = 0.125F;
 		List list = par1World
-				.getEntitiesWithinAABB(net.minecraft.src.EntityMinecart.class,
+				.getEntitiesWithinAABB(net.minecraft.entity.EntityMinecart.class,
 						AxisAlignedBB.getBoundingBoxFromPool((float) par2 + f,
 								par3, (float) par4 + f, (float) (par2 + 1) - f,
 								(float) (par3 + 1) - f, (float) (par4 + 1) - f));

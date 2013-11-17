@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.entity.Entity;
+
 public class PathEntity {
 	private final PathPoint points[];
 

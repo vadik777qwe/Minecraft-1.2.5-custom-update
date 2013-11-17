@@ -2,9 +2,9 @@ package net.minecraft.block;
 
 import java.util.Random;
 
-import net.minecraft.src.EntityFallingSand;
-import net.minecraft.src.Material;
-import net.minecraft.src.World;
+import net.minecraft.entity.EntityFallingSand;
+import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
 
 public class BlockSand extends Block {
 	/** Do blocks fall instantly to where they stop or do they fall over time */

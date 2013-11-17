@@ -4,16 +4,16 @@ import java.util.List;
 import java.util.Random;
 
 import net.minecraft.block.Block;
-import net.minecraft.src.EntityChicken;
-import net.minecraft.src.EntityOcelot;
+import net.minecraft.entity.EntityChicken;
+import net.minecraft.entity.EntityOcelot;
 import net.minecraft.src.SpawnListEntry;
-import net.minecraft.src.World;
-import net.minecraft.src.WorldGenHugeTrees;
-import net.minecraft.src.WorldGenShrub;
-import net.minecraft.src.WorldGenTallGrass;
-import net.minecraft.src.WorldGenTrees;
-import net.minecraft.src.WorldGenVines;
-import net.minecraft.src.WorldGenerator;
+import net.minecraft.world.World;
+import net.minecraft.world.generators.misc.WorldGenHugeTrees;
+import net.minecraft.world.generators.misc.WorldGenShrub;
+import net.minecraft.world.generators.misc.WorldGenTallGrass;
+import net.minecraft.world.generators.misc.WorldGenTrees;
+import net.minecraft.world.generators.misc.WorldGenVines;
+import net.minecraft.world.WorldGenerator;
 
 public class BiomeGenJungle extends BiomeGenBase {
 	public BiomeGenJungle(int par1) {
@@ -22,9 +22,9 @@ public class BiomeGenJungle extends BiomeGenBase {
 		biomeDecorator.grassPerChunk = 25;
 		biomeDecorator.flowersPerChunk = 4;
 		spawnableMonsterList.add(new SpawnListEntry(
-				net.minecraft.src.EntityOcelot.class, 2, 1, 1));
+				net.minecraft.entity.EntityOcelot.class, 2, 1, 1));
 		spawnableCreatureList.add(new SpawnListEntry(
-				net.minecraft.src.EntityChicken.class, 10, 4, 4));
+				net.minecraft.entity.EntityChicken.class, 10, 4, 4));
 	}
 
 	/**

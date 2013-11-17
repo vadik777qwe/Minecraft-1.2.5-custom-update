@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.block.material.Material;
+import net.minecraft.entity.Entity;
 import net.minecraft.block.Block;
 
 public class PathFinder {

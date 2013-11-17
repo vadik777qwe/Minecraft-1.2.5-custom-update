@@ -1,5 +1,7 @@
 package net.minecraft.src;
 
+import net.minecraft.NBT.NBTTagCompound;
+
 public class ServerNBTStorage {
 	/** User specified name for server */
 	public String name;

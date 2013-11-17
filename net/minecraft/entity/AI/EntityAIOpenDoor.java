@@ -1,6 +1,6 @@
 package net.minecraft.entity.AI;
 
-import net.minecraft.src.EntityLiving;
+import net.minecraft.entity.EntityLiving;
 
 public class EntityAIOpenDoor extends EntityAIDoorInteract {
 	boolean field_48328_i;

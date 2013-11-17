@@ -2,9 +2,9 @@ package net.minecraft.entity.AI;
 
 import java.util.*;
 
-import net.minecraft.src.Entity;
-import net.minecraft.src.EntityLiving;
-import net.minecraft.src.EntityVillager;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityVillager;
 import net.minecraft.src.RandomPositionGenerator;
 import net.minecraft.src.Vec3D;
 
@@ -33,7 +33,7 @@ public class EntityAIPlay extends EntityAIBase {
 		}
 
 		List list = villagerObj.worldObj.getEntitiesWithinAABB(
-				net.minecraft.src.EntityVillager.class,
+				net.minecraft.entity.EntityVillager.class,
 				villagerObj.boundingBox.expand(6D, 3D, 6D));
 		double d = Double.MAX_VALUE;
 		Iterator iterator = list.iterator();

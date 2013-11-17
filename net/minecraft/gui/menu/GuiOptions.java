@@ -3,15 +3,15 @@ package net.minecraft.gui.menu;
 import java.util.List;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.src.EnumOptions;
+import net.minecraft.enums.EnumOptions;
 import net.minecraft.src.GameSettings;
-import net.minecraft.src.GuiButton;
-import net.minecraft.src.GuiLanguage;
-import net.minecraft.src.GuiScreen;
-import net.minecraft.src.GuiSlider;
-import net.minecraft.src.GuiSmallButton;
-import net.minecraft.src.GuiVideoSettings;
-import net.minecraft.src.StatCollector;
+import net.minecraft.gui.GuiButton;
+import net.minecraft.gui.GuiLanguage;
+import net.minecraft.gui.GuiScreen;
+import net.minecraft.gui.GuiSlider;
+import net.minecraft.gui.GuiSmallButton;
+import net.minecraft.gui.GuiVideoSettings;
+import net.minecraft.stats.StatCollector;
 import net.minecraft.src.StringTranslate;
 
 public class GuiOptions extends GuiScreen {

@@ -3,15 +3,15 @@ package net.minecraft.biome;
 import java.util.List;
 import java.util.Random;
 
-import net.minecraft.src.EntityWolf;
+import net.minecraft.entity.EntityWolf;
 import net.minecraft.src.SpawnListEntry;
-import net.minecraft.src.WorldGenerator;
+import net.minecraft.world.WorldGenerator;
 
 public class BiomeGenForest extends BiomeGenBase {
 	public BiomeGenForest(int par1) {
 		super(par1);
 		spawnableCreatureList.add(new SpawnListEntry(
-				net.minecraft.src.EntityWolf.class, 5, 4, 4));
+				net.minecraft.entity.EntityWolf.class, 5, 4, 4));
 		biomeDecorator.treesPerChunk = 10;
 		biomeDecorator.grassPerChunk = 2;
 	}

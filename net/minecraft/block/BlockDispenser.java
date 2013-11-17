@@ -2,26 +2,26 @@ package net.minecraft.block;
 
 import java.util.Random;
 
-import net.minecraft.src.EntityArrow;
-import net.minecraft.src.EntityEgg;
-import net.minecraft.src.EntityExpBottle;
-import net.minecraft.src.EntityItem;
-import net.minecraft.src.EntityLiving;
-import net.minecraft.src.EntityPlayer;
-import net.minecraft.src.EntityPotion;
-import net.minecraft.src.EntitySmallFireball;
-import net.minecraft.src.EntitySnowball;
+import net.minecraft.entity.EntityArrow;
+import net.minecraft.entity.EntityEgg;
+import net.minecraft.entity.EntityExpBottle;
+import net.minecraft.entity.EntityItem;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityPlayer;
+import net.minecraft.entity.EntityPotion;
+import net.minecraft.entity.EntitySmallFireball;
+import net.minecraft.entity.EntitySnowball;
 import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.Item;
-import net.minecraft.src.ItemMonsterPlacer;
-import net.minecraft.src.ItemPotion;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.Material;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemMonsterPlacer;
+import net.minecraft.item.ItemPotion;
+import net.minecraft.item.ItemStack;
+import net.minecraft.block.material.Material;
 import net.minecraft.src.MathHelper;
-import net.minecraft.src.NBTTagCompound;
-import net.minecraft.src.TileEntity;
-import net.minecraft.src.TileEntityDispenser;
-import net.minecraft.src.World;
+import net.minecraft.NBT.NBTTagCompound;
+import net.minecraft.entity.tiles.TileEntity;
+import net.minecraft.entity.tiles.TileEntityDispenser;
+import net.minecraft.world.World;
 
 public class BlockDispenser extends BlockContainer {
 	private Random random;

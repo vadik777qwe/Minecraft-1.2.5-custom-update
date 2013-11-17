@@ -4,9 +4,9 @@ import java.util.Random;
 
 import net.minecraft.src.AxisAlignedBB;
 import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.Material;
-import net.minecraft.src.World;
-import net.minecraft.src.WorldProviderEnd;
+import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
+import net.minecraft.world.WorldProviderEnd;
 
 public class BlockFire extends Block {
 	private int chanceToEncourageFire[];
@@ -24,6 +24,7 @@ public class BlockFire extends Block {
 	 * created. You can use it to reference and configure something on the block
 	 * that needs the others ones.
 	 */
+        @Override
 	public void initializeBlock() {
 		setBurnRate(Block.planks.blockID, 5, 20);
 		setBurnRate(Block.fence.blockID, 5, 20);
@@ -52,6 +53,7 @@ public class BlockFire extends Block {
 	 * Returns a bounding box from the pool of bounding boxes (this means this
 	 * box can change after the pool has been cleared to be reused)
 	 */
+        @Override
 	public AxisAlignedBB getCollisionBoundingBoxFromPool(World par1World,
 			int par2, int par3, int i) {
 		return null;
@@ -62,6 +64,7 @@ public class BlockFire extends Block {
 	 * or not to render the shared face of two adjacent blocks and also whether
 	 * the player can attach torches, redstone wire, etc to this block.
 	 */
+        @Override
 	public boolean isOpaqueCube() {
 		return false;
 	}
@@ -70,6 +73,7 @@ public class BlockFire extends Block {
 	 * If this block doesn't render as an ordinary block it will return False
 	 * (examples: signs, buttons, stairs, etc)
 	 */
+        @Override
 	public boolean renderAsNormalBlock() {
 		return false;
 	}
@@ -77,6 +81,7 @@ public class BlockFire extends Block {
 	/**
 	 * The type of render function that is called for this block
 	 */
+        @Override
 	public int getRenderType() {
 		return 3;
 	}
@@ -84,6 +89,7 @@ public class BlockFire extends Block {
 	/**
 	 * Returns the quantity of items to drop on block destruction.
 	 */
+        @Override
 	public int quantityDropped(Random par1Random) {
 		return 0;
 	}
@@ -91,6 +97,7 @@ public class BlockFire extends Block {
 	/**
 	 * How many world ticks before ticking
 	 */
+        @Override
 	public int tickRate() {
 		return 30;
 	}
@@ -98,6 +105,7 @@ public class BlockFire extends Block {
 	/**
 	 * Ticks the block if it's been scheduled
 	 */
+        @Override
 	public void updateTick(World par1World, int par2, int par3, int par4,
 			Random par5Random) {
 		boolean flag = par1World.getBlockId(par2, par3 - 1, par4) == Block.netherrack.blockID;
@@ -295,6 +303,7 @@ public class BlockFire extends Block {
 	/**
 	 * Returns if this block is collidable (only used by Fire). Args: x, y, z
 	 */
+        @Override
 	public boolean isCollidable() {
 		return false;
 	}
@@ -330,6 +339,7 @@ public class BlockFire extends Block {
 	 * Checks to see if its valid to put this block at the specified
 	 * coordinates. Args: world, x, y, z
 	 */
+        @Override
 	public boolean canPlaceBlockAt(World par1World, int par2, int par3, int par4) {
 		return par1World.isBlockNormalCube(par2, par3 - 1, par4)
 				|| canNeighborBurn(par1World, par2, par3, par4);
@@ -340,6 +350,7 @@ public class BlockFire extends Block {
 	 * neighbor changed (coordinates passed are their own) Args: x, y, z,
 	 * neighbor blockID
 	 */
+        @Override
 	public void onNeighborBlockChange(World par1World, int par2, int par3,
 			int par4, int par5) {
 		if (!par1World.isBlockNormalCube(par2, par3 - 1, par4)
@@ -354,6 +365,7 @@ public class BlockFire extends Block {
 	/**
 	 * Called whenever the block is added into the world. Args: world, x, y, z
 	 */
+        @Override
 	public void onBlockAdded(World par1World, int par2, int par3, int par4) {
 		if (par1World.worldProvider.worldType <= 0
 				&& par1World.getBlockId(par2, par3 - 1, par4) == Block.obsidian.blockID
@@ -376,6 +388,7 @@ public class BlockFire extends Block {
 	 * A randomly called display update to be able to add particles or other
 	 * items for display
 	 */
+        @Override
 	public void randomDisplayTick(World par1World, int par2, int par3,
 			int par4, Random par5Random) {
 		if (par5Random.nextInt(24) == 0) {

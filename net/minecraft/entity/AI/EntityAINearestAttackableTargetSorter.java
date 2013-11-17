@@ -2,7 +2,7 @@ package net.minecraft.entity.AI;
 
 import java.util.Comparator;
 
-import net.minecraft.src.Entity;
+import net.minecraft.entity.Entity;
 
 public class EntityAINearestAttackableTargetSorter implements Comparator {
 	private Entity theEntity;

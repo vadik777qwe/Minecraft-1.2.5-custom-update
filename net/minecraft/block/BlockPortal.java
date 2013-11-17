@@ -3,10 +3,10 @@ package net.minecraft.block;
 import java.util.Random;
 
 import net.minecraft.src.AxisAlignedBB;
-import net.minecraft.src.Entity;
+import net.minecraft.entity.Entity;
 import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.Material;
-import net.minecraft.src.World;
+import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
 
 public class BlockPortal extends BlockBreakable {
 	public BlockPortal(int par1, int par2) {

@@ -1,5 +1,13 @@
 package net.minecraft.src;
 
+import net.minecraft.entity.EntityFireball;
+import net.minecraft.entity.EntityDamageSource;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityDamageSourceIndirect;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityPlayer;
+import net.minecraft.entity.EntityArrow;
+
 public class DamageSource {
 	public static DamageSource inFire = (new DamageSource("inFire"))
 			.setFireDamage();

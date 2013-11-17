@@ -2,12 +2,12 @@ package net.minecraft.entity.AI;
 
 import java.util.Random;
 
-import net.minecraft.src.Entity;
-import net.minecraft.src.EntityLiving;
-import net.minecraft.src.EntityVillager;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityVillager;
 import net.minecraft.src.MathHelper;
-import net.minecraft.src.Village;
-import net.minecraft.src.World;
+import net.minecraft.world.village.Village;
+import net.minecraft.world.World;
 
 public class EntityAIVillagerMate extends EntityAIBase {
 	private EntityVillager villagerObj;
@@ -49,7 +49,7 @@ public class EntityAIVillagerMate extends EntityAIBase {
 		}
 
 		Entity entity = worldObj.findNearestEntityWithinAABB(
-				net.minecraft.src.EntityVillager.class,
+				net.minecraft.entity.EntityVillager.class,
 				villagerObj.boundingBox.expand(8D, 3D, 8D), villagerObj);
 
 		if (entity == null) {

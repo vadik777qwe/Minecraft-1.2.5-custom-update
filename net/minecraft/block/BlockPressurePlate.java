@@ -4,13 +4,13 @@ import java.util.List;
 import java.util.Random;
 
 import net.minecraft.src.AxisAlignedBB;
-import net.minecraft.src.Entity;
-import net.minecraft.src.EntityLiving;
-import net.minecraft.src.EntityPlayer;
-import net.minecraft.src.EnumMobType;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityPlayer;
+import net.minecraft.enums.EnumMobType;
 import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.Material;
-import net.minecraft.src.World;
+import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
 
 public class BlockPressurePlate extends Block {
 	/** The mob type that can trigger this pressure plate. */
@@ -154,7 +154,7 @@ public class BlockPressurePlate extends Block {
 
 		if (triggerMobType == EnumMobType.mobs) {
 			list = par1World.getEntitiesWithinAABB(
-					net.minecraft.src.EntityLiving.class, AxisAlignedBB
+					net.minecraft.entity.EntityLiving.class, AxisAlignedBB
 							.getBoundingBoxFromPool((float) par2 + f, par3,
 									(float) par4 + f, (float) (par2 + 1) - f,
 									(double) par3 + 0.25D, (float) (par4 + 1)
@@ -163,7 +163,7 @@ public class BlockPressurePlate extends Block {
 
 		if (triggerMobType == EnumMobType.players) {
 			list = par1World.getEntitiesWithinAABB(
-					net.minecraft.src.EntityPlayer.class, AxisAlignedBB
+					net.minecraft.entity.EntityPlayer.class, AxisAlignedBB
 							.getBoundingBoxFromPool((float) par2 + f, par3,
 									(float) par4 + f, (float) (par2 + 1) - f,
 									(double) par3 + 0.25D, (float) (par4 + 1)

@@ -4,8 +4,8 @@ import java.util.Random;
 
 import net.minecraft.src.ColorizerGrass;
 import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.Material;
-import net.minecraft.src.World;
+import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
 
 public class BlockGrass extends Block {
 	protected BlockGrass(int par1) {

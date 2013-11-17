@@ -4,7 +4,7 @@ import java.util.Random;
 
 import net.minecraft.src.ColorizerFoliage;
 import net.minecraft.src.ColorizerGrass;
-import net.minecraft.src.WorldGenerator;
+import net.minecraft.world.WorldGenerator;
 
 public class BiomeGenSwamp extends BiomeGenBase {
 	protected BiomeGenSwamp(int par1) {

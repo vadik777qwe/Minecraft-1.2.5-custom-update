@@ -6,9 +6,9 @@ import java.util.Random;
 import net.minecraft.src.AxisAlignedBB;
 import net.minecraft.src.Facing;
 import net.minecraft.src.IBlockAccess;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.Material;
-import net.minecraft.src.World;
+import net.minecraft.item.ItemStack;
+import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
 
 public class BlockStep extends Block {
 	public static final String blockStepTypes[] = { "stone", "sand", "wood",

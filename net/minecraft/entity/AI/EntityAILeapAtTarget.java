@@ -2,7 +2,7 @@ package net.minecraft.entity.AI;
 
 import java.util.Random;
 
-import net.minecraft.src.EntityLiving;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.src.MathHelper;
 
 public class EntityAILeapAtTarget extends EntityAIBase {

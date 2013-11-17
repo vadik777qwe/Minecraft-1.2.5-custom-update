@@ -2,8 +2,8 @@ package net.minecraft.block;
 
 import java.util.Random;
 
-import net.minecraft.src.Material;
-import net.minecraft.src.World;
+import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
 
 public class BlockRedstoneLight extends Block {
 	/** Whether this lamp block is the powered version. */

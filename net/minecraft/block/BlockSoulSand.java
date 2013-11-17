@@ -1,9 +1,9 @@
 package net.minecraft.block;
 
 import net.minecraft.src.AxisAlignedBB;
-import net.minecraft.src.Entity;
-import net.minecraft.src.Material;
-import net.minecraft.src.World;
+import net.minecraft.entity.Entity;
+import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
 
 public class BlockSoulSand extends Block {
 	public BlockSoulSand(int par1, int par2) {

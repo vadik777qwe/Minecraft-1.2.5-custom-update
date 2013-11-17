@@ -2,7 +2,7 @@ package net.minecraft.block;
 
 import java.util.Random;
 
-import net.minecraft.src.Material;
+import net.minecraft.block.material.Material;
 
 public class BlockStone extends Block {
 	public BlockStone(int par1, int par2) {

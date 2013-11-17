@@ -5,10 +5,10 @@ import java.util.List;
 
 import net.minecraft.packet.Packet;
 import net.minecraft.src.DataWatcher;
-import net.minecraft.src.EntityList;
-import net.minecraft.src.EntityLiving;
+import net.minecraft.entity.EntityList;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.src.MathHelper;
-import net.minecraft.src.NetHandler;
+import net.minecraft.network.NetHandler;
 
 public class Packet24MobSpawn extends Packet {
 	/** The entity ID. */

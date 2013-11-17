@@ -3,10 +3,10 @@ package net.minecraft.block;
 import java.util.Random;
 
 import net.minecraft.src.AxisAlignedBB;
-import net.minecraft.src.Material;
+import net.minecraft.block.material.Material;
 import net.minecraft.src.MovingObjectPosition;
 import net.minecraft.src.Vec3D;
-import net.minecraft.src.World;
+import net.minecraft.world.World;
 
 public class BlockTorch extends Block {
 	protected BlockTorch(int par1, int par2) {

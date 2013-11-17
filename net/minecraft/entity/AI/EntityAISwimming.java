@@ -2,7 +2,7 @@ package net.minecraft.entity.AI;
 
 import java.util.Random;
 
-import net.minecraft.src.EntityLiving;
+import net.minecraft.entity.EntityLiving;
 
 public class EntityAISwimming extends EntityAIBase {
 	private EntityLiving theEntity;
