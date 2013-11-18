@@ -82,32 +82,37 @@ public class GuiChat extends GuiScreen {
 	 * KeyListener.keyTyped(KeyEvent e).
 	 */
 	protected void keyTyped(char par1, int par2) {
-		if (par2 == 15) {
-			completePlayerName();
-		} else {
-			field_50060_d = false;
-		}
-
-		if (par2 == 1) {
+		switch (par2) {
+		case 1:
 			mc.displayGuiScreen(null);
-		} else if (par2 == 28) {
+			break;
+		case 15:
+			completePlayerName();
+			break;
+		case 28:
 			String s = field_50064_a.getText().trim();
 
 			if (s.length() > 0 && !mc.lineIsCommand(s)) {
 				mc.thePlayer.sendChatMessage(s);
 			}
-
 			mc.displayGuiScreen(null);
-		} else if (par2 == 200) {
+
+			break;
+		case 200:
 			func_50058_a(-1);
-		} else if (par2 == 208) {
+			break;
+		case 208:
 			func_50058_a(1);
-		} else if (par2 == 201) {
+			break;
+		case 201:
 			mc.ingameGUI.func_50011_a(19);
-		} else if (par2 == 209) {
+			break;
+		case 209:
 			mc.ingameGUI.func_50011_a(-19);
-		} else {
+			break;
+		default:
 			field_50064_a.func_50037_a(par1, par2);
+			break;
 		}
 	}
 
