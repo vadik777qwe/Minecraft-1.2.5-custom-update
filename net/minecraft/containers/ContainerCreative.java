@@ -53,7 +53,7 @@ public class ContainerCreative extends Container {
 				Block.stairsStoneBrickSmooth, Block.lever,
 				Block.pressurePlateStone, Block.pressurePlatePlanks,
 				Block.torchRedstoneActive, Block.button, Block.trapdoor,
-				Block.enchantmentTable, Block.redstoneLampIdle };
+				Block.enchantmentTable, Block.redstoneLampIdle, Block.hay };
 		int i = 0;
 		int j = 0;
 		int k = 0;
