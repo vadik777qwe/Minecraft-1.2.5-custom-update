@@ -3,8 +3,6 @@ package net.minecraft.gui;
 import net.minecraft.item.ItemStack;
 import net.minecraft.containers.ContainerCreative;
 import net.minecraft.entity.EntityPlayer;
-import java.util.List;
-import net.minecraft.client.Minecraft;
 import net.minecraft.achievement.AchievementList;
 import net.minecraft.inventory.InventoryBasic;
 import net.minecraft.inventory.InventoryPlayer;
@@ -62,8 +60,7 @@ public class GuiContainerCreative extends GuiContainer {
 					if (par3 == 0) {
 						if (par4) {
 							itemstack1.stackSize = itemstack1.getMaxStackSize();
-						} else if (itemstack1.stackSize < itemstack1
-								.getMaxStackSize()) {
+						} else if (itemstack1.stackSize < itemstack1.getMaxStackSize()) {
 							itemstack1.stackSize++;
 						}
 					} else if (itemstack1.stackSize <= 1) {

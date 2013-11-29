@@ -27,6 +27,7 @@ public class SlotCrafting extends Slot {
 	 * Check if the stack is a valid item for this slot. Always true beside for
 	 * the armor slots.
 	 */
+        @Override
 	public boolean isItemValid(ItemStack par1ItemStack) {
 		return false;
 	}
@@ -35,6 +36,7 @@ public class SlotCrafting extends Slot {
 	 * Decrease the size of the stack in slot (first int arg) by the amount of
 	 * the second int arg. Returns the new stack.
 	 */
+        @Override
 	public ItemStack decrStackSize(int par1) {
 		if (getHasStack()) {
 			field_48436_g += Math.min(par1, getStack().stackSize);
@@ -43,11 +45,13 @@ public class SlotCrafting extends Slot {
 		return super.decrStackSize(par1);
 	}
 
+        @Override
 	protected void func_48435_a(ItemStack par1ItemStack, int par2) {
 		field_48436_g += par2;
 		func_48434_c(par1ItemStack);
 	}
 
+        @Override
 	protected void func_48434_c(ItemStack par1ItemStack) {
 		par1ItemStack.onCrafting(thePlayer.worldObj, thePlayer, field_48436_g);
 		field_48436_g = 0;
@@ -68,8 +72,8 @@ public class SlotCrafting extends Slot {
 			thePlayer.addStat(AchievementList.buildBetterPickaxe, 1);
 		} else if (par1ItemStack.itemID == Item.swordWood.shiftedIndex) {
 			thePlayer.addStat(AchievementList.buildSword, 1);
-		} else if (par1ItemStack.itemID == Block.enchantmentTable.blockID) {
-			thePlayer.addStat(AchievementList.enchantments, 1);
+		/*} else if (par1ItemStack.itemID == Block.enchantmentTable.blockID) {
+			thePlayer.addStat(AchievementList.enchantments, 1);*/
 		} else if (par1ItemStack.itemID == Block.bookShelf.blockID) {
 			thePlayer.addStat(AchievementList.bookcase, 1);
 		}
@@ -78,6 +82,7 @@ public class SlotCrafting extends Slot {
 	/**
 	 * Called when the player picks up an item from an inventory slot
 	 */
+        @Override
 	public void onPickupFromSlot(ItemStack par1ItemStack) {
 		func_48434_c(par1ItemStack);
 

@@ -24,10 +24,12 @@ public class AnvilSaveConverter extends SaveFormatOld {
 		super(par1File);
 	}
 
+        @Override
 	public String getFormatName() {
 		return "Anvil";
 	}
 
+        @Override
 	public List getSaveList() {
 		ArrayList arraylist = new ArrayList();
 		File afile[] = savesDirectory.listFiles();
@@ -69,6 +71,7 @@ public class AnvilSaveConverter extends SaveFormatOld {
 		return 19133;
 	}
 
+        @Override
 	public void flushCache() {
 		RegionFileCache.clearRegionFileReferences();
 	}
@@ -76,6 +79,7 @@ public class AnvilSaveConverter extends SaveFormatOld {
 	/**
 	 * Returns back a loader for the specified save directory
 	 */
+        @Override
 	public ISaveHandler getSaveLoader(String par1Str, boolean par2) {
 		return new AnvilSaveHandler(savesDirectory, par1Str, par2);
 	}
@@ -83,6 +87,7 @@ public class AnvilSaveConverter extends SaveFormatOld {
 	/**
 	 * Checks if the save directory uses the old map format
 	 */
+        @Override
 	public boolean isOldMapFormat(String par1Str) {
 		WorldInfo worldinfo = getWorldInfo(par1Str);
 		return worldinfo != null
@@ -93,6 +98,7 @@ public class AnvilSaveConverter extends SaveFormatOld {
 	 * Converts the specified map to the new map format. Args: worldName,
 	 * loadingScreen
 	 */
+        @Override
 	public boolean convertMapFormat(String par1Str,
 			IProgressUpdate par2IProgressUpdate) {
 		par2IProgressUpdate.setLoadingProgress(0);

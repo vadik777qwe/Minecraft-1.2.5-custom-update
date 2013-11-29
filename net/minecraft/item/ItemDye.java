@@ -4,7 +4,6 @@ import net.minecraft.world.World;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntitySheep;
 import net.minecraft.entity.EntityPlayer;
-import java.util.Random;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockCloth;
@@ -12,6 +11,7 @@ import net.minecraft.block.BlockCrops;
 import net.minecraft.block.BlockMushroom;
 import net.minecraft.block.BlockSapling;
 import net.minecraft.block.BlockStem;
+import static net.minecraft.item.Item.itemRand;
 import net.minecraft.src.MathHelper;
 
 public class ItemDye extends Item {
@@ -32,11 +32,13 @@ public class ItemDye extends Item {
 	/**
 	 * Gets an icon index based on an item's damage value
 	 */
+        @Override
 	public int getIconFromDamage(int par1) {
 		int i = MathHelper.clamp_int(par1, 0, 15);
 		return iconIndex + (i % 8) * 16 + i / 8;
 	}
 
+        @Override
 	public String getItemNameIS(ItemStack par1ItemStack) {
 		int i = MathHelper.clamp_int(par1ItemStack.getItemDamage(), 0, 15);
 		return (new StringBuilder()).append(super.getItemName()).append(".")
@@ -48,6 +50,7 @@ public class ItemDye extends Item {
 	 * clicking, he will have one of those. Return True if something happen and
 	 * false if it don't. This is for ITEMS, not BLOCKS !
 	 */
+        @Override
 	public boolean onItemUse(ItemStack par1ItemStack,
 			EntityPlayer par2EntityPlayer, World par3World, int par4, int par5,
 			int par6, int par7) {
@@ -135,10 +138,13 @@ public class ItemDye extends Item {
 						if (itemRand.nextInt(3) != 0) {
 							par3World.setBlockWithNotify(k, l, i1,
 									Block.plantYellow.blockID);
-						} else {
-							par3World.setBlockWithNotify(k, l, i1,
-									Block.plantRed.blockID);
-						}
+						} else if (itemRand.nextInt(3) != 0){
+                                                        par3World.setBlockWithNotify(k, l, i1,
+                                                                        Block.plantRed.blockID);
+                                                } else {
+                                                        par3World.setBlockWithNotify(k, l, i1,
+                                                                        Block.plantPurple.blockID);
+                                                }
 					}
 				}
 
@@ -152,6 +158,7 @@ public class ItemDye extends Item {
 	/**
 	 * Called when a player right clicks a entity with a item.
 	 */
+        @Override
 	public void useItemOnEntity(ItemStack par1ItemStack,
 			EntityLiving par2EntityLiving) {
 		if (par2EntityLiving instanceof EntitySheep) {

@@ -214,14 +214,14 @@ public class BlockDispenser extends BlockContainer {
 							k, 1.375F, 3F);
 					par1World.spawnEntityInWorld(entitypotion);
 					par1World.playAuxSFX(1002, par2, par3, par4, 0);
-				} else if (itemstack.itemID == Item.expBottle.shiftedIndex) {
+				} else /*if (itemstack.itemID == Item.expBottle.shiftedIndex) {
 					EntityExpBottle entityexpbottle = new EntityExpBottle(
 							par1World, d, d1, d2);
 					entityexpbottle.setThrowableHeading(j,
 							0.10000000149011612D, k, 1.375F, 3F);
 					par1World.spawnEntityInWorld(entityexpbottle);
 					par1World.playAuxSFX(1002, par2, par3, par4, 0);
-				} else if (itemstack.itemID == Item.monsterPlacer.shiftedIndex) {
+				} else*/ if (itemstack.itemID == Item.monsterPlacer.shiftedIndex) {
 					ItemMonsterPlacer.func_48440_a(par1World,
 							itemstack.getItemDamage(), d + (double) j
 									* 0.29999999999999999D,

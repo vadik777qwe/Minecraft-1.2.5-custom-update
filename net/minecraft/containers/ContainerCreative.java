@@ -33,7 +33,7 @@ public class ContainerCreative extends Container {
 				Block.gravel, Block.web, Block.planks, Block.planks,
 				Block.planks, Block.planks, Block.sapling, Block.sapling,
 				Block.sapling, Block.sapling, Block.deadBush, Block.sponge,
-				Block.ice, Block.blockSnow, Block.plantYellow, Block.plantRed,
+				Block.ice, Block.blockSnow, Block.plantYellow, Block.plantRed, Block.plantPurple,
 				Block.mushroomBrown, Block.mushroomRed, Block.cactus,
 				Block.melon, Block.pumpkin, Block.pumpkinLantern, Block.vine,
 				Block.fenceIron, Block.thinGlass, Block.netherBrick,
@@ -53,7 +53,7 @@ public class ContainerCreative extends Container {
 				Block.stairsStoneBrickSmooth, Block.lever,
 				Block.pressurePlateStone, Block.pressurePlatePlanks,
 				Block.torchRedstoneActive, Block.button, Block.trapdoor,
-				Block.enchantmentTable, Block.redstoneLampIdle, Block.hay };
+				/*Block.enchantmentTable,*/ Block.redstoneLampIdle, Block.hay };
 		int i = 0;
 		int j = 0;
 		int k = 0;

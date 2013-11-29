@@ -311,6 +311,7 @@ public class InventoryPlayer implements IInventory {
 	 * Decrease the size of the stack in slot (first int arg) by the amount of
 	 * the second int arg. Returns the new stack.
 	 */
+        @Override
 	public ItemStack decrStackSize(int par1, int par2) {
 		ItemStack aitemstack[] = mainInventory;
 
@@ -343,6 +344,7 @@ public class InventoryPlayer implements IInventory {
 	 * whatever it returns as an EntityItem - like when you close a workbench
 	 * GUI.
 	 */
+        @Override
 	public ItemStack getStackInSlotOnClosing(int par1) {
 		ItemStack aitemstack[] = mainInventory;
 
@@ -364,6 +366,7 @@ public class InventoryPlayer implements IInventory {
 	 * Sets the given item stack to the specified slot in the inventory (can be
 	 * crafting or armor sections).
 	 */
+        @Override
 	public void setInventorySlotContents(int par1, ItemStack par2ItemStack) {
 		ItemStack aitemstack[] = mainInventory;
 
@@ -447,6 +450,7 @@ public class InventoryPlayer implements IInventory {
 	/**
 	 * Returns the number of slots in the inventory.
 	 */
+        @Override
 	public int getSizeInventory() {
 		return mainInventory.length + 4;
 	}
@@ -454,6 +458,7 @@ public class InventoryPlayer implements IInventory {
 	/**
 	 * Returns the stack in slot i
 	 */
+        @Override
 	public ItemStack getStackInSlot(int par1) {
 		ItemStack aitemstack[] = mainInventory;
 
@@ -468,6 +473,7 @@ public class InventoryPlayer implements IInventory {
 	/**
 	 * Returns the name of the inventory.
 	 */
+        @Override
 	public String getInvName() {
 		return "container.inventory";
 	}
@@ -476,6 +482,7 @@ public class InventoryPlayer implements IInventory {
 	 * Returns the maximum stack size for a inventory slot. Seems to always be
 	 * 64, possibly will be extended. *Isn't this more of a set than a get?*
 	 */
+        @Override
 	public int getInventoryStackLimit() {
 		return 64;
 	}
@@ -585,6 +592,7 @@ public class InventoryPlayer implements IInventory {
 	/**
 	 * Called when an the contents of an Inventory change, usually
 	 */
+        @Override
 	public void onInventoryChanged() {
 		inventoryChanged = true;
 	}
@@ -602,6 +610,7 @@ public class InventoryPlayer implements IInventory {
 	 * Do not make give this method the name canInteractWith because it clashes
 	 * with Container
 	 */
+        @Override
 	public boolean isUseableByPlayer(EntityPlayer par1EntityPlayer) {
 		if (player.isDead) {
 			return false;
@@ -631,9 +640,11 @@ public class InventoryPlayer implements IInventory {
 		return false;
 	}
 
+        @Override
 	public void openChest() {
 	}
 
+        @Override
 	public void closeChest() {
 	}
 

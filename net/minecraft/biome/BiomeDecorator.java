@@ -65,7 +65,10 @@ public class BiomeDecorator {
 
 	/** Field that holds one of the plantRed WorldGenFlowers */
 	protected WorldGenerator plantRedGen;
-
+        
+        /** Field that holds one of the plantPurple WorldGenFlowers */
+        protected WorldGenerator plantPurpleGen;
+        
 	/** Field that holds mushroomBrown WorldGenFlowers */
 	protected WorldGenerator mushroomBrownGen;
 
@@ -167,6 +170,7 @@ public class BiomeDecorator {
 		lapisGen = new WorldGenMinable(Block.oreLapis.blockID, 6);
 		plantYellowGen = new WorldGenFlowers(Block.plantYellow.blockID);
 		plantRedGen = new WorldGenFlowers(Block.plantRed.blockID);
+                plantPurpleGen = new WorldGenFlowers(Block.plantPurple.blockID);
 		mushroomBrownGen = new WorldGenFlowers(Block.mushroomBrown.blockID);
 		mushroomRedGen = new WorldGenFlowers(Block.mushroomRed.blockID);
 		bigMushroomGen = new WorldGenBigMushroom();
@@ -204,7 +208,6 @@ public class BiomeDecorator {
 			decorate();
 			currentWorld = null;
 			randomGenerator = null;
-			return;
 		}
 	}
 
@@ -272,6 +275,14 @@ public class BiomeDecorator {
 				plantRedGen.generate(currentWorld, randomGenerator, i7, j11,
 						i15);
 			}
+                        if (randomGenerator.nextInt(4) == 1){
+				int i7 = chunk_X + randomGenerator.nextInt(16) + 8;
+				int j11 = randomGenerator.nextInt(128);
+				int i15 = chunk_Z + randomGenerator.nextInt(16) + 8;
+				plantPurpleGen.generate(currentWorld, randomGenerator, i7, j11,
+						i15);
+                            
+                        }
 		}
 
 		for (int k2 = 0; k2 < grassPerChunk; k2++) {

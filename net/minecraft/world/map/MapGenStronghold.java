@@ -27,7 +27,7 @@ public class MapGenStronghold extends MapGenStructure {
 				BiomeGenBase.icePlains, BiomeGenBase.iceMountains,
 				BiomeGenBase.desertHills, BiomeGenBase.forestHills,
 				BiomeGenBase.extremeHillsEdge, BiomeGenBase.jungle,
-				BiomeGenBase.jungleHills });
+				BiomeGenBase.jungleHills, BiomeGenBase.autumn });
 		structureCoords = new ChunkCoordIntPair[3];
 	}
 

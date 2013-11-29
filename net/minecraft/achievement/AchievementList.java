@@ -1,7 +1,6 @@
 package net.minecraft.achievement;
 
 import net.minecraft.item.Item;
-import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -152,22 +151,22 @@ public class AchievementList {
 				acquireIron)).registerAchievement();
 		portal = (new Achievement(18, "portal", -1, 7, Block.obsidian, diamonds))
 				.registerAchievement();
-		ghast = (new Achievement(19, "ghast", -4, 8, Item.ghastTear, portal))
+		/*ghast = (new Achievement(19, "ghast", -4, 8, Item.ghastTear, portal))
 				.setSpecial().registerAchievement();
 		blazeRod = (new Achievement(20, "blazeRod", 0, 9, Item.blazeRod, portal))
 				.registerAchievement();
 		potion = (new Achievement(21, "potion", 2, 8, Item.potion, blazeRod))
-				.registerAchievement();
-		theEnd = (new Achievement(22, "theEnd", 3, 10, Item.eyeOfEnder,
+				.registerAchievement();*/
+		theEnd = (new Achievement(/*22*/19, "theEnd", 3, 10, Item.eyeOfEnder,
 				blazeRod)).setSpecial().registerAchievement();
-		theEnd2 = (new Achievement(23, "theEnd2", 4, 13, Block.dragonEgg,
+		theEnd2 = (new Achievement(20/*3*/, "theEnd2", 4, 13, Block.dragonEgg,
 				theEnd)).setSpecial().registerAchievement();
-		enchantments = (new Achievement(24, "enchantments", -4, 4,
+		/*enchantments = (new Achievement(24, "enchantments", -4, 4,
 				Block.enchantmentTable, diamonds)).registerAchievement();
 		overkill = (new Achievement(25, "overkill", -4, 1, Item.swordDiamond,
 				enchantments)).setSpecial().registerAchievement();
 		bookcase = (new Achievement(26, "bookcase", -3, 6, Block.bookShelf,
-				enchantments)).registerAchievement();
+				enchantments)).registerAchievement();*/
 		System.out.println((new StringBuilder()).append(achievementList.size())
 				.append(" achievements").toString());
 	}

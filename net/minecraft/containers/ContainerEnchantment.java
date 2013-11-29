@@ -210,12 +210,11 @@ public class ContainerEnchantment extends Container {
 
         @Override
 	public boolean canInteractWith(EntityPlayer par1EntityPlayer) {
-		if (worldPointer.getBlockId(posX, posY, posZ) != Block.enchantmentTable.blockID) {
+		//if (worldPointer.getBlockId(posX, posY, posZ) != Block.enchantmentTable.blockID) {
 			return false;
-		}
+		//}
 
-		return par1EntityPlayer.getDistanceSq((double) posX + 0.5D,
-				(double) posY + 0.5D, (double) posZ + 0.5D) <= 64D;
+		//return par1EntityPlayer.getDistanceSq((double) posX + 0.5D, (double) posY + 0.5D, (double) posZ + 0.5D) <= 64D;
 	}
 
 	/**

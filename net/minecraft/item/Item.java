@@ -196,7 +196,7 @@ public class Item {
 			6).setItemName("enderPearl");
 	public static Item blazeRod = (new Item(113)).setIconCoord(12, 6)
 			.setItemName("blazeRod");
-	public static Item ghastTear;
+	//public static Item ghastTear;
 	public static Item goldNugget = (new Item(115)).setIconCoord(12, 7)
 			.setItemName("goldNugget");
 	public static Item netherStalkSeeds;
@@ -205,11 +205,11 @@ public class Item {
 	public static Item glassBottle = (new ItemGlassBottle(118)).setIconCoord(
 			12, 8).setItemName("glassBottle");
 	public static Item spiderEye;
-	public static Item fermentedSpiderEye;
-	public static Item blazePowder;
-	public static Item magmaCream;
-	public static Item brewingStand;
-	public static Item cauldron;
+	//public static Item fermentedSpiderEye;
+	//public static Item blazePowder;
+	//public static Item magmaCream;
+	//public static Item brewingStand;
+	//public static Item cauldron;
 	public static Item eyeOfEnder = (new ItemEnderEye(125)).setIconCoord(11, 9)
 			.setItemName("eyeOfEnder");
 	public static Item speckledMelon;
@@ -218,9 +218,9 @@ public class Item {
 
 	/**
 	 * Bottle o' Enchanting. Drops between 1 and 3 experience orbs when thrown.
-	 */
+	 
 	public static Item expBottle = (new ItemExpBottle(128))
-			.setIconCoord(11, 10).setItemName("expBottle");
+			.setIconCoord(11, 10).setItemName("expBottle");*/
 
 	/**
 	 * Fire Charge. When used in a dispenser it fires a fireball similiar to a
@@ -813,9 +813,9 @@ public class Item {
 		rottenFlesh = (new ItemFood(111, 4, 0.1F, true))
 				.setPotionEffect(Potion.hunger.id, 30, 0, 0.8F)
 				.setIconCoord(11, 5).setItemName("rottenFlesh");
-		ghastTear = (new Item(114)).setIconCoord(11, 7)
+		/*ghastTear = (new Item(114)).setIconCoord(11, 7)
 				.setItemName("ghastTear")
-				.setPotionEffect(PotionHelper.ghastTearEffect);
+				.setPotionEffect(PotionHelper.ghastTearEffect);*/
 		netherStalkSeeds = (new ItemSeeds(116, Block.netherStalk.blockID,
 				Block.slowSand.blockID)).setIconCoord(13, 7)
 				.setItemName("netherStalkSeeds").setPotionEffect("+4");
@@ -823,7 +823,7 @@ public class Item {
 				.setPotionEffect(Potion.poison.id, 5, 0, 1.0F)
 				.setIconCoord(11, 8).setItemName("spiderEye")
 				.setPotionEffect(PotionHelper.spiderEyeEffect);
-		fermentedSpiderEye = (new Item(120)).setIconCoord(10, 8)
+/*		fermentedSpiderEye = (new Item(120)).setIconCoord(10, 8)
 				.setItemName("fermentedSpiderEye")
 				.setPotionEffect(PotionHelper.fermentedSpiderEyeEffect);
 		blazePowder = (new Item(121)).setIconCoord(13, 9)
@@ -835,7 +835,7 @@ public class Item {
 		brewingStand = (new ItemReed(123, Block.brewingStand)).setIconCoord(12,
 				10).setItemName("brewingStand");
 		cauldron = (new ItemReed(124, Block.cauldron)).setIconCoord(12, 9)
-				.setItemName("cauldron");
+				.setItemName("cauldron");*/
 		speckledMelon = (new Item(126)).setIconCoord(9, 8)
 				.setItemName("speckledMelon")
 				.setPotionEffect(PotionHelper.speckledMelonEffect);

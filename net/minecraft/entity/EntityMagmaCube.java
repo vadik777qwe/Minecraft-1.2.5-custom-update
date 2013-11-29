@@ -59,7 +59,7 @@ public class EntityMagmaCube extends EntitySlime {
 	 * Returns the item ID for the item the mob drops on death.
 	 */
 	protected int getDropItemId() {
-		return Item.magmaCream.shiftedIndex;
+		return Item.netherStalkSeeds.shiftedIndex;
 	}
 
 	/**

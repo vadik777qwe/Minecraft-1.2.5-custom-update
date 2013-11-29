@@ -53,8 +53,7 @@ public class RecipesDyes {
 				6), new Object[] { new ItemStack(Item.dyePowder, 1, 4),
 				new ItemStack(Item.dyePowder, 1, 2) });
 		par1CraftingManager.addShapelessRecipe(new ItemStack(Item.dyePowder, 2,
-				5), new Object[] { new ItemStack(Item.dyePowder, 1, 4),
-				new ItemStack(Item.dyePowder, 1, 1) });
+				5), new Object[] { new ItemStack(Block.plantPurple)});
 		par1CraftingManager.addShapelessRecipe(new ItemStack(Item.dyePowder, 2,
 				13), new Object[] { new ItemStack(Item.dyePowder, 1, 5),
 				new ItemStack(Item.dyePowder, 1, 9) });

@@ -14,14 +14,6 @@ import net.minecraft.enums.EnumMobType;
 import net.minecraft.src.IBlockAccess;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-import net.minecraft.item.ItemCloth;
-import net.minecraft.item.ItemColored;
-import net.minecraft.item.ItemLeaves;
-import net.minecraft.item.ItemLilyPad;
-import net.minecraft.item.ItemMetadata;
-import net.minecraft.item.ItemPiston;
-import net.minecraft.item.ItemSapling;
-import net.minecraft.item.ItemSlab;
 import net.minecraft.item.ItemStack;
 import net.minecraft.block.material.Material;
 import net.minecraft.src.MovingObjectPosition;
@@ -30,7 +22,6 @@ import net.minecraft.stats.StatList;
 import net.minecraft.src.StepSound;
 import net.minecraft.src.StepSoundSand;
 import net.minecraft.src.StepSoundStone;
-import net.minecraft.entity.tiles.TileEntitySign;
 import net.minecraft.src.Vec3D;
 import net.minecraft.world.World;
 
@@ -408,14 +399,14 @@ public class Block {
 			.setRequiresSelfNotify();
 	public static final Block netherStalk = (new BlockNetherStalk(115))
 			.setBlockName("netherStalk").setRequiresSelfNotify();
-	public static final Block enchantmentTable = (new BlockEnchantmentTable(116))
+	/*public static final Block enchantmentTable = (new BlockEnchantmentTable(116))
 			.setHardness(5F).setResistance(2000F)
 			.setBlockName("enchantmentTable");
 	public static final Block brewingStand = (new BlockBrewingStand(117))
 			.setHardness(0.5F).setLightValue(0.125F)
 			.setBlockName("brewingStand").setRequiresSelfNotify();
 	public static final Block cauldron = (new BlockCauldron(118))
-			.setHardness(2.0F).setBlockName("cauldron").setRequiresSelfNotify();
+			.setHardness(2.0F).setBlockName("cauldron").setRequiresSelfNotify();*/
 	public static final Block endPortal = (new BlockEndPortal(119,
 			Material.portal)).setHardness(-1F).setResistance(6000000F);
 	public static final Block endPortalFrame = (new BlockEndPortalFrame(120))
@@ -438,6 +429,10 @@ public class Block {
 	/** Custom blocks */
 	public static final Block hay = (new BlockHay(125, 168)).setHardness(0.6F)
 			.setStepSound(soundGrassFootstep).setBlockName("hay");
+        public static final Block plantPurple = (BlockFlower) (new BlockFlower(126, 170))
+			.setHardness(0.0F).setStepSound(soundGrassFootstep)
+			.setBlockName("violet");
+
 
 	/** Custom blocks ends */
 

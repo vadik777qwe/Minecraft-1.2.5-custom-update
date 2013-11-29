@@ -126,8 +126,8 @@ public class RenderManager {
 				new RenderSnowball(Item.egg.getIconFromDamage(0)));
 		entityRenderMap.put(net.minecraft.entity.EntityPotion.class,
 				new RenderSnowball(154));
-		entityRenderMap.put(net.minecraft.entity.EntityExpBottle.class,
-				new RenderSnowball(Item.expBottle.getIconFromDamage(0)));
+		/*entityRenderMap.put(net.minecraft.entity.EntityExpBottle.class,
+				new RenderSnowball(Item.expBottle.getIconFromDamage(0)));*/
 		entityRenderMap.put(net.minecraft.entity.EntityFireball.class,
 				new RenderFireball(2.0F));
 		entityRenderMap.put(net.minecraft.entity.EntitySmallFireball.class,

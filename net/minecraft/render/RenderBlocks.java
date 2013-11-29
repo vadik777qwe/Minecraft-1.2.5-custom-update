@@ -4,8 +4,6 @@ import net.minecraft.world.World;
 import net.minecraft.entity.EntityRenderer;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBed;
-import net.minecraft.block.BlockBrewingStand;
-import net.minecraft.block.BlockCauldron;
 import net.minecraft.block.BlockDirectional;
 import net.minecraft.block.BlockDoor;
 import net.minecraft.block.BlockDragonEgg;
@@ -544,16 +542,6 @@ public class RenderBlocks {
 					par4);
 		}
 
-		if (i == 24) {
-			return renderBlockCauldron((BlockCauldron) par1Block, par2, par3,
-					par4);
-		}
-
-		if (i == 25) {
-			return renderBlockBrewingStand((BlockBrewingStand) par1Block, par2,
-					par3, par4);
-		}
-
 		if (i == 26) {
 			return renderBlockEndPortalFrame(par1Block, par2, par3, par4);
 		} else {
@@ -760,143 +748,6 @@ public class RenderBlocks {
 		}
 
 		flipTexture = false;
-		return true;
-	}
-
-	/**
-	 * Render BlockBrewingStand
-	 */
-	private boolean renderBlockBrewingStand(
-			BlockBrewingStand par1BlockBrewingStand, int par2, int par3,
-			int par4) {
-		par1BlockBrewingStand.setBlockBounds(0.4375F, 0.0F, 0.4375F, 0.5625F,
-				0.875F, 0.5625F);
-		renderStandardBlock(par1BlockBrewingStand, par2, par3, par4);
-		overrideBlockTexture = 156;
-		par1BlockBrewingStand.setBlockBounds(0.5625F, 0.0F, 0.3125F, 0.9375F,
-				0.125F, 0.6875F);
-		renderStandardBlock(par1BlockBrewingStand, par2, par3, par4);
-		par1BlockBrewingStand.setBlockBounds(0.125F, 0.0F, 0.0625F, 0.5F,
-				0.125F, 0.4375F);
-		renderStandardBlock(par1BlockBrewingStand, par2, par3, par4);
-		par1BlockBrewingStand.setBlockBounds(0.125F, 0.0F, 0.5625F, 0.5F,
-				0.125F, 0.9375F);
-		renderStandardBlock(par1BlockBrewingStand, par2, par3, par4);
-		clearOverrideBlockTexture();
-		Tessellator tessellator = Tessellator.instance;
-		tessellator.setBrightness(par1BlockBrewingStand
-				.getMixedBrightnessForBlock(blockAccess, par2, par3, par4));
-		float f = 1.0F;
-		int i = par1BlockBrewingStand.colorMultiplier(blockAccess, par2, par3,
-				par4);
-		float f1 = (float) (i >> 16 & 0xff) / 255F;
-		float f2 = (float) (i >> 8 & 0xff) / 255F;
-		float f3 = (float) (i & 0xff) / 255F;
-
-		if (EntityRenderer.anaglyphEnable) {
-			float f4 = (f1 * 30F + f2 * 59F + f3 * 11F) / 100F;
-			float f5 = (f1 * 30F + f2 * 70F) / 100F;
-			float f6 = (f1 * 30F + f3 * 70F) / 100F;
-			f1 = f4;
-			f2 = f5;
-			f3 = f6;
-		}
-
-		tessellator.setColorOpaque_F(f * f1, f * f2, f * f3);
-		int j = par1BlockBrewingStand.getBlockTextureFromSideAndMetadata(0, 0);
-
-		if (overrideBlockTexture >= 0) {
-			j = overrideBlockTexture;
-		}
-
-		int k = (j & 0xf) << 4;
-		int l = j & 0xf0;
-		double d = (float) l / 256F;
-		double d1 = ((float) l + 15.99F) / 256F;
-		int i1 = blockAccess.getBlockMetadata(par2, par3, par4);
-
-		for (int j1 = 0; j1 < 3; j1++) {
-			double d2 = ((double) j1 * Math.PI * 2D) / 3D + (Math.PI / 2D);
-			double d3 = ((float) k + 8F) / 256F;
-			double d4 = ((float) k + 15.99F) / 256F;
-
-			if ((i1 & 1 << j1) != 0) {
-				d3 = ((float) k + 7.99F) / 256F;
-				d4 = ((float) k + 0.0F) / 256F;
-			}
-
-			double d5 = (double) par2 + 0.5D;
-			double d6 = (double) par2 + 0.5D + (Math.sin(d2) * 8D) / 16D;
-			double d7 = (double) par4 + 0.5D;
-			double d8 = (double) par4 + 0.5D + (Math.cos(d2) * 8D) / 16D;
-			tessellator.addVertexWithUV(d5, par3 + 1, d7, d3, d);
-			tessellator.addVertexWithUV(d5, par3 + 0, d7, d3, d1);
-			tessellator.addVertexWithUV(d6, par3 + 0, d8, d4, d1);
-			tessellator.addVertexWithUV(d6, par3 + 1, d8, d4, d);
-			tessellator.addVertexWithUV(d6, par3 + 1, d8, d4, d);
-			tessellator.addVertexWithUV(d6, par3 + 0, d8, d4, d1);
-			tessellator.addVertexWithUV(d5, par3 + 0, d7, d3, d1);
-			tessellator.addVertexWithUV(d5, par3 + 1, d7, d3, d);
-		}
-
-		par1BlockBrewingStand.setBlockBoundsForItemRender();
-		return true;
-	}
-
-	/**
-	 * Render block cauldron
-	 */
-	private boolean renderBlockCauldron(BlockCauldron par1BlockCauldron,
-			int par2, int par3, int par4) {
-		renderStandardBlock(par1BlockCauldron, par2, par3, par4);
-		Tessellator tessellator = Tessellator.instance;
-		tessellator.setBrightness(par1BlockCauldron.getMixedBrightnessForBlock(
-				blockAccess, par2, par3, par4));
-		float f = 1.0F;
-		int i = par1BlockCauldron
-				.colorMultiplier(blockAccess, par2, par3, par4);
-		float f1 = (float) (i >> 16 & 0xff) / 255F;
-		float f2 = (float) (i >> 8 & 0xff) / 255F;
-		float f3 = (float) (i & 0xff) / 255F;
-
-		if (EntityRenderer.anaglyphEnable) {
-			float f4 = (f1 * 30F + f2 * 59F + f3 * 11F) / 100F;
-			float f5 = (f1 * 30F + f2 * 70F) / 100F;
-			float f7 = (f1 * 30F + f3 * 70F) / 100F;
-			f1 = f4;
-			f2 = f5;
-			f3 = f7;
-		}
-
-		tessellator.setColorOpaque_F(f * f1, f * f2, f * f3);
-		char c = '\232';
-		float f6 = 0.125F;
-		renderSouthFace(par1BlockCauldron, ((float) par2 - 1.0F) + f6, par3,
-				par4, c);
-		renderNorthFace(par1BlockCauldron, ((float) par2 + 1.0F) - f6, par3,
-				par4, c);
-		renderWestFace(par1BlockCauldron, par2, par3, ((float) par4 - 1.0F)
-				+ f6, c);
-		renderEastFace(par1BlockCauldron, par2, par3, ((float) par4 + 1.0F)
-				- f6, c);
-		char c1 = '\213';
-		renderTopFace(par1BlockCauldron, par2, ((float) par3 - 1.0F) + 0.25F,
-				par4, c1);
-		renderBottomFace(par1BlockCauldron, par2,
-				((float) par3 + 1.0F) - 0.75F, par4, c1);
-		int j = blockAccess.getBlockMetadata(par2, par3, par4);
-
-		if (j > 0) {
-			char c2 = '\315';
-
-			if (j > 3) {
-				j = 3;
-			}
-
-			renderTopFace(par1BlockCauldron, par2, ((float) par3 - 1.0F)
-					+ (6F + (float) j * 3F) / 16F, par4, c2);
-		}
-
 		return true;
 	}
 

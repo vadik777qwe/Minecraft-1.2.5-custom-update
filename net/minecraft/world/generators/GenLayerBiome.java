@@ -13,14 +13,15 @@ public class GenLayerBiome extends GenLayer {
 		allowedBiomes = (new BiomeGenBase[] { BiomeGenBase.desert,
 				BiomeGenBase.forest, BiomeGenBase.extremeHills,
 				BiomeGenBase.swampland, BiomeGenBase.plains,
-				BiomeGenBase.taiga, BiomeGenBase.jungle });
+				BiomeGenBase.taiga, BiomeGenBase.jungle,
+                                BiomeGenBase.autumn});
 		parent = par3GenLayer;
 
 		if (par4WorldType == WorldType.DEFAULT_1_1) {
 			allowedBiomes = (new BiomeGenBase[] { BiomeGenBase.desert,
 					BiomeGenBase.forest, BiomeGenBase.extremeHills,
 					BiomeGenBase.swampland, BiomeGenBase.plains,
-					BiomeGenBase.taiga });
+					BiomeGenBase.taiga, BiomeGenBase.autumn });
 		}
 	}
 
@@ -29,6 +30,7 @@ public class GenLayerBiome extends GenLayer {
 	 * interpreted as temperatures, rainfall amounts, or biomeList[] indices
 	 * based on the particular GenLayer subclass.
 	 */
+        @Override
 	public int[] getInts(int par1, int par2, int par3, int par4) {
 		int ai[] = parent.getInts(par1, par2, par3, par4);
 		int ai1[] = IntCache.getIntCache(par3 * par4);

@@ -14,6 +14,7 @@ public class GenLayerAddIsland extends GenLayer {
 	 * interpreted as temperatures, rainfall amounts, or biomeList[] indices
 	 * based on the particular GenLayer subclass.
 	 */
+        @Override
 	public int[] getInts(int par1, int par2, int par3, int par4) {
 		int i = par1 - 1;
 		int j = par2 - 1;

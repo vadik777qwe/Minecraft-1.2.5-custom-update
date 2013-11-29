@@ -1,10 +1,5 @@
 package net.minecraft.biome;
 
-import java.util.List;
-
-import net.minecraft.entity.EntityGhast;
-import net.minecraft.entity.EntityMagmaCube;
-import net.minecraft.entity.EntityPigZombie;
 import net.minecraft.src.SpawnListEntry;
 
 public class BiomeGenHell extends BiomeGenBase {

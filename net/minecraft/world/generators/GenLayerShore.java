@@ -14,6 +14,7 @@ public class GenLayerShore extends GenLayer {
 	 * interpreted as temperatures, rainfall amounts, or biomeList[] indices
 	 * based on the particular GenLayer subclass.
 	 */
+        @Override
 	public int[] getInts(int par1, int par2, int par3, int par4) {
 		int ai[] = parent.getInts(par1 - 1, par2 - 1, par3 + 2, par4 + 2);
 		int ai1[] = IntCache.getIntCache(par3 * par4);

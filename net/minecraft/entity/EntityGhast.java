@@ -227,9 +227,9 @@ public class EntityGhast extends EntityFlying implements IMob {
 	protected void dropFewItems(boolean par1, int par2) {
 		int i = rand.nextInt(2) + rand.nextInt(1 + par2);
 
-		for (int j = 0; j < i; j++) {
+		/*for (int j = 0; j < i; j++) {
 			dropItem(Item.ghastTear.shiftedIndex, 1);
-		}
+		}*/
 
 		i = rand.nextInt(3) + rand.nextInt(1 + par2);
 

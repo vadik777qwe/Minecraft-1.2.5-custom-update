@@ -5,7 +5,6 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.achievement.Achievement;
 import net.minecraft.achievement.AchievementList;
 import net.minecraft.src.DamageSource;
-import net.minecraft.gui.GuiBrewingStand;
 import net.minecraft.gui.GuiChest;
 import net.minecraft.gui.GuiCrafting;
 import net.minecraft.gui.GuiDispenser;
@@ -369,15 +368,6 @@ public class EntityPlayerSP extends EntityPlayer {
 	 */
 	public void displayGUIFurnace(TileEntityFurnace par1TileEntityFurnace) {
 		mc.displayGuiScreen(new GuiFurnace(inventory, par1TileEntityFurnace));
-	}
-
-	/**
-	 * Displays the GUI for interacting with a brewing stand.
-	 */
-	public void displayGUIBrewingStand(
-			TileEntityBrewingStand par1TileEntityBrewingStand) {
-		mc.displayGuiScreen(new GuiBrewingStand(inventory,
-				par1TileEntityBrewingStand));
 	}
 
 	/**

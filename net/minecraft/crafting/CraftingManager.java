@@ -10,7 +10,6 @@ import net.minecraft.crafting.recipes.RecipesFood;
 import net.minecraft.crafting.recipes.RecipesWeapons;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import java.io.PrintStream;
 import java.util.*;
 
 import net.minecraft.block.Block;
@@ -113,8 +112,8 @@ public class CraftingManager {
 				'X', new ItemStack(Item.coal, 1, 1), '#', Item.stick });
 		addRecipe(new ItemStack(Item.bowlEmpty, 4), new Object[] { "# #",
 				" # ", '#', Block.planks });
-		addRecipe(new ItemStack(Item.glassBottle, 3), new Object[] { "# #",
-				" # ", '#', Block.glass });
+		/*addRecipe(new ItemStack(Item.glassBottle, 3), new Object[] { "# #",
+				" # ", '#', Block.glass });*/
 		addRecipe(new ItemStack(Block.rail, 16), new Object[] { "X X", "X#X",
 				"X X", 'X', Item.ingotIron, '#', Item.stick });
 		addRecipe(new ItemStack(Block.railPowered, 6), new Object[] { "X X",
@@ -125,10 +124,10 @@ public class CraftingManager {
 				Block.pressurePlateStone });
 		addRecipe(new ItemStack(Item.minecartEmpty, 1), new Object[] { "# #",
 				"###", '#', Item.ingotIron });
-		addRecipe(new ItemStack(Item.cauldron, 1), new Object[] { "# #", "# #",
+		/*addRecipe(new ItemStack(Item.cauldron, 1), new Object[] { "# #", "# #",
 				"###", '#', Item.ingotIron });
 		addRecipe(new ItemStack(Item.brewingStand, 1), new Object[] { " B ",
-				"###", '#', Block.cobblestone, 'B', Item.blazeRod });
+				"###", '#', Block.cobblestone, 'B', Item.blazeRod });*/
 		addRecipe(new ItemStack(Block.pumpkinLantern, 1), new Object[] { "A",
 				"B", 'A', Block.pumpkin, 'B', Block.torchWood });
 		addRecipe(new ItemStack(Item.minecartCrate, 1), new Object[] { "A",
@@ -188,7 +187,7 @@ public class CraftingManager {
 				"P", 'S', Item.slimeBall, 'P', Block.pistonBase });
 		addRecipe(new ItemStack(Item.bed, 1), new Object[] { "###", "XXX", '#',
 				Block.cloth, 'X', Block.planks });
-		addRecipe(new ItemStack(Block.enchantmentTable, 1), new Object[] {
+		/*addRecipe(new ItemStack(Block.enchantmentTable, 1), new Object[] {
 				" B ", "D#D", "###", '#', Block.obsidian, 'B', Item.book, 'D',
 				Item.diamond });
 		addShapelessRecipe(new ItemStack(Item.eyeOfEnder, 1), new Object[] {
@@ -197,10 +196,12 @@ public class CraftingManager {
 				Item.gunpowder, Item.blazePowder, Item.coal });
 		addShapelessRecipe(new ItemStack(Item.fireballCharge, 3), new Object[] {
 				Item.gunpowder, Item.blazePowder,
-				new ItemStack(Item.coal, 1, 1) });
+				new ItemStack(Item.coal, 1, 1) });*/
 		/** Custom Recipes*/
 		addRecipe(new ItemStack(Block.hay, 1), new Object[] {
 				"XXX", "XXX", "XXX", 'X', Item.wheat });
+                
+                
 		Collections.sort(recipes, new RecipeSorter(this));
 		System.out.println((new StringBuilder()).append(recipes.size())
 				.append(" recipes").toString());

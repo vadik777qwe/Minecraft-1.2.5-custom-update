@@ -4,7 +4,6 @@ import net.minecraft.render.RenderManager;
 import net.minecraft.render.RenderHelper;
 import net.minecraft.entity.EntityPlayer;
 import java.util.*;
-import net.minecraft.client.Minecraft;
 import net.minecraft.achievement.AchievementList;
 import net.minecraft.item.potion.Potion;
 import net.minecraft.item.potion.PotionEffect;
@@ -33,6 +32,7 @@ public class GuiInventory extends GuiContainer {
 	/**
 	 * Called from the main game loop to update the screen.
 	 */
+        @Override
 	public void updateScreen() {
 		if (mc.playerController.isInCreativeMode()) {
 			mc.displayGuiScreen(new GuiContainerCreative(mc.thePlayer));
@@ -42,6 +42,7 @@ public class GuiInventory extends GuiContainer {
 	/**
 	 * Adds the buttons (and other controls) to the screen in question.
 	 */
+        @Override
 	public void initGui() {
 		controlList.clear();
 
@@ -60,6 +61,7 @@ public class GuiInventory extends GuiContainer {
 	 * Draw the foreground layer for the GuiContainer (everythin in front of the
 	 * items)
 	 */
+        @Override
 	protected void drawGuiContainerForegroundLayer() {
 		fontRenderer.drawString(
 				StatCollector.translateToLocal("container.crafting"), 86, 16,
@@ -69,6 +71,7 @@ public class GuiInventory extends GuiContainer {
 	/**
 	 * Draws the screen and all the components in it.
 	 */
+        @Override
 	public void drawScreen(int par1, int par2, float par3) {
 		super.drawScreen(par1, par2, par3);
 		xSize_lo = par1;
@@ -79,6 +82,7 @@ public class GuiInventory extends GuiContainer {
 	 * Draw the background layer for the GuiContainer (everything behind the
 	 * items)
 	 */
+        @Override
 	protected void drawGuiContainerBackgroundLayer(float par1, int par2,
 			int par3) {
 		int i = mc.renderEngine.getTexture("/gui/inventory.png");
@@ -124,6 +128,7 @@ public class GuiInventory extends GuiContainer {
 	 * Fired when a control is clicked. This is the equivalent of
 	 * ActionListener.actionPerformed(ActionEvent e).
 	 */
+        @Override
 	protected void actionPerformed(GuiButton par1GuiButton) {
 		if (par1GuiButton.id == 0) {
 			mc.displayGuiScreen(new GuiAchievements(mc.statFileWriter));

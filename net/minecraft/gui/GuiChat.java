@@ -1,10 +1,8 @@
 package net.minecraft.gui;
 
 import net.minecraft.entity.EntityClientPlayerMP;
-import java.lang.reflect.Method;
 import java.net.URI;
 import java.util.*;
-import net.minecraft.client.Minecraft;
 import net.minecraft.src.ChatClickData;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
@@ -49,6 +47,7 @@ public class GuiChat extends GuiScreen {
 	/**
 	 * Adds the buttons (and other controls) to the screen in question.
 	 */
+        @Override
 	public void initGui() {
 		Keyboard.enableRepeatEvents(true);
 		field_50063_c = mc.ingameGUI.func_50013_c().size();
@@ -65,6 +64,7 @@ public class GuiChat extends GuiScreen {
 	 * Called when the screen is unloaded. Used to disable keyboard repeat
 	 * events
 	 */
+        @Override
 	public void onGuiClosed() {
 		Keyboard.enableRepeatEvents(false);
 		mc.ingameGUI.func_50014_d();
@@ -73,6 +73,7 @@ public class GuiChat extends GuiScreen {
 	/**
 	 * Called from the main game loop to update the screen.
 	 */
+        @Override
 	public void updateScreen() {
 		field_50064_a.updateCursorCounter();
 	}
@@ -81,6 +82,7 @@ public class GuiChat extends GuiScreen {
 	 * Fired when a key is typed. This is the equivalent of
 	 * KeyListener.keyTyped(KeyEvent e).
 	 */
+        @Override
 	protected void keyTyped(char par1, int par2) {
 		switch (par2) {
 		case 1:
@@ -119,6 +121,7 @@ public class GuiChat extends GuiScreen {
 	/**
 	 * Handles mouse input.
 	 */
+        @Override
 	public void handleMouseInput() {
 		super.handleMouseInput();
 		int i = Mouse.getEventDWheel();
@@ -143,6 +146,7 @@ public class GuiChat extends GuiScreen {
 	/**
 	 * Called when the mouse is clicked.
 	 */
+        @Override
 	protected void mouseClicked(int par1, int par2, int par3) {
 		if (par3 == 0) {
 			ChatClickData chatclickdata = mc.ingameGUI.func_50012_a(
@@ -164,6 +168,7 @@ public class GuiChat extends GuiScreen {
 		super.mouseClicked(par1, par2, par3);
 	}
 
+        @Override
 	public void confirmClicked(boolean par1, int par2) {
 		if (par2 == 0) {
 			if (par1) {
@@ -281,6 +286,7 @@ public class GuiChat extends GuiScreen {
 	/**
 	 * Draws the screen and all the components in it.
 	 */
+        @Override
 	public void drawScreen(int par1, int par2, float par3) {
 		drawRect(2, height - 14, width - 2, height - 2, 0x80000000);
 		field_50064_a.drawTextBox();

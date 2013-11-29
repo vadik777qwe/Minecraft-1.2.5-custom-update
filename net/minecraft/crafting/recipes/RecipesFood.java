@@ -25,15 +25,15 @@ public class RecipesFood {
 				new Object[] { "M", 'M', Item.melon });
 		par1CraftingManager.addRecipe(new ItemStack(Item.pumpkinSeeds, 4),
 				new Object[] { "M", 'M', Block.pumpkin });
-		par1CraftingManager.addShapelessRecipe(new ItemStack(
+		/*par1CraftingManager.addShapelessRecipe(new ItemStack(
 				Item.fermentedSpiderEye), new Object[] { Item.spiderEye,
-				Block.mushroomBrown, Item.sugar });
+				Block.mushroomBrown, Item.sugar });*/
 		par1CraftingManager.addShapelessRecipe(
 				new ItemStack(Item.speckledMelon), new Object[] { Item.melon,
 						Item.goldNugget });
-		par1CraftingManager.addShapelessRecipe(new ItemStack(Item.blazePowder,
+		/*par1CraftingManager.addShapelessRecipe(new ItemStack(Item.blazePowder,
 				2), new Object[] { Item.blazeRod });
 		par1CraftingManager.addShapelessRecipe(new ItemStack(Item.magmaCream),
-				new Object[] { Item.blazePowder, Item.slimeBall });
+				new Object[] { Item.blazePowder, Item.slimeBall });**/
 	}
 }

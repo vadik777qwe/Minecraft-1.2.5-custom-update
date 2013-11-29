@@ -7,17 +7,6 @@ import java.util.Random;
 import net.minecraft.block.Block;
 import net.minecraft.src.ColorizerFoliage;
 import net.minecraft.src.ColorizerGrass;
-import net.minecraft.entity.EntityChicken;
-import net.minecraft.entity.EntityCow;
-import net.minecraft.entity.EntityCreeper;
-import net.minecraft.entity.EntityEnderman;
-import net.minecraft.entity.EntityPig;
-import net.minecraft.entity.EntitySheep;
-import net.minecraft.entity.EntitySkeleton;
-import net.minecraft.entity.EntitySlime;
-import net.minecraft.entity.EntitySpider;
-import net.minecraft.entity.EntitySquid;
-import net.minecraft.entity.EntityZombie;
 import net.minecraft.enums.EnumCreatureType;
 import net.minecraft.src.MathHelper;
 import net.minecraft.src.SpawnListEntry;
@@ -115,6 +104,14 @@ public abstract class BiomeGenBase {
 			.setColor(0x2c4205).setBiomeName("JungleHills")
 			.func_4124_a(0x537b09).setTemperatureRainfall(1.2F, 0.9F)
 			.setMinMaxHeight(1.8F, 0.2F);
+        /**Custom Biomes*/
+        public static final BiomeGenBase autumn = (new BiomeGenFlowerPlain(23))
+			.setColor(0xFFF000).setBiomeName("Flower Plains")
+			.func_4124_a(0xFFF000) .setTemperatureRainfall(0.6F, 0.4F);
+        public static final BiomeGenBase autumnHills = (new BiomeGenFlowerPlain(24))
+			.setColor(0xFFF000).setBiomeName("Flower Plains")
+			.func_4124_a(0xFFF000) .setTemperatureRainfall(0.6F, 0.4F);
+        
 	public String biomeName;
 	public int color;
 

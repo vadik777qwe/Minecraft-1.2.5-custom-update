@@ -20,6 +20,7 @@ public class BlockRedstoneTorch extends BlockTorch {
 	 * From the specified side and block metadata retrieves the blocks texture.
 	 * Args: side, metadata
 	 */
+        @Override
 	public int getBlockTextureFromSideAndMetadata(int par1, int par2) {
 		if (par1 == 1) {
 			return Block.redstoneWire.getBlockTextureFromSideAndMetadata(par1,
@@ -61,6 +62,7 @@ public class BlockRedstoneTorch extends BlockTorch {
 	/**
 	 * How many world ticks before ticking
 	 */
+        @Override
 	public int tickRate() {
 		return 2;
 	}
@@ -68,6 +70,7 @@ public class BlockRedstoneTorch extends BlockTorch {
 	/**
 	 * Called whenever the block is added into the world. Args: world, x, y, z
 	 */
+        @Override
 	public void onBlockAdded(World par1World, int par2, int par3, int par4) {
 		if (par1World.getBlockMetadata(par2, par3, par4) == 0) {
 			super.onBlockAdded(par1World, par2, par3, par4);
@@ -92,6 +95,7 @@ public class BlockRedstoneTorch extends BlockTorch {
 	/**
 	 * Called whenever the block is removed.
 	 */
+        @Override
 	public void onBlockRemoval(World par1World, int par2, int par3, int par4) {
 		if (torchActive) {
 			par1World.notifyBlocksOfNeighborChange(par2, par3 - 1, par4,
@@ -112,6 +116,7 @@ public class BlockRedstoneTorch extends BlockTorch {
 	/**
 	 * Is this block powering the block on the specified side
 	 */
+        @Override
 	public boolean isPoweringTo(IBlockAccess par1IBlockAccess, int par2,
 			int par3, int par4, int par5) {
 		if (!torchActive) {
@@ -179,6 +184,7 @@ public class BlockRedstoneTorch extends BlockTorch {
 	/**
 	 * Ticks the block if it's been scheduled
 	 */
+        @Override
 	public void updateTick(World par1World, int par2, int par3, int par4,
 			Random par5Random) {
 		boolean flag = isIndirectlyPowered(par1World, par2, par3, par4);
@@ -227,6 +233,7 @@ public class BlockRedstoneTorch extends BlockTorch {
 	 * neighbor changed (coordinates passed are their own) Args: x, y, z,
 	 * neighbor blockID
 	 */
+        @Override
 	public void onNeighborBlockChange(World par1World, int par2, int par3,
 			int par4, int par5) {
 		super.onNeighborBlockChange(par1World, par2, par3, par4, par5);
@@ -236,6 +243,7 @@ public class BlockRedstoneTorch extends BlockTorch {
 	/**
 	 * Is this block indirectly powering the block on the specified side
 	 */
+        @Override
 	public boolean isIndirectlyPoweringTo(World par1World, int par2, int par3,
 			int par4, int par5) {
 		if (par5 == 0) {
@@ -248,6 +256,7 @@ public class BlockRedstoneTorch extends BlockTorch {
 	/**
 	 * Returns the ID of the items to drop on destruction.
 	 */
+        @Override
 	public int idDropped(int par1, Random par2Random, int par3) {
 		return Block.torchRedstoneActive.blockID;
 	}
@@ -256,6 +265,7 @@ public class BlockRedstoneTorch extends BlockTorch {
 	 * Can this block provide power. Only wire currently seems to have this
 	 * change based on its state.
 	 */
+        @Override
 	public boolean canProvidePower() {
 		return true;
 	}
@@ -264,6 +274,7 @@ public class BlockRedstoneTorch extends BlockTorch {
 	 * A randomly called display update to be able to add particles or other
 	 * items for display
 	 */
+        @Override
 	public void randomDisplayTick(World par1World, int par2, int par3,
 			int par4, Random par5Random) {
 		if (!torchActive) {
