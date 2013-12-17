@@ -410,6 +410,47 @@ public class GuiTextField extends Gui {
 			func_50029_c(k1, i1 - 1, l1 - 1, i1 + 1 + fontRenderer.FONT_HEIGHT);
 		}
 	}
+	
+	/**
+	 * Говинще полное, но это работает.
+	 * Правда, надо фиксануть копирование
+	 * из бокса, но мне уже впадлу - спасибо
+	 * пользователям руведра за их ленивость
+	 * и довольствовании тем, что уже есть
+	 * (мудаки без фантазии кароч).
+	 * 
+	 * @Author Dereku
+	 * @return Nothing
+	 */
+	
+	@Deprecated
+	public void drawPassTextBox() {
+        	if (func_50022_i()) {
+			drawRect(xPos - 1, yPos - 1, xPos + width + 1, yPos + height + 1, 0xffa0a0a0);
+			drawRect(xPos, yPos, xPos + width, yPos + height, 0xff000000);
+		}
+
+		int i = pr_bool_1 ? field_50047_q : field_50046_r;
+		int j = selectionLegth - textLength;
+		String s = fontRenderer.func_50107_a(text.substring(textLength), func_50019_l());
+		String o = "#####################################";
+		String s2 =  o.substring(0, text.length());
+		boolean flag = j >= 0 && j <= s.length();
+		boolean flag1 = isFocused && (cursorCounter / 6) % 2 == 0 && flag;
+		int l = pr_boolean_true ? xPos + 4 : xPos;
+		int i1 = pr_boolean_true ? yPos + (height - 8) / 2 : yPos;
+		int j1 = l;
+
+		if (s.length() > 0) {
+			j1 = fontRenderer.drawStringWithShadow(s2, j1, i1, i);
+		}
+
+		boolean flag2 = selectionLegth < text.length() || text.length() >= func_50040_g();
+
+		if (flag1 && !flag2) {
+			fontRenderer.drawStringWithShadow("_", j1, i1, i);
+		}
+	}
 
 	private void func_50029_c(int par1, int par2, int par3, int par4) {
 		if (par1 < par3) {
