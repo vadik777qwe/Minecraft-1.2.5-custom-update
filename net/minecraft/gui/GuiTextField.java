@@ -430,15 +430,15 @@ public class GuiTextField extends Gui {
 			drawRect(xPos, yPos, xPos + width, yPos + height, 0xff000000);
 		}
 
-		int i = pr_bool_1 ? field_50047_q : field_50046_r;
-		int j = selectionLegth - textLength;
+		int i = field_50043_m ? field_50047_q : field_50046_r;
+		int j = field_50042_o - field_50041_n;
 		String s = fontRenderer.func_50107_a(text.substring(textLength), func_50019_l());
 		String o = "#####################################";
 		String s2 =  o.substring(0, text.length());
 		boolean flag = j >= 0 && j <= s.length();
 		boolean flag1 = isFocused && (cursorCounter / 6) % 2 == 0 && flag;
-		int l = pr_boolean_true ? xPos + 4 : xPos;
-		int i1 = pr_boolean_true ? yPos + (height - 8) / 2 : yPos;
+		int l = field_50044_j ? xPos + 4 : xPos;
+		int i1 = field_50044_j ? yPos + (height - 8) / 2 : yPos;
 		int j1 = l;
 
 		if (s.length() > 0) {
